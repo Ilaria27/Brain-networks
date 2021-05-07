@@ -1,0 +1,47 @@
+\chapter{Survey}
+\label{chap:1} 
+\section{General}
+\label{sec:caso}
+
+\section{All methods}
+We can divide the methods in the several techniques that the papers use to build the graph classification: Neural Networks, Embedding, Deep matrix factorization, Graph Fourier transform, Graph kernels, and Network classification.
+\subsection{Neural Networks}
+\paragraph{GroupINN: Grouping-based Interpretable Neural Network for Classification of Limited, Noisy Brain Data}\
+\\
+
+This paper proposes a grouping-based interpretable neural network model, GroupINN, that classifies cognitive performance with 85\% fewer parameters than baseline deep models, while also identifying the most predictive brain subnetworks within several task-specific contexts. In the design of the neural network is included the idea of node grouping. In this way the model learns the node grouping and extracts the graph features jointly.
+\\
+The problem statement of this paper is: given a set of subjects, each with corresponding fMRI data and a label associated with a certain phenotype, we seek to devise an efficient, interpretable, and parsimonious neural network model that can predict each phenotype with high accuracy.
+\\
+To reduce the number of parameters used in the model, they adopted the idea of multi-graph clustering (where the goal is to find a common clustering across multiple graphs) to summarize the original graph into a supergraph with each cluster as a supernode. 
+\\
+The neural network is formed by three different types of layers: node grouping layer, graph convolutional layer and fully connected layer. The node grouping layer is designed to “hide” the non-indicative (‘noisy’) edges by grouping them into a cluster, thus highlighting the indicative edges: two nodes are assigned to different groups if their connection is identified as important.
+Graph convolutional layers are used to capture the structure of the supergraph.
+\\
+The neural network is also divided in two branches, one processes the positive graphs and one the negative ones. 
+All in all, the architecture consists of three kinds of layers and two branches. 
+The input graph is the correlation matrix $W$. The first layer is a dimensionality reduction layer and the output is a matrix $W^{s}$ representing the supergraph. Following the dimensionality reduction layer, three graph convolutional layers are used. At last, the positive and negative outputs of the previous layer are concatenated, flattened and sent to the fully connected layer (with softmax activation).
+\paragraph{Functional Brain Network Classification for Alzheimer’s Disease
+Detection with Deep Features and Extreme Learning Machine
+}
+\subsection{Embedding}
+\paragraph{Explainable Classification of Brain Networks via Contrast Subgraphs}\
+\\
+
+In this paper they introduce an approach for classifying brain networks based on extracting contrast subgraphs, i.e., a set of vertices whose induced subgraphs are dense in one class of graphs and sparse in the other. The model is extremely simple, with just one parameter, excellent interpretability and good classification accuracy. 
+\\
+They exploited contrast subgraph TD-ASD (the subgraph that maximizes the difference between the number of edges in the class TD, typically developed brains, with respect to the same measure for class ASD, people with autism spectrum deseas). Vertex size represents the importance of the vertex in discriminating the two classes. In fact they ended up with some important rules:
+1. If an individual exhibits more than 62 edges among the 15 vertices of the contrast subgraph ASD-TD, then there are high chances that the individual is affected by ASD; 2. If the number of edges induced by the contrast subgraph ASD-TD is smaller than half of the number of edges induced by the contrast subgraph TD-ASD, then there are high chances that the individual is not affected by ASD. 3. If the number of edges induced by the contrast subgraph ASD-TD is smaller than the number of edges induced by the contrast subgraph TD-ASD, then there are high chances that the individual is affected by ASD.
+\\
+Each individual is represented by an undirected unweighted graph with $|V|$ = 116 vertices.
+\paragraph{Stable Biomarker Identification For Predicting Schizophrenia in the Human Connectome}
+\paragraph{Unsupervised Network Embedding for Graph Visualization, Clustering and Classification}
+\paragraph{Supervised classification of structural brain networks reveals gender differences}
+\subsection{Deep matrix factorization}
+\paragraph{Multi-modality disease modeling via collective deep matrix factorization}
+\subsection{Graph Fourier transform}
+\paragraph{Integration Of Network Topological Features And Graph Fourier Transform For Fmri Data Analysis}
+\subsection{Graph kernels}
+\paragraph{Sub-network Kernels for Measuring Similarity of Brain Connectivity Networks in Disease Diagnosis}
+\subsection{Network classification}
+\paragraph{Network Classification With Applications To Brain Connectomics}

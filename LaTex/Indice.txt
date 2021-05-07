@@ -1,0 +1,12 @@
+1. Introduzione
+	spiegazione dello scopo del progetto
+	connectome
+	fMRI
+	metodi
+2. Metodi
+	spiegazione dei metodi scelti
+	spiegazione dataset
+3. Risultati
+	risultati ottenuti
+	comparazione fra metodi
+4. Conclusione
