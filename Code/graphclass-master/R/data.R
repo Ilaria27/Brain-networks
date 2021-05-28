@@ -1,0 +1,94 @@
+#' fMRI brain networks of the COBRE dataset
+#'
+#' This dataset contains fMRI brain networks of 124  subjects
+#' and corresponding class labels indicating schizophrenia status (70 healthy controls and 54
+#' schizophrenic subjects).
+#' 
+#' @docType data
+#' 
+#' @format \code{COBRE.data} is a list with two elements
+#' \describe{
+#'   \item{X.cobre}{A matrix containing the upper triangular part of the networks. Each row represents a subject,
+#'   and the columns represent edges. The edge weights represent the Fisher-transformed correlation 
+#'   between the
+#'   fMRI time series of the nodes after passing to ranks. The networks are composed of 263 nodes and 34453 different edges.
+#'   For a description of the preprocessing steps to obtain the network edge weights, see \insertCite{relion2017network;textual}{graphclass}.
+#'   }.
+#'   \item{Y.cobre}{Class labels of the subjects in the dataset. \code{Y=1} represents schizophrenia status.}
+#' }
+#' 
+#' @usage
+#' data(COBRE.data)
+#' 
+#' @examples 
+#' data(COBRE.data)
+#' plot_adjmatrix(COBRE.data$X.cobre[1,])
+#' 
+#' @keywords datasets
+#' 
+#' @source \url{http://fcon_1000.projects.nitrc.org/indi/retro/cobre.html}
+#' @references 
+#' \insertRef{Aine2017}{graphclass}
+#' 
+"COBRE.data"
+
+
+
+
+
+#' fMRI brain networks of the UMich dataset
+#'
+#' The UMich dataset contains the fMRI brain networks of 78  subjects
+#' and class labels of schizophrenia disease status.
+#'
+#' @docType data
+#' 
+#' @format \code{UMich.data} is a list with two elements
+#' \describe{
+#'   \item{X.cobre}{A matrix containing the upper triangular part of networks. Each row represents a subject,
+#'   and the columns represent edges. The edge weights represent the Fisher-transformed correlation 
+#'   between the
+#'   fMRI time series of the nodes. Each network has 264 labeled nodes and 34716 different edges.
+#'   For a description of the preprocessing steps to obtain the network edge weights, see \insertCite{relion2017network;textual}{graphclass}.
+#'   }.
+#'   \item{Y.cobre}{Class labels of the subjects in the dataset.  \code{Y = 1} represents schizophrenia status.}
+#' }
+#' 
+#' @keywords datasets
+#' 
+#' @usage 
+#' data(UMich.data)
+#' 
+#' @examples 
+#' data(UMich.data)
+#' plot_adjmatrix(UMich.data$X.umich[1,])
+#' 
+"UMich.data"
+
+
+#' Node assignments of the Power parcellation
+#'
+#' Table containing the node assignments to brain systems of the 264 regions of interest from \insertCite{power2011functional;textual}{graphclass}. 
+#' These nodes were used to construct COBRE.data and UMich.data. Note that node 75 is missing in the COBRE data.
+#'
+#' @docType data
+#' 
+#' @format \code{power.parcellation} is a data frame in which the nodes represent nodes. The data frame has three columns:
+#' \describe{
+#'   \item{Master.Assignment}{Brain system number}
+#'   \item{Color}{Color representing the system.}
+#'   \item{Suggested.System}{Suggested brain system.}
+#'   
+#' }
+#' 
+#' @examples 
+#' data(power.parcellation)
+#' 
+#' @keywords datasets
+#' 
+#' @source \url{http://www.nil.wustl.edu/labs/petersen/Resources_files/Consensus264.xls}
+#' @references 
+#' \insertRef{power2011functional}{graphclass}
+#' 
+"power.parcellation"
+
