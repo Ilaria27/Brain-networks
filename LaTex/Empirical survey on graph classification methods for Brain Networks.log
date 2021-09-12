@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.17)  7 JUN 2021 13:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.17)  12 SEP 2021 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -888,7 +888,7 @@ Package hyperref Warning: Option `bookmarks' has already been used,
 (hyperref)                setting the option has no effect on input line 40.
 
 Package hyperref Info: Option `colorlinks' set `true' on input line 40.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 58
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 57
 .
 (c:/texlive/2020/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -902,22 +902,22 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \openout1 = `"Empirical survey on graph classification methods for Brain Networ
 ks.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -979,15 +979,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \textsubscript on input line 58.
-LaTeX Info: Redefining \microtypecontext on input line 58.
+LaTeX Info: Redefining \textsubscript on input line 57.
+LaTeX Info: Redefining \microtypecontext on input line 57.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 58.
+LaTeX Info: Redefining \showhyphens on input line 57.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -996,7 +996,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Package hyperref Info: Link coloring ON on input line 58.
+Package hyperref Info: Link coloring ON on input line 57.
 
 (c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1009,9 +1009,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count304
 )
-LaTeX Info: Redefining \ref on input line 58.
-LaTeX Info: Redefining \pageref on input line 58.
-LaTeX Info: Redefining \nameref on input line 58.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
+LaTeX Info: Redefining \nameref on input line 57.
 
 (./Empirical survey on graph classification methods for Brain Networks.out)
 (./Empirical survey on graph classification methods for Brain Networks.out)
@@ -1020,7 +1020,7 @@ LaTeX Info: Redefining \nameref on input line 58.
 ks.out"'.
 
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 6
-2.
+0.
 
 (c:/texlive/2020/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1029,10 +1029,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<sapienza-MLred-pos.pdf, id=88, 288.07625pt x 89.33376pt>
+<sapienza-MLred-pos.pdf, id=68, 288.07625pt x 89.33376pt>
 File: sapienza-MLred-pos.pdf Graphic file (type pdf)
 <use sapienza-MLred-pos.pdf>
-Package pdftex.def Info: sapienza-MLred-pos.pdf  used on input line 62.
+Package pdftex.def Info: sapienza-MLred-pos.pdf  used on input line 60.
 (pdftex.def)             Requested size: 142.26378pt x 44.11742pt.
  [1
 
@@ -1041,46 +1041,46 @@ Package pdftex.def Info: sapienza-MLred-pos.pdf  used on input line 62.
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <c:/texlive/2020
 /texmf-dist/tex/latex/sapthesis/sapienza-MLred-pos.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 6
-2.
+0.
 
 (c:/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 62--62
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
 
  []
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
-2.
+0.
 (c:/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
-2.
+0.
 
 (c:/texlive/2020/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-62.
+60.
 
 (c:/texlive/2020/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-62.
+60.
 
 (c:/texlive/2020/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 62.
+(Font)              <10> on input line 60.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 62.
+(Font)              <7> on input line 60.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 62.
+(Font)              <5> on input line 60.
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--62
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
 
  []
 
@@ -1088,10 +1088,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.62 
-      [1
+l.60 	\input
+            {abstract} [1
 
-] [2
+] (./abstract.tex) [2
 
 
 ]
@@ -1112,96 +1112,120 @@ ks.toc"'.
 
 ] (./intro.tex
 Chapter 1.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package lettrine.sty Info: Targeted height = 18.01001pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 18.01009pt (I);
-(lettrine.sty)             reported on input line 2.
-<Immagini/220px-6n-graf.svg.png, id=141, 220.825pt x 145.54375pt>
-File: Immagini/220px-6n-graf.svg.png Graphic file (type png)
-<use Immagini/220px-6n-graf.svg.png>
-Package pdftex.def Info: Immagini/220px-6n-graf.svg.png  used on input line 17.
+[1
 
-(pdftex.def)             Requested size: 110.41222pt x 72.77168pt.
-<Immagini/220px-Directed.svg.png, id=143, 220.825pt x 198.7425pt>
-File: Immagini/220px-Directed.svg.png Graphic file (type png)
-<use Immagini/220px-Directed.svg.png>
-Package pdftex.def Info: Immagini/220px-Directed.svg.png  used on input line 24
-.
-(pdftex.def)             Requested size: 110.41222pt x 99.371pt.
-) (./survey.tex [1
-
-
- <./Immagini/220px-6n-graf.svg.png>] [2 <./Immagini/220px-Directed.svg.png>]
-Chapter 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
-
- []
-
-[3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
+<Immagini/220px-6n-graf.svg.png, id=121, 220.825pt x 145.54375pt>
+File: Immagini/220px-6n-graf.svg.png Graphic file (type png)
+<use Immagini/220px-6n-graf.svg.png>
+Package pdftex.def Info: Immagini/220px-6n-graf.svg.png  used on input line 32.
+
+(pdftex.def)             Requested size: 110.41222pt x 72.77168pt.
+<Immagini/220px-Directed.svg.png, id=123, 220.825pt x 198.7425pt>
+File: Immagini/220px-Directed.svg.png Graphic file (type png)
+<use Immagini/220px-Directed.svg.png>
+Package pdftex.def Info: Immagini/220px-Directed.svg.png  used on input line 39
+.
+(pdftex.def)             Requested size: 110.41222pt x 99.371pt.
+ [2 <./Immagini/220px-6n-graf.svg.png> <./Immagini/220px-Directed.svg.png>]
+<Immagini/cervello-connessioni-neuroni-colorate.jpg, id=137, 501.875pt x 351.31
+25pt>
+File: Immagini/cervello-connessioni-neuroni-colorate.jpg Graphic file (type jpg
+)
+<use Immagini/cervello-connessioni-neuroni-colorate.jpg>
+Package pdftex.def Info: Immagini/cervello-connessioni-neuroni-colorate.jpg  us
+ed on input line 70.
+(pdftex.def)             Requested size: 150.56366pt x 105.39455pt.
+<Immagini/nbm3752-toc-0001-m.jpg, id=138, 329.96pt x 287.62pt>
+File: Immagini/nbm3752-toc-0001-m.jpg Graphic file (type jpg)
+<use Immagini/nbm3752-toc-0001-m.jpg>
+Package pdftex.def Info: Immagini/nbm3752-toc-0001-m.jpg  used on input line 81
+.
+(pdftex.def)             Requested size: 329.95918pt x 287.6193pt.
+
+[3 <./Immagini/cervello-connessioni-neuroni-colorate.jpg>]
+
+LaTeX Warning: Citation `GraphClassAtt' on page 4 undefined on input line 87.
+
+
+LaTeX Warning: Citation `pmlr-v5-shervashidze09a' on page 4 undefined on input 
+line 89.
+
+
+LaTeX Warning: Citation `Rogers2010ECFP' on page 4 undefined on input line 89.
+
+
+LaTeX Warning: Citation `NIPS2015_f9be311e' on page 4 undefined on input line 8
+9.
+
+
+LaTeX Warning: Citation `ZHOU202057' on page 4 undefined on input line 90.
+
+[4 <./Immagini/nbm3752-toc-0001-m.jpg>]) (./survey.tex [5]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-[4]) [5]
-Chapter 3.
 [6
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+
+ []
+
+) (./experiments.tex [7] [8]
+Chapter 3.
+) (./conclusions.tex [9
+
+]
 Chapter 4.
-[7
+) [10
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-06.
- (c:/texlive/2020/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [8
+(./Empirical survey on graph classification methods for Brain Networks.bbl)
+[11
 
 
-]
-(./Empirical survey on graph classification methods for Brain Networks.aux)
+
+] (./Empirical survey on graph classification methods for Brain Networks.aux)
 Package rerunfilecheck Info: File `"Empirical survey on graph classification me
 thods for Brain Networks".out' has not changed.
-(rerunfilecheck)             Checksum: 2BCDBE21B84C6F118E989DDA5AB173AD;1232.
+(rerunfilecheck)             Checksum: 8DA74D67A2D9D241DA2CF46438A60D11;904.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 11155 strings out of 479485
- 177327 string characters out of 5875915
- 527990 words of memory out of 5000000
- 27779 multiletter control sequences out of 15000+600000
- 626113 words of font info for 115 fonts, out of 8000000 for 9000
+ 11146 strings out of 479485
+ 177522 string characters out of 5875915
+ 529030 words of memory out of 5000000
+ 27747 multiletter control sequences out of 15000+600000
+ 620691 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,11n,128p,695b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2020/tex
-mf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2020/texmf-dist/fonts/enc/
-dvips/lm/lm-mathit.enc}{c:/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+ 81i,11n,128p,1071b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2020
+/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2020/texmf-dist/fonts/
+enc/dvips/lm/lm-rm.enc}{c:/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 }{c:/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/texlive/2020/tex
 mf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type
 1/public/lm/lmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi10
-.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/20
-20/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2020/texmf-dist/fonts
-/type1/public/lm/lmr17.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lm
+.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/20
+20/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2020/texmf-dist/fonts
+/type1/public/lm/lmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lm
 r7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2
 020/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2020/texmf-dist/fon
 ts/type1/public/lm/lmss10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm
 /lmss17.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/te
-xlive/2020/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+xlive/2020/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
 Output written on "Empirical survey on graph classification methods for Brain N
-etworks.pdf" (12 pages, 274173 bytes).
+etworks.pdf" (15 pages, 371120 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 27320 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 24730 words of extra memory for PDF output out of 24883 (max. 10000000)
 

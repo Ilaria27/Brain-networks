@@ -46,8 +46,7 @@
 \courseorganizer{Faculty of Information Engineering, Computer Science and Statistics}
 \submitdate{2020/2021}
 \copyyear{2021}
-\advisor{Prof. advisor}
-\coadvisor{Dr. co-advisor}
+\advisor{Prof. Aris Anagnostopoulos}
 \authoremail{ilariataddei.95@gmail.com}
 \examdate{22 September 2015}
 \examiner{Prof. ...} \examiner{Prof. ...} \examiner{Prof. ...}  \examiner{Prof. ...}  \examiner{Prof. ...} \examiner{Prof. ...}  \examiner{Prof. ...} 
@@ -56,55 +55,23 @@
 
 
 \begin{document}
-
-\frontmatter
-\maketitle
-
-\begin{abstract}
-Our brain, as our entire body, is a perfect as complicated machine. For this reason is important to analyse it in an effective and efficient way. An important role in this purpose is given to machine learning and similar algorithmic methods. In fact, many papers have been written on different methods to study the brain as graph or as matrix. Most of all, in those papers they want to recognize if a person is affected by a mental decease, such as, for example, Autism or Schizophrenia.  \\
-In this work, the aim is to study and compare some of those methods. First of all is important to have in mind which are the basic elements with which the papers work, such as graphs, classification and brain connectomes. Then, the algorithms taken in consideration can be classified according to the technique used, like Neural Networks or features embeddings. For each method many experiments are made, to see how they work, in which case are more useful, and how good are the results. The experiments are made with different datasets, to see how the methods adapt and how general they are. \\
-Future works can be implemented, studying more methods and maybe finding a method that could be easily used by neuroscientists. 
-\end{abstract}
-
-\tableofcontents
-
-\mainmatter
-
-\input{intro}
-
-\input{survey}
-
-
-
-\chapter{Experiments}
-\label{chap:2}
-\section{Experimental setup}
-With datasets explanation
-
-\section{Results}
-(Data Science)
-
-\section{Discussion}
-\label{sec:moons}
- 
-
-\chapter{Conclusions}
-
-\section{Future works}
-
-\backmatter
-\phantomsection
-\begin{thebibliography}{17}
-
-\bibitem{ref:vph}
-Blanche P.A., Gailly P., et al., “\textit{Volume phase holographic gratings: large size and high diffraction efficiency}“, Optical Engineering, Vol. 43, No.11, November 2004
-
-\bibitem{ref:science}
-Cirasuolo M., et al., \textit{"MOONS Science Report"}, MOONS Document Number: VLT-TRE-MON-14620-0001, Issue: $1.0$, $31^{\textup{st}}$ January $2013$
-
-\bibitem{ref:eso}
-European Southern Observatory, \url{http://www.eso.org}
-
-\end{thebibliography}
+	\frontmatter
+	\maketitle
+	\input{abstract}
+	\tableofcontents
+	
+	\mainmatter
+	\input{intro}
+	\input{survey}
+	\input{experiments} 
+	\input{conclusions}
+	
+	\backmatter
+	\phantomsection
+	
+	
+	\clearpage
+	\bibliographystyle{abbrv}
+	\bibliography{references}
 
 \end{document}

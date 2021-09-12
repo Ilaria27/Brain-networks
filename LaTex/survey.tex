@@ -1,11 +1,10 @@
 \chapter{Survey}
-\label{chap:1} 
-\section{General}
-\label{sec:caso}
+\label{chap:2} 
 
 \section{All methods}
-We can divide the methods in the several techniques that the papers use to build the graph classification: Neural Networks, Embedding, Deep matrix factorization, Graph Fourier transform, Graph kernels, and Network classification.
-\subsection{Neural Networks}
+We can divide the methods in the several techniques that the papers use to build the graph classification: Deep Learning, Statistical Fingerprints and Machine Learning.
+
+\subsection{Deep Learning}
 \paragraph{GroupINN: Grouping-based Interpretable Neural Network for Classification of Limited, Noisy Brain Data}\
 \\
 
@@ -21,10 +20,10 @@ Graph convolutional layers are used to capture the structure of the supergraph.
 The neural network is also divided in two branches, one processes the positive graphs and one the negative ones. 
 All in all, the architecture consists of three kinds of layers and two branches. 
 The input graph is the correlation matrix $W$. The first layer is a dimensionality reduction layer and the output is a matrix $W^{s}$ representing the supergraph. Following the dimensionality reduction layer, three graph convolutional layers are used. At last, the positive and negative outputs of the previous layer are concatenated, flattened and sent to the fully connected layer (with softmax activation).
-\paragraph{Functional Brain Network Classification for Alzheimer’s Disease
-Detection with Deep Features and Extreme Learning Machine
-}
-\subsection{Embedding}
+\paragraph{Deep Learning-based Pipeline to Recognize Alzheimer’s Disease using fMRI Data}
+\paragraph{Functional Brain Network Classification for Alzheimer’s Disease Detection with Deep Features and Extreme Learning Machine}
+
+\subsection{Statistical Fingerprints}
 \paragraph{Explainable Classification of Brain Networks via Contrast Subgraphs}\
 \\
 
@@ -34,14 +33,13 @@ They exploited contrast subgraph TD-ASD (the subgraph that maximizes the differe
 1. If an individual exhibits more than 62 edges among the 15 vertices of the contrast subgraph ASD-TD, then there are high chances that the individual is affected by ASD; 2. If the number of edges induced by the contrast subgraph ASD-TD is smaller than half of the number of edges induced by the contrast subgraph TD-ASD, then there are high chances that the individual is not affected by ASD. 3. If the number of edges induced by the contrast subgraph ASD-TD is smaller than the number of edges induced by the contrast subgraph TD-ASD, then there are high chances that the individual is affected by ASD.
 \\
 Each individual is represented by an undirected unweighted graph with $|V|$ = 116 vertices.
-\paragraph{Stable Biomarker Identification For Predicting Schizophrenia in the Human Connectome}
 \paragraph{Unsupervised Network Embedding for Graph Visualization, Clustering and Classification}
 \paragraph{Supervised classification of structural brain networks reveals gender differences}
-\subsection{Deep matrix factorization}
-\paragraph{Multi-modality disease modeling via collective deep matrix factorization}
-\subsection{Graph Fourier transform}
-\paragraph{Integration Of Network Topological Features And Graph Fourier Transform For Fmri Data Analysis}
-\subsection{Graph kernels}
 \paragraph{Sub-network Kernels for Measuring Similarity of Brain Connectivity Networks in Disease Diagnosis}
-\subsection{Network classification}
+\paragraph{Integration Of Network Topological Features And Graph Fourier Transform For Fmri Data Analysis}
+
+\subsection{Machine Learning}
 \paragraph{Network Classification With Applications To Brain Connectomics}
+\paragraph{Stable Biomarker Identification For Predicting Schizophrenia in the Human Connectome}
+
+\paragraph{Multi-modality disease modelling via collective deep matrix factorization}
