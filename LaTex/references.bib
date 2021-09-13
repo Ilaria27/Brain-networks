@@ -9,7 +9,6 @@
   booktitle = {Proceedings of the 26th {ACM} {SIGKDD} International Conference on Knowledge Discovery {\&} Data Mining}
 }
 
-
 @article{GutierrezUn,
   doi = {10.1007/s41109-019-0197-1},
   url = {https://doi.org/10.1007/s41109-019-0197-1},
@@ -74,4 +73,118 @@ abstract = {Schizophrenia, as a psychiatric disorder, has recognized brain alter
     doi = {10.1227/NEU.0b013e318258e9ff},
     url = {https://doi.org/10.1227/NEU.0b013e318258e9ff},
     eprint = {https://academic.oup.com/neurosurgery/article-pdf/71/1/1/14006221/neurosurgery-71-1-1.pdf},
+}
+
+@inproceedings{10.1145/3219819.3219980,
+author = {Lee, John Boaz and Rossi, Ryan and Kong, Xiangnan},
+title = {Graph Classification Using Structural Attention},
+year = {2018},
+isbn = {9781450355520},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3219819.3219980},
+doi = {10.1145/3219819.3219980},
+abstract = {Graph classification is a problem with practical applications in many different domains.
+To solve this problem, one usually calculates certain graph statistics (i.e., graph
+features) that help discriminate between graphs of different classes. When calculating
+such features, most existing approaches process the entire graph. In a graphlet-based
+approach, for instance, the entire graph is processed to get the total count of different
+graphlets or subgraphs. In many real-world applications, however, graphs can be noisy
+with discriminative patterns confined to certain regions in the graph only. In this
+work, we study the problem of attention-based graph classification. The use of attention
+allows us to focus on small but informative parts of the graph, avoiding noise in
+the rest of the graph. We present a novel RNN model, called the Graph Attention Model
+(GAM), that processes only a portion of the graph by adaptively selecting a sequence
+of "informative" nodes. Experimental results on multiple real-world datasets show
+that the proposed method is competitive against various well-known methods in graph
+classification even though our method is limited to only a portion of the graph.},
+booktitle = {Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining},
+pages = {1666–1674},
+numpages = {9},
+keywords = {graph mining, attentional processing, reinforcement learning, deep learning},
+location = {London, United Kingdom},
+series = {KDD '18}
+}
+
+
+@InProceedings{pmlr-v5-shervashidze09a,
+  title = 	 {Efficient graphlet kernels for large graph comparison},
+  author = 	 {Shervashidze, Nino and Vishwanathan, SVN and Petri, Tobias and Mehlhorn, Kurt and Borgwardt, Karsten},
+  booktitle = 	 {Proceedings of the Twelth International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {488--495},
+  year = 	 {2009},
+  editor = 	 {van Dyk, David and Welling, Max},
+  volume = 	 {5},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Hilton Clearwater Beach Resort, Clearwater Beach, Florida USA},
+  month = 	 {16--18 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v5/shervashidze09a/shervashidze09a.pdf},
+  url = 	 {https://proceedings.mlr.press/v5/shervashidze09a.html},
+  abstract = 	 {State-of-the-art  graph kernels do not scale to large graphs with hundreds of nodes and thousands of edges. In this article we propose to compare graphs by counting  \it graphlets, \ie subgraphs with k nodes where k ?{ 3, 4, 5 }. Exhaustive enumeration of all graphlets being prohibitively expensive, we introduce two theoretically grounded speedup schemes, one based on sampling and the second one specifically designed for bounded degree graphs. In our experimental evaluation, our novel kernels allow us to efficiently compare large graphs that cannot be tackled by existing graph kernels.}
+}
+
+@article{Rogers2010ECFP,
+  abstract = { Extended-connectivity fingerprints (ECFPs) are a novel class of topological fingerprints for molecular characterization. Historically, topological fingerprints were developed for substructure and similarity searching. ECFPs were developed specifically for structure-activity modeling. ECFPs are circular fingerprints with a number of useful qualities: they can be very rapidly calculated; they are not predefined and can represent an essentially infinite number of different molecular features (including stereochemical information); their features represent the presence of particular substructures, allowing easier interpretation of analysis results; and the ECFP algorithm can be tailored to generate different types of circular fingerprints, optimized for different uses. While the use of ECFPs has been widely adopted and validated, a description of their implementation has not previously been presented in the literature. },
+  added-at = {2017-02-22T23:03:16.000+0100},
+  author = {Rogers, David and Hahn, Mathew},
+  biburl = {https://www.bibsonomy.org/bibtex/2a4983270b96f6f357bb69c3b7e267038/salotz},
+  description = {Extended-Connectivity Fingerprints - Journal of Chemical Information and Modeling (ACS Publications)},
+  doi = {10.1021/ci100050t},
+  eprint = {http://dx.doi.org/10.1021/ci100050t},
+  interhash = {fe8c057b062de3cf75a08cc0cef8f867},
+  intrahash = {a4983270b96f6f357bb69c3b7e267038},
+  journal = {Journal of Chemical Information and Modeling},
+  keywords = {chemoinformatics graph-theory molecular-descriptors molecule-topological-descriptors},
+  note = {PMID: 20426451},
+  number = 5,
+  pages = {742-754},
+  timestamp = {2017-02-22T23:03:16.000+0100},
+  title = {Extended-Connectivity Fingerprints},
+  url = {http://dx.doi.org/10.1021/ci100050t},
+  volume = 50,
+  year = 2010
+}
+
+@inproceedings{NIPS2015_f9be311e,
+ 
+author = {Duvenaud, David K and Maclaurin, Dougal and Iparraguirre, Jorge and Bombarell, Rafael and Hirzel, Timothy and Aspuru-Guzik, Alan and Adams, Ryan P},
+ 
+booktitle = {Advances in Neural Information Processing Systems},
+ editor = {C. Cortes and N. Lawrence and D. Lee and M. Sugiyama and R. Garnett},
+ pages = {},
+ 
+publisher = {Curran Associates, Inc.},
+ 
+title = {Convolutional Networks on Graphs for Learning Molecular Fingerprints},
+ 
+url = {https://proceedings.neurips.cc/paper/2015/file/f9be311e65d81a9ad8150a60844bb94c-Paper.pdf},
+ 
+volume = {28},
+ 
+year = {2015}
+
+}
+
+
+
+@article{ZHOU202057,
+title = {Graph neural networks: A review of methods and applications},
+journal = {AI Open},
+volume = {1},
+pages = {57-81},
+year = {2020},
+issn = {2666-6510},
+doi = {https://doi.org/10.1016/j.aiopen.2021.01.001},
+url = {https://www.sciencedirect.com/science/article/pii/S2666651021000012},
+author = {Jie Zhou and Ganqu Cui and Shengding Hu and Zhengyan Zhang and Cheng Yang and Zhiyuan Liu and Lifeng Wang and Changcheng Li and Maosong Sun},
+keywords = {Deep learning, Graph neural network},
+abstract = {Lots of learning tasks require dealing with graph data which contains rich relation information among elements. Modeling physics systems, learning molecular fingerprints, predicting protein interface, and classifying diseases demand a model to learn from graph inputs. In other domains such as learning from non-structural data like texts and images, reasoning on extracted structures (like the dependency trees of sentences and the scene graphs of images) is an important research topic which also needs graph reasoning models. Graph neural networks (GNNs) are neural models that capture the dependence of graphs via message passing between the nodes of graphs. In recent years, variants of GNNs such as graph convolutional network (GCN), graph attention network (GAT), graph recurrent network (GRN) have demonstrated ground-breaking performances on many deep learning tasks. In this survey, we propose a general design pipeline for GNN models and discuss the variants of each component, systematically categorize the applications, and propose four open problems for future research.}
+}
+
+@misc{hcp,
+author = {Kamil Ugurbil and David Van Essen},
+title = {Hcp young adult},
+year = {2017}, 
+howpublished = "\url{https://www.humanconnectome.org/study/hcp-young-adult}"
 }

@@ -1,4 +1,5 @@
 \documentclass[english, Lau, oneside]{sapthesis}%remove "english" for a thesis written in Italian
+
 %Bachelor's (laurea triennale) thesis : Lau 
 %Master's (laurea specialistica) thesis: LaM 
 %PhD's thesis: PhD 
@@ -6,6 +7,8 @@
 \usepackage[utf8]{inputenx}
 \usepackage{indentfirst}
 \usepackage{microtype}
+\usepackage[backend=bibtex, style=numeric]{biblatex}
+\usepackage{url}
 %\usepackage{chemformula}
 %\usepackage{setspace}
 %\usepackage{yfonts,color}
@@ -33,11 +36,9 @@
 			anchorcolor=black,
 			citecolor=red,
 			urlcolor=blue,
-			pdftitle={Empirical survey on graph classification methods for Brain Networks
-},
+			pdftitle={Empirical survey on graph classification methods for Brain Networks},
 			pdfauthor={Ilaria Taddei},
-			pdfkeywords={thesis, sapienza, roma, university}
- }
+			pdfkeywords={thesis, sapienza, roma, university}}
 
 \title{Empirical survey on graph classification methods for Brain Networks}
 \author{Ilaria Taddei}
@@ -47,12 +48,13 @@
 \submitdate{2020/2021}
 \copyyear{2021}
 \advisor{Prof. Aris Anagnostopoulos}
-\authoremail{ilariataddei.95@gmail.com}
-\examdate{22 September 2015}
+\authoremail{tadde.1853733@studenti.uniroma1.it}
+\examdate{22 October 2021}
 \examiner{Prof. ...} \examiner{Prof. ...} \examiner{Prof. ...}  \examiner{Prof. ...}  \examiner{Prof. ...} \examiner{Prof. ...}  \examiner{Prof. ...} 
 
 %we refer to http://ctan.mirrorcatalogs.com/macros/latex/contrib/sapthesis/sapthesis-doc.pdf for an exhaustive description of the sapthesis documentclass.
 
+\addbibresource{references.bib}
 
 \begin{document}
 	\frontmatter
@@ -69,7 +71,7 @@
 	\backmatter
 	\phantomsection
 	
-	
+	\printbibliography
 	\clearpage
 	\bibliographystyle{abbrv}
 	\bibliography{references}
