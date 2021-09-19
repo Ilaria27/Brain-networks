@@ -26,36 +26,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Deep Learning-based Pipeline to Recognize Alzheimer’s Disease using fMRI Data}{7}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Functional Brain Network Classification for Alzheimer’s Disease Detection with Deep Features and Extreme Learning Machine}{7}{section*.13}%
+\contentsline {paragraph}{Functional Brain Network Classification for Alzheimer’s Disease Detection with Deep Features and Extreme Learning Machine}{8}{section*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Statistical Fingerprints}{7}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}Statistical Fingerprints}{9}{subsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Explainable Classification of Brain Networks via Contrast Subgraphs}{7}{section*.14}%
+\contentsline {paragraph}{Explainable Classification of Brain Networks via Contrast Subgraphs}{9}{section*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Unsupervised Network Embedding for Graph Visualization, Clustering and Classification}{8}{section*.15}%
+\contentsline {paragraph}{Unsupervised Network Embedding for Graph Visualization, Clustering and Classification}{11}{section*.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Supervised classification of structural brain networks reveals gender differences}{8}{section*.16}%
+\contentsline {paragraph}{Supervised classification of structural brain networks reveals gender differences}{12}{section*.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Sub-network Kernels for Measuring Similarity of Brain Connectivity Networks in Disease Diagnosis}{8}{section*.17}%
+\contentsline {paragraph}{Sub-network Kernels for Measuring Similarity of Brain Connectivity Networks in Disease Diagnosis}{13}{section*.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Integration Of Network Topological Features And Graph Fourier Transform For Fmri Data Analysis}{8}{section*.18}%
+\contentsline {paragraph}{Integration Of Network Topological Features And Graph Fourier Transform For Fmri Data Analysis}{15}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Machine Learning}{8}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.3}Machine Learning}{16}{subsection.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Network Classification With Applications To Brain Connectomics}{8}{section*.19}%
+\contentsline {paragraph}{Network Classification With Applications To Brain Connectomics}{16}{section*.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Stable Biomarker Identification For Predicting Schizophrenia in the Human Connectome}{8}{section*.20}%
+\contentsline {paragraph}{Stable Biomarker Identification For Predicting Schizophrenia in the Human Connectome}{16}{section*.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Multi-modality disease modelling via collective deep matrix factorization}{8}{section*.21}%
+\contentsline {paragraph}{Multi-modality disease modelling via collective deep matrix factorization}{17}{section*.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Experiments}{9}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Experiments}{19}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Experimental setup}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Experimental setup}{19}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Results}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Results}{19}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Discussion}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Discussion}{19}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusions}{10}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Conclusions}{20}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Future works}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Future works}{20}{section.4.1}%
