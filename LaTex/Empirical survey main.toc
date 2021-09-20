@@ -1,0 +1,31 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Outline}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Background}{2}{section.1.2}%
+\contentsline {paragraph}{Graphs}{2}{section*.4}%
+\contentsline {paragraph}{Classification}{3}{section*.5}%
+\contentsline {paragraph}{Connectomes}{3}{section*.6}%
+\contentsline {section}{\numberline {1.3}Related works}{4}{section.1.3}%
+\contentsline {paragraph}{Graph Classification}{4}{section*.7}%
+\contentsline {chapter}{\numberline {2}Survey}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}All methods}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Deep Learning}{6}{subsection.2.1.1}%
+\contentsline {paragraph}{GroupINN: Grouping-based Interpretable Neural Network for Classification of Limited, Noisy Brain Data}{6}{section*.8}%
+\contentsline {paragraph}{Deep Learning-based Pipeline to Recognize Alzheimer’s Disease using fMRI Data}{8}{section*.9}%
+\contentsline {paragraph}{Functional Brain Network Classification for Alzheimer’s Disease Detection with Deep Features and Extreme Learning Machine}{8}{section*.10}%
+\contentsline {subsection}{\numberline {2.1.2}Statistical Fingerprints}{10}{subsection.2.1.2}%
+\contentsline {paragraph}{Explainable Classification of Brain Networks via Contrast Subgraphs}{10}{section*.11}%
+\contentsline {paragraph}{Unsupervised Network Embedding for Graph Visualization, Clustering and Classification}{12}{section*.12}%
+\contentsline {paragraph}{Supervised classification of structural brain networks reveals gender differences}{14}{section*.13}%
+\contentsline {paragraph}{Sub-network Kernels for Measuring Similarity of Brain Connectivity Networks in Disease Diagnosis}{15}{section*.14}%
+\contentsline {paragraph}{Integration Of Network Topological Features And Graph Fourier Transform For Fmri Data Analysis}{17}{section*.15}%
+\contentsline {subsection}{\numberline {2.1.3}Machine Learning}{18}{subsection.2.1.3}%
+\contentsline {paragraph}{Network Classification With Applications To Brain Connectomics}{18}{section*.16}%
+\contentsline {paragraph}{Stable Biomarker Identification For Predicting Schizophrenia in the Human Connectome}{19}{section*.17}%
+\contentsline {paragraph}{Multi-modality disease modelling via collective deep matrix factorization}{20}{section*.18}%
+\contentsline {chapter}{\numberline {3}Experiments}{22}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Experimental setup}{22}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Results}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Discussion}{22}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Conclusions}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Future works}{23}{section.4.1}%
+\contentsline {chapter}{Bibliography}{24}{chapter*.19}%

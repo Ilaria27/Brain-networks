@@ -1,5 +1,6 @@
 \chapter{Introduction}
 \label{chap:1}
+\pagenumbering{arabic}
 
 Neuroscientists, to diagnose a psychiatric disorder, use symptom scores from clinical interviews. For a definitive validation, could be useful to study the interactions between brain regions, in order to see the different behaviours of these interactions in a brain of Typical Developed people and people with disorders. This could be seen through Magnetic Resonance Imaging (MRI), in particular functional MRI (fMRI). The neuroimaging data produced are then pre-processed and transformed in structures that an algorithm can study, in our cases graphs, matrices and time series. From the study of these interactions the important thing that we need to implement is the classification of the brain representation, meaning that each method taken in consideration in this work has the aim to implement a classification that says whether the brain that I give to it is affected by a disorder. This is called brain classification. 
 
@@ -26,14 +27,14 @@ To understand better all the methods, we should do some explanation of what we w
 
 \paragraph{Graphs} \
 \\
-There are many subjects in which graphs are used, and consequently many definitions. In mathematics, a graph is a structured set of objects that, in pairs, could have a relation between themselves. Each object is called a \textit{vertex}, and each relation between a pair of vertices is called an \textit{edge}. So, a graph $ G(V,E) $ is a pair where $ V $ are the vertices and $ E $ are the edges. Graphs are represented in diagram form, where vertices are in circle form and edges are lines that join pairs of vertices with a relation.
+There are many subjects in which graphs are used, and consequently many definitions. In mathematics, a graph is a structured set of objects that, in pairs, could have a relation between themselves. Each object is called a \textit{vertex}, and each relation between a pair of vertices is called an \textit{edge}. So, a graph $ G(V,E) $ is a pair where $ V $ are the vertices and $ E $ are the edges. Graphs are represented in diagram form, where vertices are in circle form and edges are lines that join pairs of vertices with a relation \ref{fig:diagram}.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.5]{Immagini/220px-6n-graf.svg.png}
 	\caption{\label{fig:diagram}}
 \end{figure}
 
-Graph could be \textit{directed} or \textit{undirected}. In a direct graph, edges have an orientation, the links between vertices can be represented by arrows going from one vertex to the other. In an edge $ (x,y) $ directed from $ x $ to $ y $, the vertices are called respectively \textit{tail} and \textit{head} of the edge.
+Graph could be \textit{directed} or \textit{undirected}. In a direct graph \ref{fig:diagram2}, edges have an orientation, the links between vertices can be represented by arrows going from one vertex to the other. In an edge $ (x,y) $ directed from $ x $ to $ y $, the vertices are called respectively \textit{tail} and \textit{head} of the edge.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.5]{Immagini/220px-Directed.svg.png}
@@ -42,7 +43,7 @@ Graph could be \textit{directed} or \textit{undirected}. In a direct graph, edge
 
 Graphs can be represented by matrices, the matrix representations in which we are interested for this thesis are \textbf{Adjacency matrix} and/or \textbf{Connectivity matrix}. 
 
-An \textbf{Adjacency matrix} is a square matrix that represents if there is an edge between two vertices. In particular in an unweighted graph with a vertex set $ U=\{u_{1}, ..., u_{n}\} $ the Adjacency matrix $ A $ is an $ n \x n $ matrix in which its element $ A_{ij} $ is 1 if there is an edge between the vertices $ u_{i} $ and $ u_{j} $. If the graph is weighted the values in the matrix are not 1s and 0s, but depends on the weight of each edge. Also, if the graph is undirected the Adjacency matrix is symmetric.
+An \textbf{Adjacency matrix} is a square matrix that represents if there is an edge between two vertices. In particular in an unweighted graph with a vertex set $ U=\{u_{1}, ..., u_{n}\} $ the Adjacency matrix $ A $ is an $ n x n $ matrix in which its element $ A_{ij} $ is 1 if there is an edge between the vertices $ u_{i} $ and $ u_{j} $. If the graph is weighted the values in the matrix are not 1s and 0s, but depends on the weight of each edge. Also, if the graph is undirected the Adjacency matrix is symmetric.
 
 The Adjacency matrix sometimes is called \textbf{Connectivity matrix}.
 
@@ -60,10 +61,9 @@ The \textbf{connectome} is the connection matrix of the human brain \cite{connec
 
 Being able to have a representation of the human brain allows us to understand fundamental cognitive operations, brain activities, conditional structure-function models of the brain, so, consequently, to understand and detect brain deceases. From this powerful tool, we can see how brain physiology is correlated to abilities and behaviours, underlying mental anomalies and pathology. This is fundamental to develop treatments ad hoc for each pathology and case. 
 
-Other fields, that we do not cover here, but that are very interesting, concern the memories (in fact neuroscientists believe that our memories are stored in the synapses between neurons) and the preservation of the brain (being able to recover the structure and connections of it).
-https://www.brainpreservation.org/content-2/connectome/
+Other fields, that we do not cover here, but that are very interesting, concern the memories (in fact neuroscientists believe that our memories are stored in the synapses between neurons) and the preservation of the brain (being able to recover the structure and connections of it) \cite{preservation}.
 
-In the following image we can see an example of a connectome.
+In the image \ref{fig:diagram3} we can see an example of a connectome.
 
 \begin{figure}[htbp]
 	\centering
@@ -78,7 +78,7 @@ In the following image we can see an example of a connectome.
 Here we concentrate the study of connectomes in graph form. This means that the fMRI of a brain, elaborated in a connectome, is then transformed in graph form, and the graph is studied in matrix form. The graph have as nodes the brain regions, and as edges the connections between them. It follows that the matrix is an \emph{Adjacency matrix}, in which the values represent the degree of connections between the regions, and each row and each column is a node of the graph, a so called \emph{Region of interest} (\textbf{ROI}).
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=1]{Immagini/nbm3752-toc-0001-m.jpg}
+	\includegraphics[scale=0.8]{Immagini/nbm3752-toc-0001-m.jpg}
 	\caption{\label{fig:diagram4}}
 \end{figure}
 
