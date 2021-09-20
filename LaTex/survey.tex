@@ -228,6 +228,17 @@ After the construction of the input data, they use a regularized least-square re
 \paragraph{Network Classification With Applications To Brain Connectomics}\
 \\
 
+The goal of Arroyo-Reliòn at al \cite{Arroyo_Reli_n_2019} in this paper is to develop a high-dimensional network classifier that uses all the individual edge weights but also respects the network structure of the data and produces more interpretable results. 
+\\
+
+Regarding the network structures they aim to find nodes or subnetworks with good discriminative power, and hence select both the most informative nodes and edges. To capture structural assumptions on important predictive edges, they focus on convex structured sparsity penalties (Bach et al. \cite{bach2012structured}) that encourage a small number of active nodes, meaning nodes attached to at least one edge with a non-zero coefficient. For this purpose they use a group lasso penalty, that eliminate a group of variables simultaneously. To enforce spacial smoothness in the solution, they aim for a regularization that can be applied to any kind of network data.
+\\
+
+To solve this penalty problem they use an optimization algorithm with two common approaches to convex optimization, proximal algorithms and alternative direction method of multipliers (ADMM). They use an accelerated version of the proximal algorithm (Beck and Teboulle \cite{beck2009fast}) to solve the main problem. In each step, they need to calculate a proximal operator, which is a further convex optimization problem solved with the ADMM algorithm.
+\\
+
+They first experiment their method with synthetic graphs, comparing it with other state-of-the-art models, with some that takes in account the network structure and some that does not. With small number of communities the method outperforms the others in terms of classification. When it is increased, it could be comparable to methods that do not use network structures. The runtime is of an average of ten minutes for this method, while for most of the others is of ours. 
+Experimenting on Schizophrenia datasets they outperformed all methods except the SVM model, that has not variable selection. Still it has a very high accuracy, and can also correctly identify brain regions that are suspected to be involved in the study of the Schizophrenia disease. 
 
 \paragraph{Stable Biomarker Identification For Predicting Schizophrenia in the Human Connectome}\
 \\
@@ -251,7 +262,7 @@ As we can see in figure \ref{fig:diagram18} the model has two Cross Validation. 
 	\caption{\label{fig:diagram18}}
 \end{figure}
 
-
+They observed that functional modality gives better performance than structural one, but is less stable. The better performance is given by the multi-modality input, and gives also a good trade-off between good performance and stable biomarkers. They even proceeded with the identification of brain areas involved in the classification of patients and controls.
 
 \paragraph{Multi-modality disease modelling via collective deep matrix factorization}\
 \\

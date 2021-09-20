@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.17)  19 SEP 2021 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.17)  20 SEP 2021 14:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1689,67 +1689,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--230
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
+LaTeX Warning: Citation 'Arroyo_Reli_n_2019' on page 16 undefined on input line
+ 231.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
 
  []
 
 
-LaTeX Warning: Citation 'GutierrezBio' on page 16 undefined on input line 235.
+LaTeX Warning: Citation 'bach2012structured' on page 16 undefined on input line
+ 234.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--237
-
- []
-
-<Immagini/stablebiomarkers.PNG, id=264, 612.03656pt x 244.66406pt>
-File: Immagini/stablebiomarkers.PNG Graphic file (type png)
-<use Immagini/stablebiomarkers.PNG>
-Package pdftex.def Info: Immagini/stablebiomarkers.PNG  used on input line 250.
-
-(pdftex.def)             Requested size: 397.81905pt x 159.02974pt.
-
-Overfull \hbox (1.81905pt too wide) in paragraph at lines 250--251
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+LaTeX Warning: Citation 'beck2009fast' on page 16 undefined on input line 237.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
 
  []
 
 [16]
 
-LaTeX Warning: Citation '10.1145/3097983.3098164' on page 17 undefined on input
- line 259.
+LaTeX Warning: Citation 'GutierrezBio' on page 17 undefined on input line 246.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
+
+ []
+
+<Immagini/stablebiomarkers.PNG, id=269, 612.03656pt x 244.66406pt>
+File: Immagini/stablebiomarkers.PNG Graphic file (type png)
+<use Immagini/stablebiomarkers.PNG>
+Package pdftex.def Info: Immagini/stablebiomarkers.PNG  used on input line 261.
+
+(pdftex.def)             Requested size: 397.81905pt x 159.02974pt.
+
+Overfull \hbox (1.81905pt too wide) in paragraph at lines 261--262
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--264
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
 
  []
 
-<Immagini/multimodality.PNG, id=273, 565.36218pt x 320.69812pt>
+[17 <./Immagini/stablebiomarkers.PNG>]
+
+LaTeX Warning: Citation '10.1145/3097983.3098164' on page 18 undefined on input
+ line 270.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--275
+
+ []
+
+<Immagini/multimodality.PNG, id=278, 565.36218pt x 320.69812pt>
 File: Immagini/multimodality.PNG Graphic file (type png)
 <use Immagini/multimodality.PNG>
-Package pdftex.def Info: Immagini/multimodality.PNG  used on input line 269.
+Package pdftex.def Info: Immagini/multimodality.PNG  used on input line 280.
 (pdftex.def)             Requested size: 367.48106pt x 208.4513pt.
-) (./experiments.tex [17 <./Immagini/stablebiomarkers.PNG>] [18 <./Immagini/mul
-timodality.PNG>]
+) (./experiments.tex [18 <./Immagini/multimodality.PNG>] [19]
 Chapter 3.
-) (./conclusions.tex [19
+) (./conclusions.tex [20
 
 ]
 Chapter 4.
-) [20
+) [21
 
 ]
 
@@ -1780,7 +1806,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[21
+[22
 
 
 ] (./Empirical survey on graph classification methods for Brain Networks.aux)
@@ -1804,9 +1830,9 @@ ks.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18125 strings out of 479485
- 317238 string characters out of 5875915
- 1036032 words of memory out of 5000000
+ 18126 strings out of 479485
+ 317245 string characters out of 5875915
+ 1036134 words of memory out of 5000000
  34591 multiletter control sequences out of 15000+600000
  622420 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1828,10 +1854,10 @@ xlive/2020/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2020/texmf-d
 ist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/pu
 blic/lm/lmsy8.pfb>
 Output written on "Empirical survey on graph classification methods for Brain N
-etworks.pdf" (25 pages, 1263857 bytes).
+etworks.pdf" (26 pages, 1266876 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 295 compressed objects within 3 object streams
- 79 named destinations out of 1000 (max. 500000)
+ 379 PDF objects out of 1000 (max. 8388607)
+ 298 compressed objects within 3 object streams
+ 80 named destinations out of 1000 (max. 500000)
  24792 words of extra memory for PDF output out of 24883 (max. 10000000)
 

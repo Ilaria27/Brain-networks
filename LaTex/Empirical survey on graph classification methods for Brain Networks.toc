@@ -44,18 +44,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Network Classification With Applications To Brain Connectomics}{16}{section*.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Stable Biomarker Identification For Predicting Schizophrenia in the Human Connectome}{16}{section*.31}%
+\contentsline {paragraph}{Stable Biomarker Identification For Predicting Schizophrenia in the Human Connectome}{17}{section*.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Multi-modality disease modelling via collective deep matrix factorization}{17}{section*.33}%
+\contentsline {paragraph}{Multi-modality disease modelling via collective deep matrix factorization}{18}{section*.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Experiments}{19}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Experiments}{20}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Experimental setup}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Experimental setup}{20}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Results}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Results}{20}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Discussion}{19}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Discussion}{20}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusions}{20}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Conclusions}{21}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Future works}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Future works}{21}{section.4.1}%
