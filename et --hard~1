@@ -1,0 +1,43 @@
+[33m1626502[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: commit (merge): merge
+[33mc6ebb57[m HEAD@{1}: commit: experiments
+[33m01c778e[m HEAD@{2}: commit: biblio and title
+[33me9928d7[m HEAD@{3}: commit: chapter 2
+[33m7b6a7e1[m HEAD@{4}: commit: second chapter
+[33m712d9f5[m HEAD@{5}: commit: modified survey
+[33m3c65c86[m HEAD@{6}: commit: update classify
+[33m6f383c5[m HEAD@{7}: commit: finished chapter 1
+[33m7b0e021[m HEAD@{8}: commit: finished chapter 1
+[33m7a8c502[m HEAD@{9}: commit: add classificatio files
+[33mccc5065[m HEAD@{10}: commit: add unsupervised
+[33mc95472a[m HEAD@{11}: commit: add graphclass
+[33m2ad8f70[m HEAD@{12}: commit: add cd
+[33mfc1110e[m HEAD@{13}: pull: Fast-forward
+[33m78cb240[m HEAD@{14}: pull: Fast-forward
+[33mc75270c[m HEAD@{15}: commit: commit di prova
+[33m64f7b34[m HEAD@{16}: pull --progress origin: Fast-forward
+[33m3e8484f[m HEAD@{17}: commit: biomarkers
+[33mcac5001[m HEAD@{18}: pull --progress origin: Fast-forward
+[33me2b6677[m HEAD@{19}: reset: moving to e2b6677b55de94f1e7b593893e574a6a10ad9ded
+[33m8f655ed[m HEAD@{20}: reset: moving to 8f655ed7daac2497e82133f616f7bc973af6961e
+[33md902e06[m HEAD@{21}: reset: moving to d902e06d954d055da3ad03a36d1864d2f96a67e0
+[33mc53f44b[m HEAD@{22}: reset: moving to c53f44bda2a69cf1d6223c19def144a1b4113754
+[33ma6d8b0c[m HEAD@{23}: reset: moving to a6d8b0c553a969666d521fb7f1bc38666a077aa3
+[33m26da17d[m HEAD@{24}: reset: moving to 26da17d9890c99e2f43cede70bc3bd30f8a51462
+[33m52fcd47[m HEAD@{25}: pull --progress origin: Merge made by the 'recursive' strategy.
+[33m26da17d[m HEAD@{26}: revert: Revert "load"
+[33ma6d8b0c[m HEAD@{27}: commit: .
+[33mc53f44b[m HEAD@{28}: commit: .
+[33md902e06[m HEAD@{29}: commit: load
+[33m8f655ed[m HEAD@{30}: commit: load
+[33me2b6677[m HEAD@{31}: pull --progress origin: Fast-forward
+[33m8dda656[m HEAD@{32}: commit: try
+[33mfbb9b60[m HEAD@{33}: commit: try
+[33mcfae479[m HEAD@{34}: commit: try
+[33m15cbcf8[m HEAD@{35}: checkout: moving from work to main
+[33m15cbcf8[m HEAD@{36}: checkout: moving from main to work
+[33m15cbcf8[m HEAD@{37}: checkout: moving from work to main
+[33m15cbcf8[m HEAD@{38}: checkout: moving from main to work
+[33m15cbcf8[m HEAD@{39}: commit: Update
+[33m4a2bd21[m HEAD@{40}: commit: Update intro.tex
+[33m2c9ebc0[m HEAD@{41}: commit: All
+[33m2765dfc[m HEAD@{42}: commit (initial): Initial commit
