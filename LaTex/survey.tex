@@ -9,17 +9,17 @@ In this chapter there will be a brief description of some papers that treated \t
 \\
 
 This paper of Yan Y. et al \cite{groupinn} proposes a grouping-based interpretable neural network model, GroupINN, that classifies cognitive performance with 85\% fewer parameters than baseline deep models, while also identifying the most predictive brain subnetworks within several task-specific contexts. In the design of the neural network is included the idea of node grouping. In this way the model learns the node grouping and extracts the graph features jointly.
-\\
+
 
 The problem statement of this paper is: given a set of subjects, each with corresponding fMRI data and a label associated with a certain phenotype, we seek to devise an efficient, interpretable, and parsimonious neural network model that can predict each phenotype with high accuracy.
-\\
+
 
 To reduce the number of parameters used in the model, they adopted the idea of multi-graph clustering (where the goal is to find a common clustering across multiple graphs) to summarize the original graph into a supergraph with each cluster as a supernode. 
-\\
+
 
 The neural network is formed by three different types of layers: node grouping layer, graph convolutional layer and fully connected layer. The node grouping layer is designed to “hide” the non-indicative (‘noisy’) edges by grouping them into a cluster, thus highlighting the indicative edges: two nodes are assigned to different groups if their connection is identified as important.
 Graph convolutional layers are used to capture the structure of the supergraph.
-\\
+
 
 The neural network is also divided in two branches, one processes the positive graphs and one the negative ones. 
 All in all, the architecture consists of three kinds of layers and two branches. 
@@ -33,13 +33,13 @@ The input graph is the correlation matrix $W$. The first layer is a dimensionali
 
 Regarding the experimentation part, they used a dataset taken from Human Connectome Project 1200 (HCPt) \cite{hcp}. 
 This dataset consists of 966 subjects to which has been measured brain activity, through fMRI, while they were performing specific tasks. The four task-based datasets used in this experiment are: \textit{Emotion, Gambling, Social} and \textit{Working Memory}. It is divided in 90\% train/validation set and 10\% testing set. For the evaluation they take in consideration \textit{accuracy} and the \textit{runtime}. Comparing their method, they found out that it is faster and with less parameters than other works, so it is more interpretable, as well as having good accuracy.
-\\
+
 
 \paragraph{Deep Learning-based Pipeline to Recognize Alzheimer’s Disease using fMRI Data}\
 \\
 
 S. Sarraf et al. \cite{Sarraf066910} built a Neural Network, specifically a Convolutional Neural Network (\textbf{CNN}) for classification of clinical data, in particular they tested it for Alzheimer disease. Their dataset is composed of a group of people affected by Alzheimer and a control group. They where scanned with resting-state FMRI, and after a preprocess, the data consisted of images of functional information. 
-\\
+
 
 CNNs in general are used to study images, and are composed of Pooling layers, Normalization layers, Fully Connected layers and Convolutional layers. Convolutional layers help to maintain the spacial order of the input they are working on, obviously very important on images, and these layers consist on filters applied to these images. In this case they used an already implemented CNN called LeNet-5 (by Y. LeCun et al \cite{726791}), and adjusted it for FMRI data. The data in input were 2D images, that were labeled for binary classification, as shown in figure \ref{fig:diagram7}.
 
@@ -55,7 +55,7 @@ The experiment ended up with a very high accuracy (96.8588\%) and a very low lea
 \\
 
 X. Bi et al \cite{Bi2019FunctionalBN} designed two deep learning methods of functional brain network classification. More precisely they concentrate their work on Alzheimer disease detection. The first model is a Convolutional learning method, that learns the deep regional-connectivity features. The second is a Recurrent learning method, learning deep adjacent positional features. So, both the learning methods are Neural Networks. They also implemented an Extreme Learning Machine (ELM) to improve the learning ability, and is implemented in the learning methods.
-\\
+
 
 Both the deep learning methods take as input a graph matrix, i.e. the adjacency matrix of each patient. 
 The Convolutional Learning method \ref{fig:diagram8} is composed of a Convolutional layer, Activation function, Pooling layer, Fully Connected layer and a Decision layer. It is in the Convolutional layer that the features are extracted, while in the decision layer, with a \textit{Softmax} function, are generated the labels of each brain network.
@@ -86,23 +86,26 @@ For the experiments they compared their methods with shallow methods. They saw t
 
 \subsection{Statistical Fingerprints}
 \paragraph{Explainable Classification of Brain Networks via Contrast Subgraphs}\
+\label{par:1}
 \\
 
-In this work of Bonchi F, Lanciano T. and Gionis A. \cite{lanciano2020cs} they introduce an approach for classifying brain networks based on extracting contrast subgraphs, i.e., a set of vertices whose induced subgraphs are dense in one class of graphs and sparse in the other. The model is extremely simple, with just one parameter, excellent interpretability and good classification accuracy. What they want to improve or add, differently from others methods, are the node-identity awareness, black box effect and high number of parameters. With \textbf{node-identity awareness} is meant to take in consideration that a specific vertex corresponds to the same ROI in all the input graphs. This is very important to find similarities among the input networks. The majority of the models have a \textbf{black box effect}, meaning that are complicated to understand how to use them, and their parameters. It should be crucial to make it understandable for neuroscientists that need these tools. Even the \textbf{high number of parameters} could be a problem, for overfitting and for tuning them. 
-\\
+In this work of Bonchi F, Lanciano T. and Gionis A. \cite{lanciano2020cs} they introduce an approach for classifying brain networks based on extracting contrast subgraphs, i.e., a set of vertices whose induced subgraphs are dense in one class of graphs and sparse in the other. The model is extremely simple, with just one parameter, excellent interpretability and good classification accuracy. What they want to improve or add, differently from others methods, are the node-identity awareness, black box effect and high number of parameters. With \textbf{node-identity awareness} is meant to take in consideration that a specific vertex corresponds to the same ROI in all the input graphs. This is very important to find similarities among the input networks. The majority of the models have a \textbf{black box effect}, meaning that is complicated to understand how to use them, and their parameters. It should be crucial to make it understandable for neuroscientists that need these tools. Even the \textbf{high number of parameters} could be a problem, for overfitting and for tuning them. 
+
 
 Let's go more in details. Each individual is represented by an undirected unweighted graph with $|V|$ = 116 vertices, that are the ROIs. This means that for each patient we have a squared correlation matrix of 116 rows and columns. They exploits two problems regarding contrast-subgraphs, in the experiments chapter \ref{chap:3} we will mention only the first one. \textit{Problem 1} states that given the observations of condition group - affected by autism - and control group, and the corresponding summary graphs, they seek to find a subset of vertices that maximizes the contrast-subgraph objective, so to find a set of vertices whose induced subgraph is dense in the summary graph of $G^{\mathcal{A}}$ - condition group - and sparse in summary graph $G^{\mathcal{B}}$ - control group. It can be summarised in the following equation:
+
 \begin{equation}
 	\delta(S)=e^{\mathcal{A}}(S)-e^{\mathcal{B}}(S)-\alpha\left(\begin{array}{c}
 		|S| \\
 		2
 	\end{array}\right)
 \end{equation}
+
 where $ e^{\mathcal{A}}(S) $ and $ e^{\mathcal{B}}(S) $ correspond to the number of edges in the subgraph induced by $ S $ in the summary graphs $G^{\mathcal{A}}$ and $G^{\mathcal{B}}$, and $ \alpha $ is a parameter that penalize large size solutions: larger the value of $\alpha$, smaller is the optimal contrast-subgraph. 
-\\
+
 
 \textit{Problem 2} is a symmetric variant, wanting to find a subgraph having the largest absolute difference of edge weights between $G^{\mathcal{A}}$ and $G^{\mathcal{B}}$, so that maximize the contrast-subgraph. 
-\\
+
 
 Calculating constrast-subgraph TD-ASD and ASD-TD from a dataset they used to make experiments, they were able to observe differences between the two graphs.
 \begin{figure}[htbp]
@@ -120,16 +123,16 @@ They ended up with figure \ref{fig:diagram6}, where the top left image is the TD
 They used these two features to make classification, based on SVM, and compared the results with other methods of the literature. At the end they have a single parameter $\alpha$, a very low run-time (less than 30 seconds to extract the constrast-subgraph), a simple explainability, having only two simple features, and high accuracy. 
 
 \paragraph{Unsupervised Network Embedding for Graph Visualization, Clustering and Classification}\
+\label{par:2}
 \\
 
-A crucial challenge in mining network-based data is to find effective ways to represent or encode graph structures, in order to make themm efficiently exploited by Machine Learning algorithms. L. Gutiérrez et al \cite{GutierrezUn} provide an unsupervised approach to learn embedding representation for a collection of graphs, to use in graph mining tasks. They use an unsupervised neural network on graphs that aims to capture the distribution of the data, to discriminate between different class of networks. With their method, they learn automatically a feature representation of graphs assessing their similarity on an Euclidean space \ref{fig:diagram11}, focusing on problems defined on networks that account for \textit{node identity}. They evaluate the method in three network mining tasks: graph clustering, graph classification and visualization. We are more interested in graph classification.
+A crucial challenge in mining network-based data is to find effective ways to represent or encode graph structures, in order to make them efficiently exploited by Machine Learning algorithms. L. Gutiérrez et al \cite{GutierrezUn} provide an unsupervised approach to learn embedding representation for a collection of graphs, to use in graph mining tasks. They use an unsupervised neural network on graphs that aims to capture the distribution of the data, to discriminate between different class of networks. With their method, they learn automatically a feature representation of graphs assessing their similarity on an Euclidean space \ref{fig:diagram11}, focusing on problems defined on networks that account for \textit{node identity}. They evaluate the method in three network mining tasks: graph clustering, graph classification and visualization. We are more interested in graph classification.
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.5]{Immagini/Unsupervised.PNG}
 	\caption{\label{fig:diagram11}}
 \end{figure}
-
 
 Unlike classical distances in the literature, such as \textit{Hamming} and \textit{Jaccard} distances, this approach performs network comparisons directly on a feature space, through a learned non-linear mapping applied to input graphs. It is composed by some blocks. The first is the \textbf{Autoencoder}, that is one of the most popular unsupervised neural network approaches. Unsupervised approaches aim to uncover hidden patterns or learning representations from unlabeled data. In particular, the autoencoder allows to compress the representation of input data, removing redundancy and reducing the dimension of the input. A traditional autoencoder learns a non-linear mapping which encodes an input example in a smaller dimensional latent vector. Unfortunately, this method could just learn the training data, meaning that it will not work on unknown data. For this reason they train a \textbf{Denoising Autoencoder} (\textbf{DAE}) \ref{fig:diagram12}, that reconstruct a clean or repaired version from corrupted input.
 
@@ -141,14 +144,16 @@ Unlike classical distances in the literature, such as \textit{Hamming} and \text
  
 Giving in input an adjacency matrix to the DEA could be insufficient, so they compute higher powers of the matrix to capture multiple path relationships. Also, this method remains invariant to the node ordering when the same node permutation is assigned to the graph, having a collection of networks with node correspondence across graphs. A main advantage of transforming graphs into feature vectors is that it allows to compare easily networks computing only Euclidean distances between their
 embeddings.
-\\
+
 
 For the experiment part, we will see the graph classification results. Their task is to classify connectomes according to gender, male or female. The input is a dataset built from MRI, structural and diffusion, so a collection of graphs. The two steps of the model are learning graph embedding through DAE and computation of a pairwise Euclidean distance matrix. Comparing their method with classic ones of the literature, they saw that it outperformed them, at accuracy level, remaining competitive only with DeltaCon model. Regarding the runtime, it is much faster than all the others.
+
+
 \paragraph{Supervised classification of structural brain networks reveals gender differences}\
 \\
 
 Another work base on statistical fingerprint is the one of Chiem B. et al \cite{8379106}. The work aims to study individual differences in the structural connectome, not the functional one, with perfect node correspondence property. This property means that each node corresponds to the same anatomical location in each connectome. They propose three new methods based on SVM.
-\\
+
 
 The first contribution of this paper regards the feature extraction, crucial point for the classification part. They introduced the \textbf{Bag-of-Edges}, it consists in the application of the \textit{Recursive Feature Eliminatio} (RFE). It trains an SVM with linear kernel, sorts features according to the weights granted by the SVM, and reduces the size of the feature vector keeping only a percentage of the most discriminative features. It stops when a given number of features is reached \ref{fig:diagram13}. At the end we have a feature vector with only the most discriminative edges of the graph.
 
@@ -167,7 +172,7 @@ To take advantage of perfect node property they designed two new graph kernels. 
 \end{figure}
 
 The second graph kernel is the kernel based on \textbf{regularized Laplacian}. It follows the same principle of the DeltaCon kernel, but uses a different similarity measure, the regularized Laplacian.
-\\
+
 
 The experiments aim to classify connectomes, detecting the gender of the brain in input. The method that gave better results is the Bag-of-edges, even if even the other two models performed better than other graph kernels take from the literature. In particular, the DeltaCon kernel worked better with regularized Laplacian similarity.
 
@@ -175,7 +180,7 @@ The experiments aim to classify connectomes, detecting the gender of the brain i
 \\
 
 The innovation of this paper of B. Jie \cite{Jie2018} is in the fact that they take in consideration both global and local properties of brain regions to construct graph kernels for measuring the similarity of brain networks. They propose a novel sub-network kernel on brain networks for brain decease classification. They first construct a group of sub-networks on each node to reflect the multi-level connectivity properties of brain networks. Then, we define the similarity of a pair of brain networks, by calculating the similarities of all corresponding pairs of sub-network groups when considering the uniqueness of nodes. The total contribution of this work comprehend three steps: a novel sub-network kernel for measuring the similarity between brain networks, a sub-network kernel based learning (SKL) framework for automated brain disease diagnosis based on fMRI data and finally an implementation for performing inference on brain network data.
-\\
+
 
 The proposed \textbf{sub-network kernel based learning} (\textbf{SKL}) framework for brain disease classification in composed by the following steps: 
 
@@ -194,10 +199,10 @@ It is illustrated in figure \ref{fig:diagram15}.
 \end{figure}
 
 After the preprocess of the images, there is the construction of sub-network kernel. First a group of sub-networks is constructed on each node to reflect the multi-level connectivity properties of the brain. Then is calculated the similarity between brain networks. It is done calculating the similarity of all pairs of sub-networks groups from the same node across different brain networks, since each node on each brain network corresponds to the same ROI. 
-\\
+
 
 The sub-network kernel based Learning starts with a \textit{discrimination} of the nodes to construct more discriminative networks. It is done with \textit{t}-test and a thresholding with \textit{p}-value. The result is a feature vector that represents the discriminative network. Then there is a \textit{network thresholding}, with different thresholds, that will remove edges with zero weights, to reflect the topological properties of discriminative networks. Eventually, having more thresholds, they adopt a \textit{multi-kernel SVM classification} with grid-search approach. Once found the optimal parameters, the traditional SVM can be applied for classification.
-\\
+
 
 Compared with others state-of-the-art kernels, this method performs much better, with higher accuracy and AUC. They also experimented on different parameters. The two parameters to tune are \textit{d}, the number of iterations to compute the mathematical representation of sub-networks, and \textit{h}, the size of a sub-network set. They saw that \textit{h} is very important, because they reached the best performance at $ h = 2 $, while for \textit{d} the method is robust. 
 Another important evidence is that, without constructing discriminative networks from the originals brain network, the model is not so accurate compared to the model with it. 
@@ -214,37 +219,39 @@ Very interesting is the new approach of J. Wang et al \cite{8363530}. Their chal
 \end{figure}
 
 In \textit{Graph signal}, resting-state fMRI data can be viewed as time series graoh signals defined on the parcellated brain regions. On each graph can be computed the GFT, and the eigenvalues are taken in consideration for the construction of the network. To represent the original graph signal, are selected the low frequency components, corresponding to the first several eigenvalues calculated by GFT. 
-\\
+
 
 For the topological features they calculate the \textit{centrality} and the \textit{segregation}. The centrality of the nodes is calculated with two measures, the degree and the betweeness centrality. The segregation refers to the existence of specialized neurons and brain areas, organized into distinct neural populations and grouped together to form segregated cortical areas. Functional segregation in the brain is the ability for specialized processing to occur within these areas. A simple measure of functional segregation is defined based on the number of triangles in the network, with a high number of triangles implying segregation.
-\\
+
 
 To construct the graph, once calculated the topological features, they concatenate the data into a $ 264 x (TM) $ matrix, where M is the number of subjects. Each row is normalized into a unit norm. To estimate the adjacency matrix is used the Gaussian radial basis functional kernel. Then they can get the features from the frequency domain by GFT. 
-\\
+
 
 After the construction of the input data, they use a regularized least-square regression using lasso algorithm for feature selection. The features are then given to a linear SVM classifier. The results of the experiment gives high accuracy, but they where not compared with other state-of-the-art methods. The steps of the model are illustrate in figure \ref{fig:diagram16}.
 
 \subsection{Machine Learning}
 \paragraph{Network Classification With Applications To Brain Connectomics}\
+\label{par:3}
 \\
 
 The goal of Arroyo-Reliòn at al \cite{Arroyo_Reli_n_2019} in this paper is to develop a high-dimensional network classifier that uses all the individual edge weights but also respects the network structure of the data and produces more interpretable results. 
-\\
+
 
 Regarding the network structures they aim to find nodes or subnetworks with good discriminative power, and hence select both the most informative nodes and edges. To capture structural assumptions on important predictive edges, they focus on convex structured sparsity penalties (Bach et al. \cite{bach2012structured}) that encourage a small number of active nodes, meaning nodes attached to at least one edge with a non-zero coefficient. For this purpose they use a group lasso penalty, that eliminate a group of variables simultaneously. To enforce spacial smoothness in the solution, they aim for a regularization that can be applied to any kind of network data.
-\\
+
 
 To solve this penalty problem they use an optimization algorithm with two common approaches to convex optimization, proximal algorithms and alternative direction method of multipliers (ADMM). They use an accelerated version of the proximal algorithm (Beck and Teboulle \cite{beck2009fast}) to solve the main problem. In each step, they need to calculate a proximal operator, which is a further convex optimization problem solved with the ADMM algorithm.
-\\
+
 
 They first experiment their method with synthetic graphs, comparing it with other state-of-the-art models, with some that takes in account the network structure and some that does not. With small number of communities the method outperforms the others in terms of classification. When it is increased, it could be comparable to methods that do not use network structures. The runtime is of an average of ten minutes for this method, while for most of the others is of ours. 
 Experimenting on Schizophrenia datasets they outperformed all methods except the SVM model, that has not variable selection. Still it has a very high accuracy, and can also correctly identify brain regions that are suspected to be involved in the study of the Schizophrenia disease. 
 
 \paragraph{Stable Biomarker Identification For Predicting Schizophrenia in the Human Connectome}\
+\label{par:4}
 \\
 
 Stable Biomarker Identification model \cite{GutierrezBio} is one of the methods we will take in account for the experimentation part. They adopt a machine learning approach that aims at discovering the most relevant set of biomarkers for discriminating subjects groups and thus quantitatively describing the group differences, both in terms of classification accuracy and stability of selected features. 
-\\
+
 
 Biomarkers discovery consists on the identification of regions or connections of interest associated with a neural disorder. From machine learning perspective, the choice of biomarkers can be addressed as a feature selection problem. They perform an automatic feature selection procedure in order to identify biomarkers that are relevant for the diagnosis of schizophrenia from brain connectivity data. As a classifier they use an RFE-SVM, integrated into an embedded feature selection approach. The aim of the present work is threefold:
 
@@ -268,10 +275,10 @@ They observed that functional modality gives better performance than structural 
 \\
 
 This model of Q. Wang et al \cite{10.1145/3097983.3098164} is based on a framework to fuse multiple data modalities for predictive modeling, using deep matrix factorization. In particular, they study three modalities together, two kinds of MRI and genetic data. The first type of MRI is \textbf{T1 MRI}, that capture structural information of grey matter in the brain. The other is the diffusion-weighted MRI (\textbf{dMRI}), that is sensitive to microscopic properties of brain's white matter. So, T1 MRI captures areas composed of neurons while dMRI estimated connections between those area. The genotype impacts the disease in a way that is not directly related to brain structure and function. All these modalities interact in a complicated manner, this suggests that directly combining feature spaces may not lead to effective integration.
-\\
+
 
 To reduce the feature dimensionality while maintaining most information they use \textbf{matrix factorization technique}. Traditional matrix factorizations assume linear interactions between data. This cannot be the case, there are non-linear interactions. They propose a deep matrix factorization framework to fuse information from multiple modalities and transfer predictive knowledge to differentiate patients with mild cognitive impairment (MCI), early stage of Alzheimer, from cognitive normal subjects. They build a non-linear hierarchical deep matrix factorization framework which decomposes each modality into a modality invariant component and a modality specific component, guided by supervision information. 
-\\
+
 
 To fuse multiple data modalities through deep matrix factorization they use a deep neural network to factorize each modality. The structure is illustrated in figure \ref{fig:diagram17}.
 

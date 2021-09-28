@@ -1,7 +1,24 @@
 \begin{thebibliography}{10}
 
+\bibitem{mta}
+ACPI.
+\newblock Acpi: Multimodal treatment of attention deficit hyperactivity
+  disorder (mta) - preprocessed arra nida.
+\newblock
+  \url{http://fcon_1000.projects.nitrc.org/indi/ACPI/html/acpi_mta_1.html},
+  2015.
+
+\bibitem{schizo}
+C.~Aine, H.~J. Bockholt, J.~Bustillo, J.~Ca(\~{n})ive, A.~Caprihan,
+  C.~Gasparovic, F.~Hanlon, J.~Houck, R.~Jung, J.~Lauriello, J.~Liu, A.~Mayer,
+  N.~Perrone-Bizzozero, S.~Posse, J.~Stephen, J.~Turner, V.~Clark, and
+  V.~Calhoun.
+\newblock Multimodal neuroimaging in schizophrenia: Description and
+  dissemination.
+\newblock {\em Neuroinformatics}, 15, 10 2017.
+
 \bibitem{Arroyo_Reli_n_2019}
-J.~D. Arroyo-Reli{\'{o}}n, D.~Kessler, E.~Levina, and S.~F. Taylor.
+J.~D. Arroyo~Reli(\'{o})n, D.~Kessler, E.~Levina, and S.~F. Taylor.
 \newblock Network classification with applications to brain connectomics.
 \newblock {\em The Annals of Applied Statistics}, 13(3), Sep 2019.
 
@@ -21,8 +38,20 @@ X.~Bi, X.~Zhao, H.~Huang, D.~Chen, and Y.~Ma.
   detection with deep features and extreme learning machine.
 \newblock {\em Cognitive Computation}, 12:513--527, 2019.
 
+\bibitem{preservation}
+T.~brain~preservation foundation.
+\newblock What is a connectome?
+\newblock \url{https://www.brainpreservation.org/content-2/connectome}, 2017.
+
+\bibitem{Cameron2013TheNB}
+C.~Cameron, B.~Yassine, C.~Carlton, C.~Francois, E.~Alan, J.~Andr{\'a}s,
+  K.~Budhachandra, L.~John, L.~Qingyang, M.~Michael, Y.~Chaogan, and B.~Pierre.
+\newblock The neuro bureau preprocessing initiative: open sharing of
+  preprocessed neuroimaging data and derivatives.
+\newblock {\em Frontiers in Neuroinformatics}, 7, 2013.
+
 \bibitem{8379106}
-B.~Chi{\^{e}}m, F.~Crevecoeur, and J.-C. Delvenne.
+B.~Chi(\^{e})m, F.~Crevecoeur, and J.-C. Delvenne.
 \newblock Supervised classification of structural brain networks reveals gender
   differences.
 \newblock In {\em 2018 19th IEEE Mediterranean Electrotechnical Conference
@@ -42,7 +71,8 @@ L.~Guti{\'{e}}rrez-G{\'{o}}mez and J.-C. Delvenne.
 \newblock {\em Applied Network Science}, 4(1), Oct. 2019.
 
 \bibitem{GutierrezBio}
-L.~Guti{\'{e}}rrez-G{\'{o}}mez, J.~Vohryzek, B.~Chi{\^{e}}m, P.~S. Baumann, P.~Conus, K.~D. Cuenod, P.~Hagmann, and J.-C. Delvenne.
+L.~Guti(\'{e})rrez-G(\'{o})mez, J.~Vohryzek, B.~Chi(\^{e})m, P.~S. Baumann,
+  P.~Conus, K.~D. Cuenod, P.~Hagmann, and J.-C. Delvenne.
 \newblock Stable biomarker identification for predicting schizophrenia in the
   human connectome.
 \newblock {\em NeuroImage: Clinical}, 27:102316, 2020.
@@ -73,7 +103,9 @@ Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner.
 \bibitem{10.1145/3219819.3219980}
 J.~B. Lee, R.~Rossi, and X.~Kong.
 \newblock Graph classification using structural attention.
-\newblock In {\em Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery {\&} Data Mining, {KDD} 2018}, pages 1666--–1674, New York, NY, USA, 2018. Association for Computing Machinery.
+\newblock In {\em Proceedings of the 24th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '18, pages 1666--1674, New York,
+  NY, USA, 2018. Association for Computing Machinery.
 
 \bibitem{Rogers2010ECFP}
 D.~Rogers and M.~Hahn.
@@ -118,7 +150,14 @@ J.~Wang, V.~D. Calhoun, J.~M. Stephen, T.~W. Wilson, and Y.-p. Wang.
 Q.~Wang, M.~Sun, L.~Zhan, P.~Thompson, S.~Ji, and J.~Zhou.
 \newblock Multi-modality disease modeling via collective deep matrix
   factorization.
-\newblock In {\em Proceedings of the 23rd ACM SIGKDD International Conference on     Knowledge Discovery {\& } Data Mining, {KDD} 2017}, pages 1155--–1164, New York, NY, USA, 2017. Association for Computing Machinery.
+\newblock In {\em Proceedings of the 23rd ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '17, pages 1155--1164, New York,
+  NY, USA, 2017. Association for Computing Machinery.
+
+\bibitem{Woolrich2001TemporalAI}
+M.~Woolrich, B.~Ripley, M.~Brady, and S.~M. Smith.
+\newblock Temporal autocorrelation in univariate linear modeling of fmri data.
+\newblock {\em NeuroImage}, 14:1370--1386, 2001.
 
 \bibitem{groupinn}
 Y.~Yan, J.~Zhu, M.~Duda, E.~Solarz, C.~Sripada, and D.~Koutra.
