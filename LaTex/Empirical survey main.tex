@@ -1,0 +1,26 @@
+%beginning of the settings
+\documentclass[11pt,a4paper,openright,bibliography=totoc]{report}
+
+
+\include{macro}
+\UseRawInputEncoding
+
+
+\begin{document}
+	\include{title}
+	%\include{citation}
+	\include{abstract}
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	
+	\include{intro}
+	\include{survey}
+	\include{experiments}
+	\include{conclusions}
+	%\include{acknowledgements}
+	
+	\clearpage
+	\bibliographystyle{abbrv}
+	\bibliography{references}
+\end{document}

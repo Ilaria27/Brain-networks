@@ -1,0 +1,19 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Outline}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Background}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Related works}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Survey}{}% 5
+\BOOKMARK [1][-]{section.2.1}{All methods}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.1.1}{Deep Learning}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.2}{Statistical Fingerprints}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.3}{Machine Learning}{section.2.1}% 9
+\BOOKMARK [0][-]{chapter.3}{Experiments}{}% 10
+\BOOKMARK [1][-]{section.3.1}{Experimental setup}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.1.1}{Methods studied}{section.3.1}% 12
+\BOOKMARK [2][-]{subsection.3.1.2}{Datasets used}{section.3.1}% 13
+\BOOKMARK [2][-]{subsection.3.1.3}{Code}{section.3.1}% 14
+\BOOKMARK [1][-]{section.3.2}{Results}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Discussion}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{Conclusions}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Future works}{chapter.4}% 18
+\BOOKMARK [0][-]{chapter*.19}{Bibliography}{}% 19

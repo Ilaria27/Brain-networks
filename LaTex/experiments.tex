@@ -1,0 +1,50 @@
+\chapter{Experiments}
+\label{chap:3}
+\section{Experimental setup}
+\subsection{Methods studied}
+So far, we have seen some methods for brain classification. Now we are going to describe the experiments done with some of them, to evaluate their performance in a more general setting. This means that the experiments are done with other brain networks datasets. In particular, the methods we are going to experiment are four:
+\begin{itemize}
+	\item Explainable Classification of Brain Networks via Contrast Subgraphs \ref{par:1};
+	\item Unsupervised Network Embedding for Graph Visualization, Clustering and Classification \ref{par:2};
+	\item Network Classification with Application to Brain Connectomics \ref{par:3};
+	\item Stable Biomarker Identification for Predicting Schizophrenia in the Human Connectome \ref{par:4}.
+\end{itemize}
+To make a recap and have in mind what we are studying, we will briefly summarize what they do. The first two methods are in the family of statistical fingerprints, the second two in Machine learning. 
+
+The first in the list aims to extract a constrast-subgraph, a set of vertices whose induced subgraph is dense in the summary graph of the condition group, and sparse in the summary graph of the control group. To make classification they calculated the number of edges of the subgraph induced by the contrast subgraphs (ASD-TD and TD-ASD) for each patient. They made classification with these two feature and an SVM.
+
+In Unsupervised network embedding, they train an autoecoder neural network that construct a feature space for each graph in input. These features, composed of embedding vectors, will be the input of a classification function. 
+
+Network Classification is given us like a library of the programming language R. Their aim is to find nodes or subnetworks with good discriminative power, meaning that they want to select only the most informative nodes and edges. To capture structural assumptions on these informative edges, they focus on convex structured sparsity penalties, with convex optimization. 
+
+In Stable Biomarkers identification they perform an automatic feature selection procedure to identify biomarkers that will be used to classify brain networks. In this case classify people affected by schizophrenia. To make classification they also design a RFE-SVM classifier. 
+
+\subsection{Datasets used}
+The principle datasets are four big ones, from which are extracted other ones. The main four are:
+\begin{itemize}
+	\item \textbf{ABIDE} (Autism Brain Imaging Data Exchange) \cite{Cameron2013TheNB}, is a collaboration of 16 international imaging sites that have aggregated and are openly sharing neuroimaging data from 539 individuals suffering from ASD (autism) and 573 typical controls. These 1112 datasets are composed of structural and resting state functional MRI data along with an extensive array of phenotypic information. All data are preprocessed and different types of preprocessing are described in the web site.
+	\item  \textbf{MTA} (Multimodal Treatment of Attention Deficit Hyperactivity Disorder) \cite{mta}, datasets from a subset of MTA participants at 6 sites, both with and without childhood ADHD, who were studied as part of a follow-up multimodal brain imaging examination. he principal aim of the effort was to investigate the effect of cannabis use among adults with a childhood diagnosis of ADHD. The study was a 2x2 design of those with/without ADHD and those who did/did not regularly use cannabis.
+	\item \textbf{HCP} (Human Connectome Project) \cite{Woolrich2001TemporalAI}, includes high-resolution scans from young healthy adult twins and non-twin siblings (ages 22-35) using four imaging modalities: structural images, resting-state fMRI (rfMRI), task-fMRI (tfMRI), and high angular resolution diffusion imaging (dMRI). Behavioral and other individual subject measure data is included on all subjects. 
+	\item \textbf{Schizophrenia} \cite{schizo}, is a dataset acquired from approximately 100 patients with schizophrenia and 100 age-matched controls during rest as well as several task activation paradigms targeting a hierarchy of cognitive constructs. Neuroimaging data include structural MRI, functional MRI, diffusion MRI, MR spectroscopic imaging, and magneto-encephalography.
+\end{itemize}
+
+The datasets ABIDE, MTA and Schizophrenia are also used with all the patients because are already divided in control group and condition group, while HCP dataset must be divided. 
+
+The datasets have been extracted from ABIDE are three, \textit{Children}, that includes patients which are at most 9 years, \textit{Adolescents}, individuals between 15 and 20 years old, and \textit{EyesClosed}, with people that performed their fMRI with their eyes closed. These had been already extracted by T. Lanciano et al \cite{lanciano2020cs}, and kindly given to me to make experiments.
+
+From HCP dataset I though that could be interesting to divide male and female patients, dataset that we will call hcp-gender, to see if they are in some way different in their brain connections, like in some other papers described in \ref{chap:2}. 
+
+At the end we have seven datasets: ABIDE, Children, Adolescents, EyesClosed, MTA, Schizophrenia and hcp-gender. 
+
+I want to specify that each patient is represented by an adjacency matrix contained in a .csv file. Also, all the values of the diagonal of the matrix are zeros, because we do not want to interpret the connection of a ROI with itself like an edge.
+
+\subsection{Code}
+To make the experiments easier to perform, I wrote a python script that, when runned, one can specify which method want to evaluate, which dataset to use and even if the data must be weighted or binary, meaning that one can choose to have weighted edges of the network, or binary ones. There is also a preprocess script.
+
+
+
+\section{Results}
+(Data Science)
+
+\section{Discussion}
+\label{sec:moons}

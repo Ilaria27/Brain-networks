@@ -1,0 +1,175 @@
+\begin{thebibliography}{10}
+
+\bibitem{mta}
+ACPI.
+\newblock Acpi: Multimodal treatment of attention deficit hyperactivity
+  disorder (mta) - preprocessed arra nida.
+\newblock
+  \url{http://fcon_1000.projects.nitrc.org/indi/ACPI/html/acpi_mta_1.html},
+  2015.
+
+\bibitem{schizo}
+C.~Aine, H.~J. Bockholt, J.~Bustillo, J.~Ca(\~{n})ive, A.~Caprihan,
+  C.~Gasparovic, F.~Hanlon, J.~Houck, R.~Jung, J.~Lauriello, J.~Liu, A.~Mayer,
+  N.~Perrone-Bizzozero, S.~Posse, J.~Stephen, J.~Turner, V.~Clark, and
+  V.~Calhoun.
+\newblock Multimodal neuroimaging in schizophrenia: Description and
+  dissemination.
+\newblock {\em Neuroinformatics}, 15, 10 2017.
+
+\bibitem{Arroyo_Reli_n_2019}
+J.~D. Arroyo~Reli(\'{o})n, D.~Kessler, E.~Levina, and S.~F. Taylor.
+\newblock Network classification with applications to brain connectomics.
+\newblock {\em The Annals of Applied Statistics}, 13(3), Sep 2019.
+
+\bibitem{bach2012structured}
+F.~Bach, R.~Jenatton, J.~Mairal, and G.~Obozinski.
+\newblock Structured sparsity through convex optimization, 2012.
+
+\bibitem{beck2009fast}
+A.~Beck and M.~Teboulle.
+\newblock A fast iterative shrinkage-thresholding algorithm for linear inverse
+  problems.
+\newblock {\em SIAM Journal on Imaging Sciences}, 2(1):183--202, 2009.
+
+\bibitem{Bi2019FunctionalBN}
+X.~Bi, X.~Zhao, H.~Huang, D.~Chen, and Y.~Ma.
+\newblock Functional brain network classification for alzheimer's disease
+  detection with deep features and extreme learning machine.
+\newblock {\em Cognitive Computation}, 12:513--527, 2019.
+
+\bibitem{preservation}
+T.~brain~preservation foundation.
+\newblock What is a connectome?
+\newblock \url{https://www.brainpreservation.org/content-2/connectome}, 2017.
+
+\bibitem{Cameron2013TheNB}
+C.~Cameron, B.~Yassine, C.~Carlton, C.~Francois, E.~Alan, J.~Andr{\'a}s,
+  K.~Budhachandra, L.~John, L.~Qingyang, M.~Michael, Y.~Chaogan, and B.~Pierre.
+\newblock The neuro bureau preprocessing initiative: open sharing of
+  preprocessed neuroimaging data and derivatives.
+\newblock {\em Frontiers in Neuroinformatics}, 7, 2013.
+
+\bibitem{8379106}
+B.~Chi(\^{e})m, F.~Crevecoeur, and J.-C. Delvenne.
+\newblock Supervised classification of structural brain networks reveals gender
+  differences.
+\newblock In {\em 2018 19th IEEE Mediterranean Electrotechnical Conference
+  (MELECON)}, pages 269--274, 2018.
+
+\bibitem{NIPS2015_f9be311e}
+D.~K. Duvenaud, D.~Maclaurin, J.~Iparraguirre, R.~Bombarell, T.~Hirzel,
+  A.~Aspuru-Guzik, and R.~P. Adams.
+\newblock Convolutional networks on graphs for learning molecular fingerprints.
+\newblock In C.~Cortes, N.~Lawrence, D.~Lee, M.~Sugiyama, and R.~Garnett,
+  editors, {\em Advances in Neural Information Processing Systems}, volume~28.
+  Curran Associates, Inc., 2015.
+
+\bibitem{GutierrezUn}
+L.~Guti{\'{e}}rrez-G{\'{o}}mez and J.-C. Delvenne.
+\newblock Unsupervised network embeddings with node identity awareness.
+\newblock {\em Applied Network Science}, 4(1), Oct. 2019.
+
+\bibitem{GutierrezBio}
+L.~Guti(\'{e})rrez-G(\'{o})mez, J.~Vohryzek, B.~Chi(\^{e})m, P.~S. Baumann,
+  P.~Conus, K.~D. Cuenod, P.~Hagmann, and J.-C. Delvenne.
+\newblock Stable biomarker identification for predicting schizophrenia in the
+  human connectome.
+\newblock {\em NeuroImage: Clinical}, 27:102316, 2020.
+
+\bibitem{Jie2018}
+B.~Jie, M.~Liu, D.~Zhang, and D.~Shen.
+\newblock Sub-network kernels for measuring similarity of brain connectivity
+  networks in disease diagnosis.
+\newblock {\em {IEEE} Transactions on Image Processing}, 27(5):2340--2353, May
+  2018.
+
+\bibitem{koutra2013deltacon}
+D.~Koutra, J.~Vogelstein, and C.~Faloutsos.
+\newblock Deltacon: A principled massive-graph similarity function.
+\newblock 2013.
+
+\bibitem{lanciano2020cs}
+T.~Lanciano, F.~Bonchi, and A.~Gionis.
+\newblock Explainable classification of brain networks via contrast subgraphs.
+\newblock In {\em Proceedings of the 26th {ACM} {SIGKDD} International
+  Conference on Knowledge Discovery {\&} Data Mining}. {ACM}, July 2020.
+
+\bibitem{726791}
+Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner.
+\newblock Gradient-based learning applied to document recognition.
+\newblock {\em Proceedings of the IEEE}, 86(11):2278--2324, 1998.
+
+\bibitem{10.1145/3219819.3219980}
+J.~B. Lee, R.~Rossi, and X.~Kong.
+\newblock Graph classification using structural attention.
+\newblock In {\em Proceedings of the 24th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '18, pages 1666--1674, New York,
+  NY, USA, 2018. Association for Computing Machinery.
+
+\bibitem{Rogers2010ECFP}
+D.~Rogers and M.~Hahn.
+\newblock Extended-connectivity fingerprints.
+\newblock {\em Journal of Chemical Information and Modeling}, 50(5):742--754,
+  2010.
+\newblock PMID: 20426451.
+
+\bibitem{Sarraf066910}
+S.~Sarraf and G.~Tofighi.
+\newblock Deep learning-based pipeline to recognize alzheimer{\textquoteright}s
+  disease using fmri data.
+\newblock {\em bioRxiv}, 2016.
+
+\bibitem{pmlr-v5-shervashidze09a}
+N.~Shervashidze, S.~Vishwanathan, T.~Petri, K.~Mehlhorn, and K.~Borgwardt.
+\newblock Efficient graphlet kernels for large graph comparison.
+\newblock In D.~van Dyk and M.~Welling, editors, {\em Proceedings of the Twelth
+  International Conference on Artificial Intelligence and Statistics}, volume~5
+  of {\em Proceedings of Machine Learning Research}, pages 488--495, Hilton
+  Clearwater Beach Resort, Clearwater Beach, Florida USA, 16--18 Apr 2009.
+  PMLR.
+
+\bibitem{connectome}
+A.~W. Toga, K.~A. Clark, P.~M. Thompson, D.~W. Shattuck, and J.~D. Van~Horn.
+\newblock {Mapping the Human Connectome}.
+\newblock {\em Neurosurgery}, 71(1):1--5, 07 2012.
+
+\bibitem{hcp}
+K.~Ugurbil and D.~V. Essen.
+\newblock Hcp young adult.
+\newblock \url{https://www.humanconnectome.org/study/hcp-young-adult}, 2017.
+
+\bibitem{8363530}
+J.~Wang, V.~D. Calhoun, J.~M. Stephen, T.~W. Wilson, and Y.-p. Wang.
+\newblock Integration of network topological features and graph fourier
+  transform for fmri data analysis.
+\newblock In {\em 2018 IEEE 15th International Symposium on Biomedical Imaging
+  (ISBI 2018)}, pages 92--96, 2018.
+
+\bibitem{10.1145/3097983.3098164}
+Q.~Wang, M.~Sun, L.~Zhan, P.~Thompson, S.~Ji, and J.~Zhou.
+\newblock Multi-modality disease modeling via collective deep matrix
+  factorization.
+\newblock In {\em Proceedings of the 23rd ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '17, pages 1155--1164, New York,
+  NY, USA, 2017. Association for Computing Machinery.
+
+\bibitem{Woolrich2001TemporalAI}
+M.~Woolrich, B.~Ripley, M.~Brady, and S.~M. Smith.
+\newblock Temporal autocorrelation in univariate linear modeling of fmri data.
+\newblock {\em NeuroImage}, 14:1370--1386, 2001.
+
+\bibitem{groupinn}
+Y.~Yan, J.~Zhu, M.~Duda, E.~Solarz, C.~Sripada, and D.~Koutra.
+\newblock Groupinn: Grouping-based interpretable neural network-based
+  classification of limited, noisy brain data.
+\newblock In {\em Proceedings of the 25th {ACM} {SIGKDD} International
+  Conference on Knowledge Discovery {\&} Data Mining, {KDD} 2019, London, UK,
+  August 4-8, 2019}, 2019.
+
+\bibitem{ZHOU202057}
+J.~Zhou, G.~Cui, S.~Hu, Z.~Zhang, C.~Yang, Z.~Liu, L.~Wang, C.~Li, and M.~Sun.
+\newblock Graph neural networks: A review of methods and applications.
+\newblock {\em AI Open}, 1:57--81, 2020.
+
+\end{thebibliography}
