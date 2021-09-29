@@ -18,7 +18,7 @@ C.~Aine, H.~J. Bockholt, J.~Bustillo, J.~Ca(\~{n})ive, A.~Caprihan,
 \newblock {\em Neuroinformatics}, 15, 10 2017.
 
 \bibitem{Arroyo_Reli_n_2019}
-J.~D. Arroyo~Reli(\'{o})n, D.~Kessler, E.~Levina, and S.~F. Taylor.
+J.~D. Arroyo~Relión, D.~Kessler, E.~Levina, and S.~F. Taylor.
 \newblock Network classification with applications to brain connectomics.
 \newblock {\em The Annals of Applied Statistics}, 13(3), Sep 2019.
 
@@ -34,7 +34,7 @@ A.~Beck and M.~Teboulle.
 
 \bibitem{Bi2019FunctionalBN}
 X.~Bi, X.~Zhao, H.~Huang, D.~Chen, and Y.~Ma.
-\newblock Functional brain network classification for alzheimer's disease
+\newblock Functional brain network classification for alzheimer’s disease
   detection with deep features and extreme learning machine.
 \newblock {\em Cognitive Computation}, 12:513--527, 2019.
 
@@ -51,7 +51,7 @@ C.~Cameron, B.~Yassine, C.~Carlton, C.~Francois, E.~Alan, J.~Andr{\'a}s,
 \newblock {\em Frontiers in Neuroinformatics}, 7, 2013.
 
 \bibitem{8379106}
-B.~Chi(\^{e})m, F.~Crevecoeur, and J.-C. Delvenne.
+B.~Chiêm, F.~Crevecoeur, and J.-C. Delvenne.
 \newblock Supervised classification of structural brain networks reveals gender
   differences.
 \newblock In {\em 2018 19th IEEE Mediterranean Electrotechnical Conference
@@ -71,8 +71,8 @@ L.~Guti{\'{e}}rrez-G{\'{o}}mez and J.-C. Delvenne.
 \newblock {\em Applied Network Science}, 4(1), Oct. 2019.
 
 \bibitem{GutierrezBio}
-L.~Guti(\'{e})rrez-G(\'{o})mez, J.~Vohryzek, B.~Chi(\^{e})m, P.~S. Baumann,
-  P.~Conus, K.~D. Cuenod, P.~Hagmann, and J.-C. Delvenne.
+L.~Gutiérrez-Gómez, J.~Vohryzek, B.~Chiêm, P.~S. Baumann, P.~Conus, K.~D.
+  Cuenod, P.~Hagmann, and J.-C. Delvenne.
 \newblock Stable biomarker identification for predicting schizophrenia in the
   human connectome.
 \newblock {\em NeuroImage: Clinical}, 27:102316, 2020.
@@ -93,7 +93,7 @@ D.~Koutra, J.~Vogelstein, and C.~Faloutsos.
 T.~Lanciano, F.~Bonchi, and A.~Gionis.
 \newblock Explainable classification of brain networks via contrast subgraphs.
 \newblock In {\em Proceedings of the 26th {ACM} {SIGKDD} International
-  Conference on Knowledge Discovery {\&} Data Mining}. {ACM}, July 2020.
+  Conference on Knowledge Discovery \& Data Mining}. {ACM}, July 2020.
 
 \bibitem{726791}
 Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner.
@@ -104,7 +104,7 @@ Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner.
 J.~B. Lee, R.~Rossi, and X.~Kong.
 \newblock Graph classification using structural attention.
 \newblock In {\em Proceedings of the 24th ACM SIGKDD International Conference
-  on Knowledge Discovery and Data Mining}, KDD '18, pages 1666--1674, New York,
+  on Knowledge Discovery \& Data Mining}, KDD '18, page 1666–1674, New York,
   NY, USA, 2018. Association for Computing Machinery.
 
 \bibitem{Rogers2010ECFP}
@@ -151,7 +151,7 @@ Q.~Wang, M.~Sun, L.~Zhan, P.~Thompson, S.~Ji, and J.~Zhou.
 \newblock Multi-modality disease modeling via collective deep matrix
   factorization.
 \newblock In {\em Proceedings of the 23rd ACM SIGKDD International Conference
-  on Knowledge Discovery and Data Mining}, KDD '17, pages 1155--1164, New York,
+  on Knowledge Discovery and Data Mining}, KDD '17, page 1155–1164, New York,
   NY, USA, 2017. Association for Computing Machinery.
 
 \bibitem{Woolrich2001TemporalAI}
