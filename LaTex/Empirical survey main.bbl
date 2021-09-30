@@ -22,6 +22,13 @@ J.~D. Arroyo~Relión, D.~Kessler, E.~Levina, and S.~F. Taylor.
 \newblock Network classification with applications to brain connectomics.
 \newblock {\em The Annals of Applied Statistics}, 13(3), Sep 2019.
 
+\bibitem{classification}
+S.~Asiri.
+\newblock Machine learning classifiers.
+\newblock
+  \url{https://towardsdatascience.com/machine-learning-classifiers-a5cc4e1b0623},
+  2019.
+
 \bibitem{bach2012structured}
 F.~Bach, R.~Jenatton, J.~Mairal, and G.~Obozinski.
 \newblock Structured sparsity through convex optimization, 2012.
@@ -83,6 +90,12 @@ B.~Jie, M.~Liu, D.~Zhang, and D.~Shen.
   networks in disease diagnosis.
 \newblock {\em {IEEE} Transactions on Image Processing}, 27(5):2340--2353, May
   2018.
+
+\bibitem{6596128}
+D.~Koop, J.~Freire, and C.~T. Silva.
+\newblock Visual summaries for graph collections.
+\newblock In {\em 2013 IEEE Pacific Visualization Symposium (PacificVis)},
+  pages 57--64, 2013.
 
 \bibitem{koutra2013deltacon}
 D.~Koutra, J.~Vogelstein, and C.~Faloutsos.

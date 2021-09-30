@@ -2,7 +2,7 @@
 \label{chap:1}
 \pagenumbering{arabic}
 
-Neuroscientists, to diagnose a psychiatric disorder, use symptom scores from clinical interviews. For a definitive validation, could be useful to study the interactions between brain regions, in order to see the different behaviours of these interactions in a brain of Typical Developed people and people with disorders. This could be seen through Magnetic Resonance Imaging (MRI), in particular functional MRI (fMRI). The neuroimaging data produced are then pre-processed and transformed in data structures that an algorithm can study, in our cases graphs, matrices and time series. From the study of these interactions, the goal is to implement a classifier of the brain representation, able to says whether the brain we give in input is affected by a specific psychiatric disorder. This is called\textbf{ brain network classification}. 
+Neuroscientists, to diagnose a psychiatric disorder, use symptom scores from clinical interviews. For a definitive validation, could be useful to study the interactions between brain regions, in order to see the different behaviours of these interactions in a brain of Typical Developed people and people with disorders. This could be seen through Magnetic Resonance Imaging (MRI), in particular functional MRI (fMRI). The neuroimaging data produced are then pre-processed and transformed in data structures that an algorithm can study, in our cases graphs, matrices and time series. From the study of these interactions, the goal is to implement a classifier of the brain representation, able to says whether the brain we give in input is affected by a specific psychiatric disorder. This is called \textbf{brain network classification}. Also, through Machine Learning algorithms, we could analyse better brain data. This could be useful to comprehend the causes of the psychiatric disorder, that from the simple interview of neuroscientists could not emerge. 
 
 The studies taken in consideration, other than in techniques, differs also in the data that have in input. The inputs could be either graphs, matrices, time series and even images. This work is focused only on methods that take in input graphs, for which many methods have been implemented for their classification. In our particular field, graph classification of brain networks, becomes important to take into account the structure of the graph, because there could be many brain regions that characterize a specific psychiatric disorder. We will see how in some methods are also studied those regions to identify the once that have different interactions in people with disorders, even if the described experiments of this works are concentrated on the simple classification of brain networks. 
 
@@ -27,32 +27,39 @@ To understand better all the methods, we should do some explanation of what we w
 
 \paragraph{Graphs} \
 \\
-There are many subjects in which graphs are used, and consequently many definitions. In mathematics, a graph is a structured set of objects that, in pairs, could have a relation between themselves. Each object is called a \textit{vertex}, and each relation between a pair of vertices is called an \textit{edge}. So, a graph $ G(V,E) $ is a pair where $ V $ is the set of vertices and $ E $ is the set of edges. Graphs are represented in diagram form, where vertices are in circle form and edges are lines that join pairs of vertices with a relation \ref{fig:diagram}.
+There are many subjects in which graphs are used, and consequently many definitions. In mathematics, a graph is a structured set of objects that, in pairs, could have a relation between themselves. Each object is called a \textit{vertex}, and each relation between a pair of vertices is called an \textit{edge}. So, a graph $ G(V,E) $ is a pair where $ V $ is the set of vertices and $ E $ is the set of edges. Graphs are represented in diagram form, where vertices are in circle form and edges are lines that join pairs of vertices with a relation (Figure \ref{fig:diagram}).
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.5]{Immagini/220px-6n-graf.svg.png}
-	\caption{\label{fig:diagram}}
+	\caption{Representation of a graph.}
+	\label{fig:diagram}
 \end{figure}
 
-Graph could be \textit{directed} or \textit{undirected}. In a direct graph \ref{fig:diagram2}, edges have an orientation, the links between vertices can be represented by arrows going from one vertex to the other. In an edge $ (x,y) $ directed from $ x $ to $ y $, the vertices are called respectively \textit{tail} and \textit{head} of the edge.
+Graph could be \textit{directed} or \textit{undirected}. In a direct graph (Figure  \ref{fig:diagram2}), edges have an orientation, the links between vertices can be represented by arrows going from one vertex to the other. In an edge $ (x,y) $ directed from $ x $ to $ y $, the vertices are called respectively \textit{tail} and \textit{head} of the edge.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.5]{Immagini/220px-Directed.svg.png}
-	\caption{\label{fig:diagram2}}
+	\caption{Representation of a directed graph}
+	\label{fig:diagram2}
 \end{figure}
 
 Graphs can be represented by matrices, the matrix representations in which we are interested for this thesis are \textbf{Adjacency matrix} and/or \textbf{Connectivity matrix}. 
 
-An \textbf{Adjacency matrix} is a square matrix that represents if there is an edge between two vertices. In particular in an unweighted graph with a vertex set $ U=\{u_{1}, ..., u_{n}\} $ the Adjacency matrix $ A $ is an $ n \times n $ matrix in which its element $ A_{ij} $ is 1 if there is an edge between the vertices $ u_{i} $ and $ u_{j} $. If the graph is weighted the values in the matrix are not 1s and 0s, but depends on the weight of each edge. Also, if the graph is undirected the Adjacency matrix is symmetric.
+An \textbf{Adjacency matrix} is a square matrix that represents if there is an edge between two vertices. In particular in an unweighted graph with a vertex set $ U=\{u_{1}, ..., u_{n}\} $ the Adjacency matrix $ A $ is an $ n \times n $ matrix in which its element $ A_{ij} $ is 1 if there is an edge between the vertices $ u_{i} $ and $ u_{j} $, because they have no specific weight in each edge. If the graph is weighted the values in the matrix are not 1s and 0s, but depends on the weight of each edge. In fact, a weighted graph is a graph where each branch (or edge) is given a numerical weight (or label). Also, if the graph is undirected the Adjacency matrix is symmetric.
 
 
 \paragraph{Classification}\
 \\
-In machine learning, \emph{Classification} is a supervised learning approach in which an algorithm is trained, with some given data, to classify new observations. It is a process. 
+In machine learning, \emph{Classification} is a supervised learning approach in which an algorithm is trained, with some given data, to classify new observations. It is a process. In particular classification predictive modeling is the task of approximating a mapping function $f(X)$ from input variables $X$ to discrete output variables $y$ (\cite{classification}).
 
-First we have some data, of which we already know the belonging class, called \emph{labelled} data. We could have two classes, in which case we will have a \emph{binary classification}, or multiple classes, so \emph{multi-class classification}. Our labelled data are given to the classification model, starting the \textbf{training} of the model.
+First we have some data, of which we already know the belonging class, called \emph{labelled} data. We could have two classes, in which case we will have a \emph{binary classification}, or multiple classes, so \emph{multi-class classification}. Our labelled data are given to the classification model, starting the \textbf{training} of the model. In this step the classifier uses the training data to how the given input data relate to the class.
 
-Once trained the classificator, we can give to it new data that we want to classify. This is called the \textbf{prediction}. Finished the prediction we can evaluate our model through some scores, the main one in our case is the \textbf{accuracy}, that calculates the percentage of how many predictions of our classifier are right. 
+
+Once trained the classificator, we can give to it new data that we want to classify. This is called the \textbf{prediction}. In classification there are two types of learners, \textit{Lazy learners} and \textit{Eager leraners}. Lazy learners simply store the training data and wait until a testing data appear. When it does, classification is conducted based on the most related data in the stored training data. They have less training time but more predicting time. An example of lazy learner is k-nearest neighbour. Eager learners construct a classification model based on the given training data before receiving data for classification. It must be able to commit to a single hypothesis that covers the entire instance space. They take more time in training time and less in predicting time. Some examples of eager learners are Decision Tree, Naive Bayes, Artificial Neural Networks. 
+
+There are many classification algorithm, it depends on the dataset which one is better to apply. 
+
+Finished the prediction we can evaluate our model through some scores, the main one in our case is the \textbf{accuracy}, that calculates the percentage of how many predictions of our classifier are right. Others are Precision and Recall and the ROC curve. To evaluate the model there are also the \textbf{loss functions}. They calculate the distance between the prediction of the algorithm and its expected output. There are many measures of loss functions, the most common are the \textit{cross-entropy}, the \textit{Log loss} and the \textit{Mean Square Error} (MSE). Cross-entropy and Log loss function compute the difference between two probability distribution functions. The MSE is the square difference between the current output ($y\_pred$) and the expected output ($y\_true$) divided by the number of output. 
 
 \paragraph{Connectomes}\
 \\
@@ -62,23 +69,25 @@ Being able to have a representation of the human brain allows us to understand f
 
 Other fields, that we do not cover here, but that are very interesting, concern the memories (in fact neuroscientists believe that our memories are stored in the synapses between neurons) and the preservation of the brain (being able to recover the structure and connections of it) \cite{preservation}.
 
-In the image \ref{fig:diagram3} we can see an example of a connectome.
+In Figure \ref{fig:diagram3} we can see an example of a connectome.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.3]{Immagini/cervello-connessioni-neuroni-colorate.jpg}
-	\caption{\label{fig:diagram3}}
+	\includegraphics[scale=0.08]{Immagini/cervello.jpg}
+	\caption{Example of a connectome}
+	\label{fig:diagram3}
 \end{figure}
 
 
 
 \section{Related works}\
 \\
-Here we concentrate the study of connectomes in graph form. This means that the fMRI of a brain, elaborated in a connectome, is then transformed in graph form, and the graph is studied in matrix form. The graph have as nodes the brain regions, and as edges the connections between them. It follows that the matrix is an \emph{Adjacency matrix}, in which the values represent the degree of connections between the regions, and each row and each column is a node of the graph, a so called \emph{Region of interest} (\textbf{ROI}).
+Here we concentrate the study of connectomes. This means that the fMRI of a brain, is elaborated in a graph form, that is called connectome. To make easier the study of the brain, the graph is studied in matrix form (Figure \ref{fig:diagram4}). The graph have as nodes the brain regions, and as edges the connections between them. It follows that the matrix is an \emph{Adjacency matrix}, in which the values represent the degree of connections between the regions, and each row and each column is a node of the graph, a so called \emph{Region of interest} (\textbf{ROI}).
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.8]{Immagini/nbm3752-toc-0001-m.jpg}
-	\caption{\label{fig:diagram4}}
+	\caption{Different representations of a brain. Up left: nodes of a connectome. Up right: edges of a connectome. Bottom: Correlation matrix of a connectome.}
+	\label{fig:diagram4}
 \end{figure}
 
 \paragraph{Graph Classification}\
