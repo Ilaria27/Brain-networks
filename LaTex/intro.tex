@@ -3,10 +3,13 @@
 \pagenumbering{arabic}
 
 Neuroscientists, to diagnose a psychiatric disorder, use symptom scores from clinical interviews. For a definitive validation, could be useful to study the interactions between brain regions, in order to see the different behaviours of these interactions in a brain of Typical Developed people and people with disorders. This could be seen through Magnetic Resonance Imaging (MRI), in particular functional MRI (fMRI). The neuroimaging data produced are then pre-processed and transformed in data structures that an algorithm can study, in our cases graphs, matrices and time series. From the study of these interactions, the goal is to implement a classifier of the brain representation, able to says whether the brain we give in input is affected by a specific psychiatric disorder. This is called \textbf{brain network classification}. Also, through Machine Learning algorithms, we could analyse better brain data. This could be useful to comprehend the causes of the psychiatric disorder, that from the simple interview of neuroscientists could not emerge. 
+\vspace{0.5cm}
 
 The studies taken in consideration, other than in techniques, differs also in the data that have in input. The inputs could be either graphs, matrices, time series and even images. This work is focused only on methods that take in input graphs, for which many methods have been implemented for their classification. In our particular field, graph classification of brain networks, becomes important to take into account the structure of the graph, because there could be many brain regions that characterize a specific psychiatric disorder. We will see how in some methods are also studied those regions to identify the once that have different interactions in people with disorders, even if the described experiments of this works are concentrated on the simple classification of brain networks. 
+\vspace{0.5cm}
 
 This thesis contains an explanation of the basics with which the study works, then a description of several methods on this subject and then experiments with some of these methods that more represent our field. 
+\vspace{0.5cm}
 
 This work was performed during a research internship at ISI Foundation
 under the supervision of Dr. Francesco Bonchi.
@@ -25,9 +28,12 @@ The thesis is organized as follows:
 \section{Background}
 To understand better all the methods, we should do some explanation of what we will encounter during the lecture. The main arguments we should consider are \textbf{Graphs}, \textbf{Classification} and \textbf{Connectomes}.
 
-\paragraph{Graphs} \
-\\
+\paragraph{Graphs}\
+\vspace{0.5cm}
+
 There are many subjects in which graphs are used, and consequently many definitions. In mathematics, a graph is a structured set of objects that, in pairs, could have a relation between themselves. Each object is called a \textit{vertex}, and each relation between a pair of vertices is called an \textit{edge}. So, a graph $ G(V,E) $ is a pair where $ V $ is the set of vertices and $ E $ is the set of edges. Graphs are represented in diagram form, where vertices are in circle form and edges are lines that join pairs of vertices with a relation (Figure \ref{fig:diagram}).
+\vspace{0.5cm}
+
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.5]{Immagini/220px-6n-graf.svg.png}
@@ -36,6 +42,8 @@ There are many subjects in which graphs are used, and consequently many definiti
 \end{figure}
 
 Graph could be \textit{directed} or \textit{undirected}. In a direct graph (Figure  \ref{fig:diagram2}), edges have an orientation, the links between vertices can be represented by arrows going from one vertex to the other. In an edge $ (x,y) $ directed from $ x $ to $ y $, the vertices are called respectively \textit{tail} and \textit{head} of the edge.
+\vspace{0.5cm}
+
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.5]{Immagini/220px-Directed.svg.png}
@@ -44,32 +52,42 @@ Graph could be \textit{directed} or \textit{undirected}. In a direct graph (Figu
 \end{figure}
 
 Graphs can be represented by matrices, the matrix representations in which we are interested for this thesis are \textbf{Adjacency matrix} and/or \textbf{Connectivity matrix}. 
+\vspace{0.5cm}
 
 An \textbf{Adjacency matrix} is a square matrix that represents if there is an edge between two vertices. In particular in an unweighted graph with a vertex set $ U=\{u_{1}, ..., u_{n}\} $ the Adjacency matrix $ A $ is an $ n \times n $ matrix in which its element $ A_{ij} $ is 1 if there is an edge between the vertices $ u_{i} $ and $ u_{j} $, because they have no specific weight in each edge. If the graph is weighted the values in the matrix are not 1s and 0s, but depends on the weight of each edge. In fact, a weighted graph is a graph where each branch (or edge) is given a numerical weight (or label). Also, if the graph is undirected the Adjacency matrix is symmetric.
 
 
 \paragraph{Classification}\
-\\
+\vspace{0.5cm}
+
 In machine learning, \emph{Classification} is a supervised learning approach in which an algorithm is trained, with some given data, to classify new observations. It is a process. In particular classification predictive modeling is the task of approximating a mapping function $f(X)$ from input variables $X$ to discrete output variables $y$ (\cite{classification}).
+\vspace{0.5cm}
 
 First we have some data, of which we already know the belonging class, called \emph{labelled} data. We could have two classes, in which case we will have a \emph{binary classification}, or multiple classes, so \emph{multi-class classification}. Our labelled data are given to the classification model, starting the \textbf{training} of the model. In this step the classifier uses the training data to how the given input data relate to the class.
-
+\vspace{0.5cm}
 
 Once trained the classificator, we can give to it new data that we want to classify. This is called the \textbf{prediction}. In classification there are two types of learners, \textit{Lazy learners} and \textit{Eager leraners}. Lazy learners simply store the training data and wait until a testing data appear. When it does, classification is conducted based on the most related data in the stored training data. They have less training time but more predicting time. An example of lazy learner is k-nearest neighbour. Eager learners construct a classification model based on the given training data before receiving data for classification. It must be able to commit to a single hypothesis that covers the entire instance space. They take more time in training time and less in predicting time. Some examples of eager learners are Decision Tree, Naive Bayes, Artificial Neural Networks. 
+\vspace{0.5cm}
 
 There are many classification algorithm, it depends on the dataset which one is better to apply. 
+\vspace{0.5cm}
 
 Finished the prediction we can evaluate our model through some scores, the main one in our case is the \textbf{accuracy}, that calculates the percentage of how many predictions of our classifier are right. Others are Precision and Recall and the ROC curve. To evaluate the model there are also the \textbf{loss functions}. They calculate the distance between the prediction of the algorithm and its expected output. There are many measures of loss functions, the most common are the \textit{cross-entropy}, the \textit{Log loss} and the \textit{Mean Square Error} (MSE). Cross-entropy and Log loss function compute the difference between two probability distribution functions. The MSE is the square difference between the current output ($y\_pred$) and the expected output ($y\_true$) divided by the number of output. 
 
 \paragraph{Connectomes}\
-\\
+\vspace{0.5cm}
+
 The \textbf{connectome} is the connection matrix of the human brain \cite{connectome}. From the anatomic point of view, the connectome is defined by all the axonal origins, terminations and trajectories of all the brain neurons, through the brain regions. This means, the connectivity of neural pathways in the brain. 
+\vspace{0.5cm}
 
 Being able to have a representation of the human brain allows us to understand fundamental cognitive operations, brain activities, conditional structure-function models of the brain, so, consequently, to understand and detect brain deceases. From this powerful tool, we can see how brain physiology is correlated to abilities and behaviours, underlying mental anomalies and pathology. This is fundamental to develop treatments ad hoc for each pathology and case. 
+\vspace{0.5cm}
 
 Other fields, that we do not cover here, but that are very interesting, concern the memories (in fact neuroscientists believe that our memories are stored in the synapses between neurons) and the preservation of the brain (being able to recover the structure and connections of it) \cite{preservation}.
+\vspace{0.5cm}
 
 In Figure \ref{fig:diagram3} we can see an example of a connectome.
+\vspace{0.5cm}
 
 \begin{figure}[htbp]
 	\centering
@@ -78,11 +96,11 @@ In Figure \ref{fig:diagram3} we can see an example of a connectome.
 	\label{fig:diagram3}
 \end{figure}
 
+\section{Related works}
 
-
-\section{Related works}\
-\\
 Here we concentrate the study of connectomes. This means that the fMRI of a brain, is elaborated in a graph form, that is called connectome. To make easier the study of the brain, the graph is studied in matrix form (Figure \ref{fig:diagram4}). The graph have as nodes the brain regions, and as edges the connections between them. It follows that the matrix is an \emph{Adjacency matrix}, in which the values represent the degree of connections between the regions, and each row and each column is a node of the graph, a so called \emph{Region of interest} (\textbf{ROI}).
+\vspace{0.5cm}
+
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.8]{Immagini/nbm3752-toc-0001-m.jpg}
@@ -91,10 +109,13 @@ Here we concentrate the study of connectomes. This means that the fMRI of a brai
 \end{figure}
 
 \paragraph{Graph Classification}\
-\\
+\vspace{0.5cm}
+
 The technique that studies the classification of graphs is called \textbf{Graph Classification}. A basic definition of graph classification is given in \cite{10.1145/3219819.3219980}: given a set of graphs $\mathcal{B}=\left\{\left(\mathcal{G}_{1}, \ell_{1}\right),\left(\mathcal{G}_{2}, \ell_{2}\right), \cdots,\left(\mathcal{G}_{n}, \ell_{n}\right)\right\}$ the aim is to learn a function $f: \mathbf{G} \rightarrow \mathcal{L}$, where $\mathbf{G}$ is the input space of graphs, and $\mathcal{L}$ is the set of graph labels. Each graph $\mathcal{G}_{i}=\left(\mathbf{A}_{\mathcal{G}_{i}}, \mathbf{B}_{\mathcal{G}_{i}}\right)$ has an adjacency matrix $\mathbf{A}_{\mathcal{G}_{i}} \in\{0,1\}^{N_{i} \times N_{i}}$ and an attribute matrix $\mathbf{B}_{\mathcal{G}_{i}} \in\ \mathbf{R}^{N_{i} \times N_{i}}$, where ${N}_{i}$ is the number of nodes of the $i$-graph and $B$ is the number of attributes. Each graph has also a corresponding label $l_{i}$. 	
+\vspace{0.5cm}
 
 The usual strategy to study graphs is to calculate graph statistics on the entire graph. A popular technique is to count the occurrences of various \textit{subgraphs} on a graph, called graphlet kernel \cite{pmlr-v5-shervashidze09a}. Then there is the \textit{Morgan algorithm} \cite{Rogers2010ECFP} that consists in an iterative process, that updates the attributes vector of each node by hashing a concatenation of all the attributes of in the node's local neighbourhood. Then from the final attributes of all the nodes in the graph is computed the graph feature. Recently, learning data-driven graph features \cite{NIPS2015_f9be311e} is becoming more important. This means that given a dataset, the task-relevant features are learned automatically from the graphs. Once we extract these features, independently of which method we would like to use, we use them for the classification.
 Another method that we can mention is all the literature that regards \textit{Graph Neural Networks} (GNN), a deep learning technique. To build a GNN we need to find out the graph structure, the graph type and its scale, then we should define the loss function, depending on the task, and then we are ready to build a model using computational model \cite{ZHOU202057}. 
+\vspace{0.5cm}
 
 These methods brings us to the field of our interest, \textbf{Brain Network Classification}. For this task, we will show that the state-of-the-art is mostly made by methods based on the previous graph classification techniques, but specifically adapted for a more suitable result. In the next chapter we will discuss various methods that inspired this work.

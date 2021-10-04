@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.17)  30 SEP 2021 19:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.17)  4 OCT 2021 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -813,7 +813,7 @@ e
 
 
 (./title.tex
-<Immagini/sapienza.PNG, id=83, 242.40562pt x 76.03406pt>
+<Immagini/sapienza.PNG, id=95, 242.40562pt x 76.03406pt>
 File: Immagini/sapienza.PNG Graphic file (type png)
 <use Immagini/sapienza.PNG>
 Package pdftex.def Info: Immagini/sapienza.PNG  used on input line 4.
@@ -852,7 +852,13 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 
 (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+Overfull \hbox (5.3808pt too wide) in paragraph at lines 32--32
+ [][] [][]\OT1/cmr/m/n/10.95 Results of Un-su-per-vised Net-work Em-bed-ding fo
+r Graph 
+ []
+
+)
 \tf@toc=\write6
 \openout6 = `"Empirical survey main.toc"'.
 
@@ -887,81 +893,60 @@ Chapter 1.
 
 
 ]
-<Immagini/220px-6n-graf.svg.png, id=184, 220.825pt x 145.54375pt>
+<Immagini/220px-6n-graf.svg.png, id=202, 220.825pt x 145.54375pt>
 File: Immagini/220px-6n-graf.svg.png Graphic file (type png)
 <use Immagini/220px-6n-graf.svg.png>
-Package pdftex.def Info: Immagini/220px-6n-graf.svg.png  used on input line 33.
+Package pdftex.def Info: Immagini/220px-6n-graf.svg.png  used on input line 39.
 
 (pdftex.def)             Requested size: 110.41222pt x 72.77168pt.
-<Immagini/220px-Directed.svg.png, id=186, 220.825pt x 198.7425pt>
+<Immagini/220px-Directed.svg.png, id=204, 220.825pt x 198.7425pt>
 File: Immagini/220px-Directed.svg.png Graphic file (type png)
 <use Immagini/220px-Directed.svg.png>
-Package pdftex.def Info: Immagini/220px-Directed.svg.png  used on input line 41
+Package pdftex.def Info: Immagini/220px-Directed.svg.png  used on input line 49
 .
 (pdftex.def)             Requested size: 110.41222pt x 99.371pt.
- [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
+ [2] [3pdfTeX warning (ext4): destination with the same identifier (name{figure
+.1.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.68 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.68 
+      <./Immagini/220px-6n-graf.svg.png> <./Immagini/220px-Directed.svg.png>]
+[4]
+<Immagini/cervello.jpg, id=235, 1656.1875pt x 1358.07375pt>
+File: Immagini/cervello.jpg Graphic file (type jpg)
+<use Immagini/cervello.jpg>
+Package pdftex.def Info: Immagini/cervello.jpg  used on input line 94.
+(pdftex.def)             Requested size: 132.49771pt x 108.64812pt.
+<Immagini/nbm3752-toc-0001-m.jpg, id=237, 329.96pt x 287.62pt>
+File: Immagini/nbm3752-toc-0001-m.jpg Graphic file (type jpg)
+<use Immagini/nbm3752-toc-0001-m.jpg>
+Package pdftex.def Info: Immagini/nbm3752-toc-0001-m.jpg  used on input line 10
+6.
+(pdftex.def)             Requested size: 263.96834pt x 230.0963pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.45 
-      <./Immagini/220px-6n-graf.svg.png>] [3pdfTeX warning (ext4): destination 
-with the same identifier (name{figure.1.2}) has been already used, duplicate ig
-nored
+l.116 
+       <./Immagini/cervello.jpg>]) [6pdfTeX warning (ext4): destination with th
+e same identifier (name{figure.1.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.59 
-      <./Immagini/220px-Directed.svg.png>]
-<Immagini/cervello.jpg, id=211, 1656.1875pt x 1358.07375pt>
-File: Immagini/cervello.jpg Graphic file (type jpg)
-<use Immagini/cervello.jpg>
-Package pdftex.def Info: Immagini/cervello.jpg  used on input line 76.
-(pdftex.def)             Requested size: 132.49771pt x 108.64812pt.
-<Immagini/nbm3752-toc-0001-m.jpg, id=213, 329.96pt x 287.62pt>
-File: Immagini/nbm3752-toc-0001-m.jpg Graphic file (type jpg)
-<use Immagini/nbm3752-toc-0001-m.jpg>
-Package pdftex.def Info: Immagini/nbm3752-toc-0001-m.jpg  used on input line 88
-.
-(pdftex.def)             Requested size: 263.96834pt x 230.0963pt.
- [4] [5pdfTeX warning (ext4): destination with the same identifier (name{figure
-.1.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.96 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.96 
-      <./Immagini/cervello.jpg> <./Immagini/nbm3752-toc-0001-m.jpg>]) [6]
+l.17 	\include{intro}
+                      <./Immagini/nbm3752-toc-0001-m.jpg>] [7]
 \openout2 = `survey.aux'.
 
-
-(./survey.tex
+ (./survey.tex
 Chapter 2.
 
 Overfull \hbox (7.55576pt too wide) in paragraph at lines 8--10
  []\OT1/cmr/bx/n/10.95 GroupINN: Grouping-based In-ter-pretable Neu-ral Net-wor
 k for Clas-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
-
  []
 
 Missing character: There is no â in font cmr10!
@@ -976,380 +961,235 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--23
-
- []
-
-[7
+[8
 
 
 
 
 ]
-<Immagini/Groupinn1.PNG, id=251, 563.10374pt x 262.73157pt>
+<Immagini/Groupinn1.PNG, id=274, 563.10374pt x 262.73157pt>
 File: Immagini/Groupinn1.PNG Graphic file (type png)
 <use Immagini/Groupinn1.PNG>
-Package pdftex.def Info: Immagini/Groupinn1.PNG  used on input line 30.
+Package pdftex.def Info: Immagini/Groupinn1.PNG  used on input line 31.
 (pdftex.def)             Requested size: 366.01309pt x 170.77348pt.
 
-Overfull \hbox (6.01309pt too wide) in paragraph at lines 30--31
+Overfull \hbox (6.01309pt too wide) in paragraph at lines 31--32
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--38
-
- []
-
-Missing character: There is no â in font cmbx10!
-Missing character: There is no € in font cmbx10!
-Missing character: There is no ™ in font cmbx10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
-
- []
-
-[8pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.41 
-      <./Immagini/Groupinn1.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
-
- []
-
-<Immagini/deep-learning1.PNG, id=263, 368.1253pt x 96.36pt>
+l.39 \paragraph
+               {Deep Learning-based Pipeline to Recognize Alzheimerâ€™s Dise...
+ <./Immagini/Groupinn1.PNG>]
+Missing character: There is no â in font cmbx10!
+Missing character: There is no € in font cmbx10!
+Missing character: There is no ™ in font cmbx10!
+<Immagini/deep-learning1.PNG, id=285, 368.1253pt x 96.36pt>
 File: Immagini/deep-learning1.PNG Graphic file (type png)
 <use Immagini/deep-learning1.PNG>
-Package pdftex.def Info: Immagini/deep-learning1.PNG  used on input line 49.
+Package pdftex.def Info: Immagini/deep-learning1.PNG  used on input line 50.
 (pdftex.def)             Requested size: 368.1244pt x 96.35974pt.
 
-Overfull \hbox (8.1244pt too wide) in paragraph at lines 49--50
+Overfull \hbox (8.1244pt too wide) in paragraph at lines 50--51
  [][] 
  []
 
 Missing character: There is no â in font cmbx10!
 Missing character: There is no € in font cmbx10!
 Missing character: There is no ™ in font cmbx10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
-
- []
-
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.61 
-      <./Immagini/deep-learning1.PNG>]
-<Immagini/functional1.PNG, id=276, 624.08156pt x 183.68625pt>
-File: Immagini/functional1.PNG Graphic file (type png)
-<use Immagini/functional1.PNG>
-Package pdftex.def Info: Immagini/functional1.PNG  used on input line 67.
-(pdftex.def)             Requested size: 312.04001pt x 91.84288pt.
-<Immagini/functional2.PNG, id=278, 721.94719pt x 180.675pt>
-File: Immagini/functional2.PNG Graphic file (type png)
-<use Immagini/functional2.PNG>
-Package pdftex.def Info: Immagini/functional2.PNG  used on input line 76.
-(pdftex.def)             Requested size: 360.9727pt x 90.33727pt.
-
-Overfull \hbox (0.9727pt too wide) in paragraph at lines 76--77
- [][] 
- []
-
-<Immagini/functional3.PNG, id=280, 636.87938pt x 260.47313pt>
-File: Immagini/functional3.PNG Graphic file (type png)
-<use Immagini/functional3.PNG>
-Package pdftex.def Info: Immagini/functional3.PNG  used on input line 85.
-(pdftex.def)             Requested size: 318.4389pt x 130.23624pt.
-[10pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.91 
+l.62 
+      <./Immagini/deep-learning1.PNG>]
+<Immagini/functional1.PNG, id=298, 624.08156pt x 183.68625pt>
+File: Immagini/functional1.PNG Graphic file (type png)
+<use Immagini/functional1.PNG>
+Package pdftex.def Info: Immagini/functional1.PNG  used on input line 69.
+(pdftex.def)             Requested size: 312.04001pt x 91.84288pt.
+<Immagini/functional2.PNG, id=300, 721.94719pt x 180.675pt>
+File: Immagini/functional2.PNG Graphic file (type png)
+<use Immagini/functional2.PNG>
+Package pdftex.def Info: Immagini/functional2.PNG  used on input line 79.
+(pdftex.def)             Requested size: 360.9727pt x 90.33727pt.
+
+Overfull \hbox (0.9727pt too wide) in paragraph at lines 79--80
+ [][] 
+ []
+
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.86 
      pdfTeX warning (ext4): destination with the same identifier (name{figure.2
 .4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.91 
+l.86 
       <./Immagini/functional1.PNG> <./Immagini/functional2.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
-
- []
-
-[11pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
-}) has been already used, duplicate ignored
+<Immagini/functional3.PNG, id=308, 636.87938pt x 260.47313pt>
+File: Immagini/functional3.PNG Graphic file (type png)
+<use Immagini/functional3.PNG>
+Package pdftex.def Info: Immagini/functional3.PNG  used on input line 89.
+(pdftex.def)             Requested size: 318.4389pt x 130.23624pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.101 \begin{equation}
-                       <./Immagini/functional3.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
-
- []
-
-<Immagini/c-s1.PNG, id=297, 398.99063pt x 302.63063pt>
+l.106 
+       <./Immagini/functional3.PNG>]
+<Immagini/c-s1.PNG, id=319, 398.99063pt x 302.63063pt>
 File: Immagini/c-s1.PNG Graphic file (type png)
 <use Immagini/c-s1.PNG>
-Package pdftex.def Info: Immagini/c-s1.PNG  used on input line 116.
+Package pdftex.def Info: Immagini/c-s1.PNG  used on input line 124.
 (pdftex.def)             Requested size: 319.19293pt x 242.10483pt.
-[12] [13pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.2.6}) has been already used, duplicate ignored
+ [13] [14pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.2.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.125 \end{itemize}
-                    <./Immagini/c-s1.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 129--132
-
- []
-
+l.131 	\item I
+              f the number of edges induced by the contrast subgraph ASD-TD ...
+ <./Immagini/c-s1.PNG>]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
-<Immagini/Unsupervised.PNG, id=314, 584.1825pt x 142.28156pt>
+<Immagini/Unsupervised.PNG, id=338, 584.1825pt x 142.28156pt>
 File: Immagini/Unsupervised.PNG Graphic file (type png)
 <use Immagini/Unsupervised.PNG>
-Package pdftex.def Info: Immagini/Unsupervised.PNG  used on input line 137.
+Package pdftex.def Info: Immagini/Unsupervised.PNG  used on input line 146.
 (pdftex.def)             Requested size: 292.09053pt x 71.1406pt.
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
-}) has been already used, duplicate ignored
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.144 
+l.153 
        <./Immagini/Unsupervised.PNG>]
-<Immagini/unsupervised2.PNG, id=325, 311.66437pt x 158.09062pt>
+<Immagini/unsupervised2.PNG, id=347, 311.66437pt x 158.09062pt>
 File: Immagini/unsupervised2.PNG Graphic file (type png)
 <use Immagini/unsupervised2.PNG>
-Package pdftex.def Info: Immagini/unsupervised2.PNG  used on input line 147.
+Package pdftex.def Info: Immagini/unsupervised2.PNG  used on input line 156.
 (pdftex.def)             Requested size: 155.8318pt x 79.0451pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
-
- []
-
-[15pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8
-}) has been already used, duplicate ignored
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.164 
+l.169 
        <./Immagini/unsupervised2.PNG>]
-<Immagini/supervised1.PNG, id=335, 193.47281pt x 143.78719pt>
+<Immagini/supervised1.PNG, id=355, 193.47281pt x 143.78719pt>
 File: Immagini/supervised1.PNG Graphic file (type png)
 <use Immagini/supervised1.PNG>
-Package pdftex.def Info: Immagini/supervised1.PNG  used on input line 167.
+Package pdftex.def Info: Immagini/supervised1.PNG  used on input line 178.
 (pdftex.def)             Requested size: 154.77846pt x 115.02989pt.
-<Immagini/supervised2.PNG, id=338, 343.2825pt x 114.4275pt>
+<Immagini/supervised2.PNG, id=358, 343.2825pt x 114.4275pt>
 File: Immagini/supervised2.PNG Graphic file (type png)
 <use Immagini/supervised2.PNG>
-Package pdftex.def Info: Immagini/supervised2.PNG  used on input line 176.
+Package pdftex.def Info: Immagini/supervised2.PNG  used on input line 188.
 (pdftex.def)             Requested size: 274.62636pt x 91.54211pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
-
- []
-
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9
-}) has been already used, duplicate ignored
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.188 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.10}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.188 
-       <./Immagini/supervised1.PNG> <./Immagini/supervised2.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 189--191
-
- []
-
-<Immagini/subnetwork1.PNG, id=348, 343.2825pt x 338.76563pt>
+l.197 
+       <./Immagini/supervised1.PNG>]
+<Immagini/subnetwork1.PNG, id=369, 343.2825pt x 338.76563pt>
 File: Immagini/subnetwork1.PNG Graphic file (type png)
 <use Immagini/subnetwork1.PNG>
-Package pdftex.def Info: Immagini/subnetwork1.PNG  used on input line 204.
+Package pdftex.def Info: Immagini/subnetwork1.PNG  used on input line 217.
 (pdftex.def)             Requested size: 274.62636pt x 271.01285pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
-
- []
-
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-1}) has been already used, duplicate ignored
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.223 
-       <./Immagini/subnetwork1.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 224--226
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--229
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
-
- []
-
-<Immagini/integration.PNG, id=367, 357.58594pt x 249.18094pt>
+l.224 
+       <./Immagini/supervised2.PNG>] [19pdfTeX warning (ext4): destination with
+ the same identifier (name{figure.2.11}) has been already used, duplicate ignor
+ed
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.230 
+       <./Immagini/subnetwork1.PNG>] [20]
+<Immagini/integration.PNG, id=394, 357.58594pt x 249.18094pt>
 File: Immagini/integration.PNG Graphic file (type png)
 <use Immagini/integration.PNG>
-Package pdftex.def Info: Immagini/integration.PNG  used on input line 237.
+Package pdftex.def Info: Immagini/integration.PNG  used on input line 251.
 (pdftex.def)             Requested size: 286.06912pt x 199.345pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--246
-
- []
-
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ² in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--249
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--252
-
- []
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 253--255
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--262
-
- []
-
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-2}) has been already used, duplicate ignored
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.262 
+l.269 
        <./Immagini/integration.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 263--265
-
- []
-
-
-Overfull \hbox (5.33507pt too wide) in paragraph at lines 270--271
+Overfull \hbox (5.33507pt too wide) in paragraph at lines 284--285
 []\OT1/cmr/m/n/10.95 Second, they per-form a care-ful fea-ture se-lec-tion pro-
 ce-dure across modal-
  []
 
-<Immagini/stablebiomarkers.PNG, id=387, 612.03656pt x 244.66406pt>
+[22]
+<Immagini/stablebiomarkers.PNG, id=415, 612.03656pt x 244.66406pt>
 File: Immagini/stablebiomarkers.PNG Graphic file (type png)
 <use Immagini/stablebiomarkers.PNG>
-Package pdftex.def Info: Immagini/stablebiomarkers.PNG  used on input line 278.
+Package pdftex.def Info: Immagini/stablebiomarkers.PNG  used on input line 293.
 
 (pdftex.def)             Requested size: 397.81905pt x 159.02974pt.
 
-Overfull \hbox (37.81905pt too wide) in paragraph at lines 278--279
+Overfull \hbox (37.81905pt too wide) in paragraph at lines 293--294
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--287
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 288--290
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 291--293
-
- []
-
-<Immagini/multimodality.PNG, id=397, 565.36218pt x 320.69812pt>
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.305 
+       <./Immagini/stablebiomarkers.PNG>]
+<Immagini/multimodality.PNG, id=425, 565.36218pt x 320.69812pt>
 File: Immagini/multimodality.PNG Graphic file (type png)
 <use Immagini/multimodality.PNG>
-Package pdftex.def Info: Immagini/multimodality.PNG  used on input line 298.
+Package pdftex.def Info: Immagini/multimodality.PNG  used on input line 314.
 (pdftex.def)             Requested size: 367.48106pt x 208.4513pt.
 
-Overfull \hbox (7.48106pt too wide) in paragraph at lines 298--299
+Overfull \hbox (7.48106pt too wide) in paragraph at lines 314--315
  [][] 
  []
 
-) [22pdfTeX warning (ext4): destination with the same identifier (name{figure.2
-.13}) has been already used, duplicate ignored
+) [24pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.18 	\include{survey}
-                       <./Immagini/stablebiomarkers.PNG>] [23pdfTeX warning (ex
-t4): destination with the same identifier (name{figure.2.14}) has been already 
-used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.18 	\include{survey}
-                       <./Immagini/multimodality.PNG>]
+                       <./Immagini/multimodality.PNG>] [25]
 \openout2 = `experiments.aux'.
 
  (./experiments.tex
 Chapter 3.
-[24
+[26
 
 
 
 
 ]
-Overfull \hbox (4.66449pt too wide) in paragraph at lines 27--28
+Overfull \hbox (4.66449pt too wide) in paragraph at lines 31--32
 []\OT1/cmr/bx/n/10.95 HCP \OT1/cmr/m/n/10.95 (Hu-man Con-nec-tome Project) [[]]
 , in-cludes high-resolution scans
  []
 
-[25]) [26]
+[27] [28] [29]
+Overfull \hbox (4.81398pt too wide) in paragraph at lines 83--83
+[]\OT1/cmr/bx/n/12 Results of Un-su-per-vised Net-work Em-bed-ding for Graph
+ []
+
+[30]) [31]
 \openout2 = `conclusions.aux'.
 
  (./conclusions.tex
 Chapter 4.
-) [27
+) [32
 
 
 
@@ -1358,7 +1198,7 @@ Chapter 4.
 Missing character: There is no ó in font cmr10!
 Missing character: There is no ’ in font cmr10!
 Missing character: There is no ê in font cmr10!
- [28
+ [33
 
 
 
@@ -1368,23 +1208,23 @@ Missing character: There is no é in font cmr10!
 Missing character: There is no ó in font cmr10!
 Missing character: There is no ê in font cmr10!
 Missing character: There is no – in font cmr10!
- [29]
+ [34]
 Missing character: There is no – in font cmr10!
-) [30]
+) [35]
 (./Empirical survey main.aux (./title.aux) (./abstract.aux) (./intro.aux)
 (./survey.aux) (./experiments.aux) (./conclusions.aux))
 Package rerunfilecheck Info: File `"Empirical survey main".out' has not changed
 .
-(rerunfilecheck)             Checksum: 6FF804D775DB4F3089D95C776C873EAE;1098.
+(rerunfilecheck)             Checksum: 6C97571A1EB9AF98D78D5F4F99586245;1506.
  ) 
 Here is how much of TeX's memory you used:
- 18593 strings out of 479485
- 356557 string characters out of 5875915
- 651680 words of memory out of 5000000
- 35016 multiletter control sequences out of 15000+600000
+ 18604 strings out of 479485
+ 356694 string characters out of 5875915
+ 651684 words of memory out of 5000000
+ 35019 multiletter control sequences out of 15000+600000
  544679 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,8n,100p,1170b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 91i,7n,100p,1170b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-di
@@ -1400,10 +1240,10 @@ nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sf
 rm1095.pfb>
-Output written on "Empirical survey main.pdf" (35 pages, 2601295 bytes).
+Output written on "Empirical survey main.pdf" (40 pages, 2610409 bytes).
 PDF statistics:
- 539 PDF objects out of 1000 (max. 8388607)
- 446 compressed objects within 5 object streams
- 122 named destinations out of 1000 (max. 500000)
- 260 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 584 PDF objects out of 1000 (max. 8388607)
+ 486 compressed objects within 5 object streams
+ 130 named destinations out of 1000 (max. 500000)
+ 284 words of extra memory for PDF output out of 10000 (max. 10000000)
 
