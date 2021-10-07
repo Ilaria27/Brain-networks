@@ -31,7 +31,8 @@
 \contentsline {subsection}{\numberline {3.2.1}Results of Explainable Classification of Brain Networks via Contrast Subgraphs}{30}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Results of Unsupervised Network Embedding for Graph Visualization, Clustering and Classification}{30}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Results of Network Classification with Application to Brain Connectomics}{31}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Discussion}{31}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Conclusions}{32}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Future works}{32}{section.4.1}%
-\contentsline {chapter}{Bibliography}{33}{chapter*.19}%
+\contentsline {subsection}{\numberline {3.2.4}Results of Stable Biomarker Identification for Predicting Schizophrenia in the Human Connectome}{32}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Discussion}{32}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Conclusions}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Future works}{33}{section.4.1}%
+\contentsline {chapter}{Bibliography}{34}{chapter*.19}%

@@ -80,6 +80,21 @@ with dataset (...). The running time to extract the contrast-subgraphs is very l
 
 It is interesting to see how change the number of edges induced by both the contrast-subgraphs, depending on the class of the patient. In the scatterplot of Figure (...) are reported these features for the best result obtained with this method, that is with the dataset (...) and $ \alpha = (...) $.
 
+\begin{table}
+\centerline{
+\setlength{\tabcolsep}{2.25pt}
+\begin{tabular}{l|l|l|l|l|l|l|l|l}
+	& \textbf{children} & \textbf{adolescents} & \textbf{eyesclosed} & \textbf{male} & \textbf{ABIDE} & \textbf{mta} & \textbf{hcp\_gender} & \textbf{schizophrenia}  \\ 
+	\hline
+	b &                   &                      &                     &               &                &              &                      &                         \\ 
+	\hline
+	w &                   &                      &                     &               &                &              &                      &                         \\
+	\hline
+\end{tabular}
+}
+\caption{Results of Contrast-subgraph method with each dataset.}
+\end{table}
+
 \subsection{Results of Unsupervised Network Embedding for Graph Visualization, Clustering and Classification}
 
 The output we have from \textit{Unsupervised Network Embedding} is an embedded vector for each patient. The embedded vector contains 1024 values, so we will have a matrix in which the rows are the patients and the columns are the values of the embedded vector. Obviously, each dataset is studied separately and each one has different extracted features. We give the features to our classifier, and repeat the experiment ten times for each dataset, to take at the end the mean of all accuracies and the standard deviation.
@@ -93,13 +108,107 @@ In Figure (...) we can see a plot implemented by L. Guti\'{e}rrez and adjusted f
 
 The running time to extract the features depends on the number of epochs and length of the data most of all, anyway it is not very high, more and less 15 minutes. Even the classification part does not take long, just few minutes.
 
+\begin{table}
+\centerline{
+\setlength{\tabcolsep}{2.25pt}
+\begin{tabular}{l|l|l|l|l|l|l|l|l}
+	& \textbf{children} & \textbf{adolescents} & \textbf{eyesclosed} & \textbf{male} & \textbf{ABIDE} & \textbf{mta} & \textbf{hcp\_gender} & \textbf{schizophrenia}  \\ 
+	\hline
+	b &                   &                      &                     &               &                &              &                      &                         \\ 
+	\hline
+	w &                   &                      &                     &               &                &              &                      &                         \\
+	\hline
+\end{tabular}
+}
+\caption{Results of Unsupervised network embedding method with each dataset.}
+\end{table}
+
 \subsection{Results of Network Classification with Application to Brain Connectomics}
 
-In this work is implemented also the classification. It is implemented in R code, and, to compute the accuracy score, we were able to extract the predicted values and the true values. The main function is \textit{graphclass()}, and has three parameters to try and tune, that are lamba $\lambda$, rho $\rho$ and gamma $\gamma$. As in the previous experiments, we run the algorithm 10 times for each dataset, then compute the accuracy and the standard deviation. The results for all the datasets are in Table (...).The best score is with the dataset (...), for which the best parameters are (...). 
+In this work is implemented also the classification. It is written in R code, and, to compute the accuracy score, we were able to extract the predicted values and the true values. The main function is \textit{graphclass()}, and has three parameters to try and tune, that are lamba $\lambda$, rho $\rho$ and gamma $\gamma$. As in the previous experiments, we run the algorithm 10 times for each dataset, then compute the accuracy and the standard deviation. The results for all the datasets are in Table (...).The best score is with the dataset (...), for which the best parameters are (...). 
 \vspace{0.5cm}
 
 The running time for each classification task is not more than 7 minutes, depending on the length of the data.
+
+\begin{table}
+\centerline{
+\setlength{\tabcolsep}{2.25pt}
+\begin{tabular}{l|l|l|l|l|l|l|l|l}
+	& \textbf{children} & \textbf{adolescents} & \textbf{eyesclosed} & \textbf{male} & \textbf{ABIDE} & \textbf{mta} & \textbf{hcp\_gender} & \textbf{schizophrenia}  \\ 
+	\hline
+	b &                   &                      &                     &               &                &              &                      &                         \\ 
+	\hline
+	w &                   &                      &                     &               &                &              &                      &                         \\
+	\hline
+\end{tabular}
+}
+\caption{Results of Network classification method with each dataset.}
+\end{table}
+
 \subsection{Results of Stable Biomarker Identification for Predicting Schizophrenia in the Human Connectome}
+\begin{table}
+\centerline{
+\setlength{\tabcolsep}{2.25pt}
+\begin{tabular}{l|l|l|l|l|l|l|l|l}
+	& \textbf{children} & \textbf{adolescents} & \textbf{eyesclosed} & \textbf{male} & \textbf{ABIDE} & \textbf{mta} & \textbf{hcp\_gender} & \textbf{schizophrenia}  \\ 
+	\hline
+	b &                   &                      &                     &               &                &              &                      &                         \\ 
+	\hline
+	w &                   &                      &                     &               &                &              &                      &                         \\
+	\hline
+\end{tabular}
+}
+\caption{Results of Stable biomarkers identification method with each dataset.}
+\end{table}
+
 
 \section{Discussion}
 \label{sec:moons}
+
+% \usepackage{multirow}
+% \usepackage{booktabs}
+
+
+\begin{table}
+\centerline{
+\setlength{\tabcolsep}{2.25pt}
+\begin{tabular}{c|c|c|c|c|c}
+	\multicolumn{1}{c}{}                    &                        & \textbf{Contrast-subgraph}   & \textbf{GraphEmbs}    & \textbf{Biomarkers}   & \textbf{Graphclass}   \\ 
+	\midrule
+	\multirow{2}{*}{\textbf{children}}      & b                      & 0.50 $\pm$ 0.02 & 0.50 $\pm$ 0.02              &                       &                       \\ 
+	\cline{2-6}
+	& w                      &                              &                       &                       &                       \\ 
+	\midrule
+	\multirow{2}{*}{\textbf{adolescents}}   & b                      &                              &                       &                       &                       \\ 
+	\cline{2-6}
+	& \multicolumn{1}{l|}{w} & \multicolumn{1}{l|}{}        & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l}{}  \\ 
+	\midrule
+	\multirow{2}{*}{\textbf{eyesclosed}}    & b                      &                              &                       &                       &                       \\ 
+	\cline{2-6}
+	& \multicolumn{1}{l|}{w} & \multicolumn{1}{l|}{}        & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l}{}  \\ 
+	\midrule
+	\multirow{2}{*}{\textbf{male}}          & b                      &                              &                       &                       &                       \\ 
+	\cline{2-6}
+	& \multicolumn{1}{l|}{w} & \multicolumn{1}{l|}{}        & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l}{}  \\ 
+	\midrule
+	\multirow{2}{*}{\textbf{ABIDE}}         & b                      &                              &                       &                       &                       \\ 
+	\cline{2-6}
+	& \multicolumn{1}{l|}{w} & \multicolumn{1}{l|}{}        & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l}{}  \\ 
+	\midrule
+	\multirow{2}{*}{\textbf{mta}}           & b                      &                              &                       &                       &                       \\ 
+	\cline{2-6}
+	& \multicolumn{1}{l|}{w} & \multicolumn{1}{l|}{}        & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l}{}  \\ 
+	\midrule
+	\multirow{2}{*}{\textbf{hcp\_gender}}   & b                      &                              &                       &                       &                       \\ 
+	\cline{2-6}
+	& \multicolumn{1}{l|}{w} & \multicolumn{1}{l|}{}        & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l}{}  \\ 
+	\midrule
+	\multirow{2}{*}{\textbf{schizophrenia}} & b                      &                              &                       &                       &                       \\ 
+	\cline{2-6}
+	& \multicolumn{1}{l|}{w} & \multicolumn{1}{l|}{}        & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l}{}  \\
+	\bottomrule
+\end{tabular}
+}
+\caption{Accuracy results and standard deviation of each method experimented with each dataset.}
+\label{tab:all_results}
+\end{table}
