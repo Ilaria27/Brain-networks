@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.17)  7 OCT 2021 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.17)  9 OCT 2021 13:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1220,28 +1220,28 @@ l.105
 ble.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.162 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{table.3.3}) has been already used, duplicate ignored
+l.154 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.3
+.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.162 \end{table}
-                 ]) [32pdfTeX warning (ext4): destination with the same identif
-ier (name{table.3.4}) has been already used, duplicate ignored
+l.154 
+      ] [32pdfTeX warning (ext4): destination with the same identifier (name{ta
+ble.3.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.19 	\include{experiments}
-                           pdfTeX warning (ext4): destination with the same ide
-ntifier (name{table.3.5}) has been already used, duplicate ignored
+l.225 
+      ] [33pdfTeX warning (ext4): destination with the same identifier (name{ta
+ble.3.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.19 	\include{experiments}
-                           ]
+l.225 
+      ]) [34]
 \openout2 = `conclusions.aux'.
 
  (./conclusions.tex
 Chapter 4.
-) [33
+) [35
 
 
 
@@ -1250,7 +1250,7 @@ Chapter 4.
 Missing character: There is no ó in font cmr10!
 Missing character: There is no ’ in font cmr10!
 Missing character: There is no ê in font cmr10!
- [34
+ [36
 
 
 
@@ -1260,9 +1260,9 @@ Missing character: There is no é in font cmr10!
 Missing character: There is no ó in font cmr10!
 Missing character: There is no ê in font cmr10!
 Missing character: There is no – in font cmr10!
- [35]
+ [37]
 Missing character: There is no – in font cmr10!
-) [36]
+) [38]
 (./Empirical survey main.aux (./title.aux) (./abstract.aux) (./intro.aux)
 (./survey.aux) (./experiments.aux) (./conclusions.aux))
 Package rerunfilecheck Info: File `"Empirical survey main".out' has not changed
@@ -1270,10 +1270,10 @@ Package rerunfilecheck Info: File `"Empirical survey main".out' has not changed
 (rerunfilecheck)             Checksum: 117C47E5395DA6E671C054835D2923BD;1655.
  ) 
 Here is how much of TeX's memory you used:
- 18720 strings out of 479485
- 358442 string characters out of 5875915
- 665220 words of memory out of 5000000
- 35120 multiletter control sequences out of 15000+600000
+ 18725 strings out of 479485
+ 358496 string characters out of 5875915
+ 663531 words of memory out of 5000000
+ 35123 multiletter control sequences out of 15000+600000
  544679 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,12n,100p,1170b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1292,10 +1292,10 @@ nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sf
 rm1095.pfb>
-Output written on "Empirical survey main.pdf" (41 pages, 2616265 bytes).
+Output written on "Empirical survey main.pdf" (43 pages, 2620487 bytes).
 PDF statistics:
- 609 PDF objects out of 1000 (max. 8388607)
- 509 compressed objects within 6 object streams
- 137 named destinations out of 1000 (max. 500000)
+ 626 PDF objects out of 1000 (max. 8388607)
+ 524 compressed objects within 6 object streams
+ 139 named destinations out of 1000 (max. 500000)
  292 words of extra memory for PDF output out of 10000 (max. 10000000)
 
