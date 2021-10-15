@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  15 OCT 2021 11:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  15 OCT 2021 12:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1240,20 +1240,20 @@ Overfull \hbox (4.66449pt too wide) in paragraph at lines 31--32
 , in-cludes high-resolution scans
  []
 
-[27] [28] [29]
-<Immagini/scatterplot_cs_mta.png, id=500, 647.41875pt x 647.41875pt>
+[27] [28] [29] [30pdfTeX warning (ext4): destination with the same identifier (
+name{table.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.99 
+     ]
+<Immagini/scatterplot_cs_mta.png, id=504, 647.41875pt x 647.41875pt>
 File: Immagini/scatterplot_cs_mta.png Graphic file (type png)
 <use Immagini/scatterplot_cs_mta.png>
 Package pdftex.def Info: Immagini/scatterplot_cs_mta.png  used on input line 10
-3.
+2.
 (pdftex.def)             Requested size: 323.70857pt x 323.70857pt.
- [30pdfTeX warning (ext4): destination with the same identifier (name{table.3.1
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.106 \end{figure}
-                  ]
-Overfull \hbox (4.81398pt too wide) in paragraph at lines 109--109
+
+Overfull \hbox (4.81398pt too wide) in paragraph at lines 108--108
 []\OT1/cmr/bx/n/12 Results of Un-su-per-vised Net-work Em-bed-ding for Graph
  []
 
@@ -1261,40 +1261,40 @@ Overfull \hbox (4.81398pt too wide) in paragraph at lines 109--109
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.116 
+l.112 
        <./Immagini/scatterplot_cs_mta.png>] [32pdfTeX warning (ext4): destinati
 on with the same identifier (name{table.3.2}) has been already used, duplicate 
 ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.146 
+l.142 
       ] [33pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.3.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.198 
+l.191 
       ]
 <Immagini/fc_83_schizo.png, id=524, 602.7318pt x 569.4876pt>
 File: Immagini/fc_83_schizo.png Graphic file (type png)
 <use Immagini/fc_83_schizo.png>
-Package pdftex.def Info: Immagini/fc_83_schizo.png  used on input line 201.
+Package pdftex.def Info: Immagini/fc_83_schizo.png  used on input line 194.
 (pdftex.def)             Requested size: 301.36516pt x 284.7431pt.
  [34pdfTeX warning (ext4): destination with the same identifier (name{table.3.4
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.260 
+l.253 
       ] [35pdfTeX warning (ext4): destination with the same identifier (name{fi
 gure.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.260 
+l.253 
        <./Immagini/fc_83_schizo.png>] [36pdfTeX warning (ext4): destination wit
 h the same identifier (name{table.3.5}) has been already used, duplicate ignore
 d
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.260 
+l.253 
       ]) [37]
 \openout2 = `conclusions.aux'.
 
@@ -1331,11 +1331,11 @@ Package rerunfilecheck Info: File `"Empirical survey main".out' has not changed
 Here is how much of TeX's memory you used:
  21316 strings out of 478994
  393974 string characters out of 5858184
- 693992 words of memory out of 5000000
+ 694992 words of memory out of 5000000
  38176 multiletter control sequences out of 15000+600000
  413021 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,12n,93p,1352b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 94i,12n,93p,1353b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -1352,7 +1352,7 @@ exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on "Empirical survey main.pdf" (46 pages, 2681575 bytes).
+Output written on "Empirical survey main.pdf" (46 pages, 2682266 bytes).
 PDF statistics:
  653 PDF objects out of 1000 (max. 8388607)
  544 compressed objects within 6 object streams
