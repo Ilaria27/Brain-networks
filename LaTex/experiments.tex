@@ -124,9 +124,9 @@ The results for each dataset are shown in Table \ref{tab:embs}. From that we can
 		\textbf{eyesclosed}    & 0.57 $\pm$ 0.04        & 0.57 $\pm$ 0.04  \\
 		\textbf{male}          & 0.56 $\pm$ 0.02        & 0.56 $\pm$ 0.02  \\
 		\textbf{ABIDE}         & 0.56 $\pm$ 0.01        & 0.57 $\pm$ 0.05  \\
-		\textbf{mta}           & \textbf{0.67 $\pm$ 0.03}        & 0.64 $\pm$ 0.09  \\
+		\textbf{mta}           & 0.67 $\pm$ 0.03        & 0.64 $\pm$ 0.09  \\
 		\textbf{hcp\_gender}   & 0.64 $\pm$ 0.08        & 0.63 $\pm$ 0.02  \\
-		\textbf{schizophrenia} & 0.63 $\pm$ 0.03        & \textbf{0.67 $\pm$ 0.01}  \\
+		\textbf{schizophrenia} & \textbf{0.70 $\pm$ 0.03}        & 0.67 $\pm$ 0.01  \\
 		\textbf{mta\_cannabis} & 0.58 $\pm$ 0.03        & 0.56 $\pm$ 0.09 
 	\end{tabular}
 	\caption{Results of Unsupervised network embedding method with each dataset.}
@@ -137,7 +137,7 @@ The running time to extract the features depends most of all on the number of ep
 
 \subsection{Results of Network Classification with Application to Brain Connectomics}
 
-In this work is implemented also the classification. It is written in R code, and, to compute the accuracy score, we were able to extract the predicted values and the true values. The main function is \textit{graphclass()}, and has three parameters to try and tune, that are lamba $\lambda$, rho $\rho$ and gamma $\gamma$. As in the previous experiments, we run the algorithm 10 times for each dataset, then compute the mean of all accuracies and the standard deviation. The results for all the datasets are in Table \ref{tab:graphclass}. The best score is with the dataset hcp\_gender, for which the best parameters are $\lambda = 10^{-4} $, $\rho = 1$ and $\gamma = 10^{-5}$. 
+In this work is implemented also the classification. It is written in R code, and, to compute the accuracy score, we were able to extract the predicted values and the true values. The main function is \textit{graphclass()}, and has three parameters to try and tune, that are lamba $\lambda$, rho $\rho$ and gamma $\gamma$. As in the previous experiments, we run the algorithm 10 times for each dataset, then compute the mean of all accuracies and the standard deviation. The results for all the datasets are in Table \ref{tab:graphclass}. The best score is with the dataset hcp\_gender left in weighted form, for which the best parameters are $\lambda = 10^{-4} $, $\rho = 1$ and $\gamma = 10^{-5}$. 
 \vspace{0.5cm}
 
 The mean of the running time is 5 minutes, anyway it is not more than 11 minutes, depending on the length of the data. 
@@ -148,15 +148,15 @@ The mean of the running time is 5 minutes, anyway it is not more than 11 minutes
 		\toprule
 		& \multicolumn{1}{c|}{b} & w                \\ 
 		\midrule
-		\textbf{children}      & 0.59 $\pm$ 0.09        & 0.54 $\pm$ 0.07  \\
+		\textbf{children}      & 0.46 $\pm$ 0.14        & 0.55 $\pm$ 0.04  \\
 		\textbf{adolescents}   & 0.61 $\pm$ 0.05        & 0.61 $\pm$ 0.05  \\
 		\textbf{eyesclosed}    & 0.55 $\pm$ 0.05        & 0.55 $\pm$ 0.05  \\
 		\textbf{male}          & 0.61 $\pm$ 0.02        & 0.61 $\pm$ 0.02  \\
-		\textbf{ABIDE}         & 0.61 $\pm$ 0.04        & 0.58 $\pm$ 0.03  \\
-		\textbf{mta}           & 0.71 $\pm$ 0.03        & 0.68 $\pm$ 0.02  \\
-		\textbf{hcp\_gender}   & \textbf{0.77 $\pm$ 0.01}        & 0.71 $\pm$ 0.03  \\
-		\textbf{schizophrenia} & 0.58 $\pm$ 0.09        & 0.59 $\pm$ 0.06  \\
-		\textbf{mta\_cannabis} & 0.57 $\pm$ 0.07        & 0.59 $\pm$ 0.12 
+		\textbf{ABIDE}         & 0.63 $\pm$ 0.04        & 0.65 $\pm$ 0.04  \\
+		\textbf{mta}           & 0.72 $\pm$ 0.05        & 0.69 $\pm$ 0.03  \\
+		\textbf{hcp\_gender}   & 0.75 $\pm$ 0.03        & \textbf{0.84 $\pm$ 0.01}  \\
+		\textbf{schizophrenia} & 0.74 $\pm$ 0.15        & 0.74 $\pm$ 0.07  \\
+		\textbf{mta\_cannabis} & 0.53 $\pm$ 0.10        & 0.58 $\pm$ 0.11 
 	\end{tabular}
 \caption{Results of Network classification method with each dataset.}
 \label{tab:graphclass}
@@ -209,51 +209,51 @@ We can see the summary of all the results mentioned in this chapter in Table \re
 \begin{table}
 	\centerline{
 	\setlength{\tabcolsep}{2.25pt}	
-	\begin{tabular}{c|c|c|c|l|l}
-		\multicolumn{1}{c}{}                                                         &                        & \textbf{Contrast-subgraph}        & \textbf{GraphEmbs}          & \multicolumn{1}{c|}{\textbf{Biomarkers}} & \multicolumn{1}{c}{\textbf{Graphclass}}  \\ 
+	\begin{tabular}{c|c|c|c|c|c}
+		\multicolumn{1}{c}{}                                         &                        & \textbf{Contrast-subgraph} & \textbf{GraphEmbs} & \textbf{Biomarkers}   & \textbf{Graphclass}                                   \\ 
 		\bottomrule
-		\multirow{2}{*}{\textbf{children}}                                           & b                      & 0.51 $\pm$ 0.02  & 0.55~$\pm$ 0.02             & \multicolumn{1}{c|}{}                    & \multicolumn{1}{c}{}                     \\ 
+		\multirow{2}{*}{\textbf{children}}                           & b                      & 0.51 $\pm$ 0.04            & 0.55 $\pm$ 0.05    &                       & 0.46 $\pm$ 0.14                      \\ 
 		\cline{2-6}
-		& w                      & 0.49 $\pm$    & 0.56$\pm$ & \multicolumn{1}{c|}{}                    & \multicolumn{1}{c}{}                     \\ 
+		& w                      & 0.49 $\pm$ 0.08            & 0.56 $\pm$ 0.05    &                       & 0.55 $\pm$ 0.04                      \\ 
 		\bottomrule
-		\multirow{2}{*}{\textbf{adolescents}}                                        & b                      & 0.53 $\pm$      & 0.59$\pm$ & \multicolumn{1}{c|}{}                    & \multicolumn{1}{c}{}                     \\ 
+		\multirow{2}{*}{\textbf{adolescents}}                        & b                      & 0.53 $\pm$ 0.03            & 0.59 $\pm$ 0.07    &                       & 0.61 $\pm$ 0.05                      \\ 
 		\cline{2-6}
-		& \multicolumn{1}{l|}{w} & 0.53 $\pm$    & 0.59 $\pm$ &                                          &                                          \\ 
+		& \multicolumn{1}{l|}{w} & 0.53 $\pm$ 0.03            & 0.59 $\pm$ 0.07    & \multicolumn{1}{l|}{} & \multicolumn{1}{l}{0.61 $\pm$ 0.05}  \\ 
 		\midrule
-		\multirow{2}{*}{\textbf{eyesclosed}}                                         & b                      & 0.54 $\pm$     & 0.57 $\pm$ & \multicolumn{1}{c|}{}                    & \multicolumn{1}{c}{}                     \\ 
+		\multirow{2}{*}{\textbf{eyesclosed}}                         & b                      & 0.54 $\pm$ 0.09            & 0.57 $\pm$ 0.04    &                       & 0.55 $\pm$0.05                      \\ 
 		\cline{2-6}
-		& \multicolumn{1}{l|}{w} & 0.54 $\pm$     & 0.57 $\pm$ &                                          &                                          \\ 
+		& \multicolumn{1}{l|}{w} & 0.54 $\pm$ 0.09            & 0.57 $\pm$ 0.04    & \multicolumn{1}{l|}{} & 0.55 $\pm$ 0.05                      \\ 
 		\bottomrule
-		\multirow{2}{*}{\textbf{male}}                                               & b                      & 0.51 $\pm$     & 0.56 $\pm$ & \multicolumn{1}{c|}{}                    & \multicolumn{1}{c}{}                     \\ 
+		\multirow{2}{*}{\textbf{male}}                               & b                      & 0.51 $\pm$ 0.07            & 0.56 $\pm$ 0.02    &                       & 0.61 $\pm$ 0.02                      \\ 
 		\cline{2-6}
-		& \multicolumn{1}{l|}{w} & 0.51 $\pm$     & 0.56 $\pm$ &                                          &                                          \\ 
+		& \multicolumn{1}{l|}{w} & 0.51 $\pm$ 0.07            & 0.56 $\pm$ 0.02    & \multicolumn{1}{l|}{} & 0.61 $\pm$ 0.02                      \\ 
 		\bottomrule
-		\multirow{2}{*}{\textbf{ABIDE}}                                              & b                      & 0.52 $\pm$     & 0.56 $\pm$& \multicolumn{1}{c|}{}                    & \multicolumn{1}{c}{}                     \\ 
+		\multirow{2}{*}{\textbf{ABIDE}}                              & b                      & 0.52 $\pm$ 0.03            & 0.56 $\pm$ 0.01    &                       & 0.63 $\pm$ 0.04                      \\ 
 		\cline{2-6}
-		& \multicolumn{1}{l|}{w} & 0.52 $\pm$    & 0.57 $\pm$&                                          &                                          \\ 
+		& \multicolumn{1}{l|}{w} & 0.52 $\pm$ 0.06            & 0.57 $\pm$ 0.05    & \multicolumn{1}{l|}{} & 0.65 $\pm$ 0.04                      \\ 
 		\bottomrule
-		\multirow{2}{*}{\textbf{mta}}                                                & b                      & 0.69 $\pm$      & 0.67$\pm$ & \multicolumn{1}{c|}{}                    & \multicolumn{1}{c}{}                     \\ 
+		\multirow{2}{*}{\textbf{mta}}                                & b                      & \textbf{0.69 $\pm$ 0.03}           & 0.67 $\pm$ 0.03    &                       & 0.72 $\pm$ 0.05                      \\ 
 		\cline{2-6}
-		& \multicolumn{1}{l|}{w} & 0.69 $\pm$     & 0.64 $\pm$ &                                          &                                          \\ 
+		& \multicolumn{1}{l|}{w} & \textbf{0.69 $\pm$ 0.02}            & 0.64 $\pm$ 0.09    & \multicolumn{1}{l|}{} & 0.69 $\pm$ 0.03                      \\ 
 		\bottomrule
-		\multirow{2}{*}{\textbf{hcp\_gender}}                                        & b                      & 0.53 $\pm$      & 0.64 $\pm$ & \multicolumn{1}{c|}{}                    & \multicolumn{1}{c}{}                     \\ 
+		\multirow{2}{*}{\textbf{hcp\_gender}}                        & b                      & 0.53 $\pm$ 0.11            & 0.64 $\pm$ 0.08    &                       & 0.75 $\pm$ 0.03                      \\ 
 		\cline{2-6}
-		& \multicolumn{1}{l|}{w} & 0.53 $\pm$      & 0.63 $\pm$ &                                          &                                          \\ 
-		%\cmidrule{1-3}\cline{4-4}\cmidrule{5-6}
+		& \multicolumn{1}{l|}{w} & 0.53 $\pm$ 0.02            & 0.63 $\pm$ 0.02    & \multicolumn{1}{l|}{} & \textbf{0.84 $\pm$ 0.01}             \\ 
 		\bottomrule
-		\multirow{2}{*}{\textbf{schizophrenia}}                                      & b                     & 0.54 $\pm$     & 0.70 $\pm$ & \multicolumn{1}{c|}{}                    & \multicolumn{1}{c}{}         \\ 
+		\multirow{2}{*}{\textbf{schizophrenia}}                      & b                      & 0.54 $\pm$ 0.05            & \textbf{0.70 $\pm$ 0.03}    &                       & 0.74 $\pm$ 0.15                      \\ 
 		\cline{2-6}
-		& \multicolumn{1}{l|}{w} & 0.51 $\pm$      & 0.67 $\pm$ &                                          &                                          \\ 
+		& \multicolumn{1}{l|}{w} & 0.51 $\pm$ 0.06            & 0.67 $\pm$ 0.01    & \multicolumn{1}{l|}{} & 0.74 $\pm$ 0.07                      \\ 
 		\bottomrule
-		\multicolumn{1}{l|}{\multirow{2}{*}{\textbf{mta\_cannabis}}} & b                      & 0.47 $\pm$      & 0.58 $\pm$ &                                          &                                          \\ 
+		\multicolumn{1}{l|}{\multirow{2}{*}{\textbf{mta\_cannabis}}} & b                      & 0.47 $\pm$ 0.04            & 0.58 $\pm$ 0.03    & \multicolumn{1}{l|}{} & 0.53 $\pm$ 0.10                      \\ 
 		\cline{3-6}
-		\multicolumn{1}{l|}{}                                                        & w                      & 0.55 $\pm$      & 0.56 $\pm$ &                                          &                                          \\
+		\multicolumn{1}{l|}{}                                        & w                      & 0.55 $\pm$ 0.10            & 0.56 $\pm$ 0.09    & \multicolumn{1}{l|}{} & 0.58 $\pm$ 0.11                      \\
 		\hline
-	\end{tabular}
-}
-\caption{Accuracy results and standard deviation of each method experimented with each dataset.}
-\label{tab:all_results}
+		\end{tabular}
+	}
+		\caption{Accuracy results and standard deviation of each method experimented with each dataset.}
+		\label{tab:all_results}
 \end{table}
+		
 
 The accuracy is not the only evaluation that is worth to take in consideration. Obviously it is really important to have right results, in order to use these methods for scientific purpuses. What we think also important to evaluate is the running time. All the algortihms that we evaluated have different running times, we can see them in Figure (...). From this plot we can see how much time the work of Guti\'{e}rrez et al. \cite{GutierrezBio} takes to evaluate all the dataset, and this is not very good if we want to make a diagnosis for a patient. 
 \vspace{0.5cm}

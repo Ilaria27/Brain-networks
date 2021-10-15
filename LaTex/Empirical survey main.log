@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  15 OCT 2021 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  15 OCT 2021 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -805,7 +805,11 @@ LaTeX Warning: Unused global option(s):
     [bibliography=totoc].
 
 (./Empirical survey main.aux (./title.aux) (./abstract.aux) (./intro.aux)
-(./survey.aux) (./experiments.aux) (./conclusions.aux))
+(./survey.aux) (./experiments.aux
+
+LaTeX Warning: Label `tab:all_results' multiply defined.
+
+) (./conclusions.aux))
 \openout1 = `"Empirical survey main.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -954,13 +958,13 @@ Chapter 1.
 
 
 ]
-<Immagini/220px-6n-graf.svg.png, id=231, 220.825pt x 145.54375pt>
+<Immagini/220px-6n-graf.svg.png, id=234, 220.825pt x 145.54375pt>
 File: Immagini/220px-6n-graf.svg.png Graphic file (type png)
 <use Immagini/220px-6n-graf.svg.png>
 Package pdftex.def Info: Immagini/220px-6n-graf.svg.png  used on input line 39.
 
 (pdftex.def)             Requested size: 110.41222pt x 72.77168pt.
-<Immagini/220px-Directed.svg.png, id=233, 220.825pt x 198.7425pt>
+<Immagini/220px-Directed.svg.png, id=236, 220.825pt x 198.7425pt>
 File: Immagini/220px-Directed.svg.png Graphic file (type png)
 <use Immagini/220px-Directed.svg.png>
 Package pdftex.def Info: Immagini/220px-Directed.svg.png  used on input line 49
@@ -978,12 +982,12 @@ l.68
 l.68 
       <./Immagini/220px-6n-graf.svg.png> <./Immagini/220px-Directed.svg.png>]
 [4]
-<Immagini/cervello.jpg, id=263, 1656.1875pt x 1358.07375pt>
+<Immagini/cervello.jpg, id=266, 1656.1875pt x 1358.07375pt>
 File: Immagini/cervello.jpg Graphic file (type jpg)
 <use Immagini/cervello.jpg>
 Package pdftex.def Info: Immagini/cervello.jpg  used on input line 94.
 (pdftex.def)             Requested size: 132.49771pt x 108.64812pt.
-<Immagini/nbm3752-toc-0001-m.jpg, id=265, 329.96pt x 287.62pt>
+<Immagini/nbm3752-toc-0001-m.jpg, id=268, 329.96pt x 287.62pt>
 File: Immagini/nbm3752-toc-0001-m.jpg Graphic file (type jpg)
 <use Immagini/nbm3752-toc-0001-m.jpg>
 Package pdftex.def Info: Immagini/nbm3752-toc-0001-m.jpg  used on input line 10
@@ -1028,7 +1032,7 @@ Missing character: There is no ™ in font cmr10!
 
 
 ]
-<Immagini/Groupinn1.PNG, id=302, 563.10374pt x 262.73157pt>
+<Immagini/Groupinn1.PNG, id=305, 563.10374pt x 262.73157pt>
 File: Immagini/Groupinn1.PNG Graphic file (type png)
 <use Immagini/Groupinn1.PNG>
 Package pdftex.def Info: Immagini/Groupinn1.PNG  used on input line 31.
@@ -1048,7 +1052,7 @@ l.39 \paragraph
 Missing character: There is no â in font cmbx10!
 Missing character: There is no € in font cmbx10!
 Missing character: There is no ™ in font cmbx10!
-<Immagini/deep-learning1.PNG, id=313, 368.1253pt x 96.36pt>
+<Immagini/deep-learning1.PNG, id=316, 368.1253pt x 96.36pt>
 File: Immagini/deep-learning1.PNG Graphic file (type png)
 <use Immagini/deep-learning1.PNG>
 Package pdftex.def Info: Immagini/deep-learning1.PNG  used on input line 50.
@@ -1067,12 +1071,12 @@ Missing character: There is no ™ in font cmbx10!
                                                   
 l.62 
       <./Immagini/deep-learning1.PNG>]
-<Immagini/functional1.PNG, id=327, 624.08156pt x 183.68625pt>
+<Immagini/functional1.PNG, id=330, 624.08156pt x 183.68625pt>
 File: Immagini/functional1.PNG Graphic file (type png)
 <use Immagini/functional1.PNG>
 Package pdftex.def Info: Immagini/functional1.PNG  used on input line 69.
 (pdftex.def)             Requested size: 312.04001pt x 91.84288pt.
-<Immagini/functional2.PNG, id=329, 721.94719pt x 180.675pt>
+<Immagini/functional2.PNG, id=332, 721.94719pt x 180.675pt>
 File: Immagini/functional2.PNG Graphic file (type png)
 <use Immagini/functional2.PNG>
 Package pdftex.def Info: Immagini/functional2.PNG  used on input line 79.
@@ -1093,7 +1097,7 @@ l.86
                                                   
 l.86 
       <./Immagini/functional1.PNG> <./Immagini/functional2.PNG>]
-<Immagini/functional3.PNG, id=337, 636.87938pt x 260.47313pt>
+<Immagini/functional3.PNG, id=340, 636.87938pt x 260.47313pt>
 File: Immagini/functional3.PNG Graphic file (type png)
 <use Immagini/functional3.PNG>
 Package pdftex.def Info: Immagini/functional3.PNG  used on input line 89.
@@ -1104,7 +1108,7 @@ Package pdftex.def Info: Immagini/functional3.PNG  used on input line 89.
                                                   
 l.106 
        <./Immagini/functional3.PNG>]
-<Immagini/c-s1.PNG, id=348, 398.99063pt x 302.63063pt>
+<Immagini/c-s1.PNG, id=351, 398.99063pt x 302.63063pt>
 File: Immagini/c-s1.PNG Graphic file (type png)
 <use Immagini/c-s1.PNG>
 Package pdftex.def Info: Immagini/c-s1.PNG  used on input line 124.
@@ -1118,7 +1122,7 @@ l.131 	\item I
  <./Immagini/c-s1.PNG>]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
-<Immagini/Unsupervised.PNG, id=366, 584.1825pt x 142.28156pt>
+<Immagini/Unsupervised.PNG, id=369, 584.1825pt x 142.28156pt>
 File: Immagini/Unsupervised.PNG Graphic file (type png)
 <use Immagini/Unsupervised.PNG>
 Package pdftex.def Info: Immagini/Unsupervised.PNG  used on input line 146.
@@ -1129,7 +1133,7 @@ Package pdftex.def Info: Immagini/Unsupervised.PNG  used on input line 146.
                                                   
 l.153 
        <./Immagini/Unsupervised.PNG>]
-<Immagini/unsupervised2.PNG, id=375, 311.66437pt x 158.09062pt>
+<Immagini/unsupervised2.PNG, id=378, 311.66437pt x 158.09062pt>
 File: Immagini/unsupervised2.PNG Graphic file (type png)
 <use Immagini/unsupervised2.PNG>
 Package pdftex.def Info: Immagini/unsupervised2.PNG  used on input line 156.
@@ -1140,12 +1144,12 @@ Package pdftex.def Info: Immagini/unsupervised2.PNG  used on input line 156.
                                                   
 l.169 
        <./Immagini/unsupervised2.PNG>]
-<Immagini/supervised1.PNG, id=383, 193.47281pt x 143.78719pt>
+<Immagini/supervised1.PNG, id=386, 193.47281pt x 143.78719pt>
 File: Immagini/supervised1.PNG Graphic file (type png)
 <use Immagini/supervised1.PNG>
 Package pdftex.def Info: Immagini/supervised1.PNG  used on input line 178.
 (pdftex.def)             Requested size: 154.77846pt x 115.02989pt.
-<Immagini/supervised2.PNG, id=386, 343.2825pt x 114.4275pt>
+<Immagini/supervised2.PNG, id=389, 343.2825pt x 114.4275pt>
 File: Immagini/supervised2.PNG Graphic file (type png)
 <use Immagini/supervised2.PNG>
 Package pdftex.def Info: Immagini/supervised2.PNG  used on input line 188.
@@ -1156,7 +1160,7 @@ Package pdftex.def Info: Immagini/supervised2.PNG  used on input line 188.
                                                   
 l.197 
        <./Immagini/supervised1.PNG>]
-<Immagini/subnetwork1.PNG, id=397, 343.2825pt x 338.76563pt>
+<Immagini/subnetwork1.PNG, id=400, 343.2825pt x 338.76563pt>
 File: Immagini/subnetwork1.PNG Graphic file (type png)
 <use Immagini/subnetwork1.PNG>
 Package pdftex.def Info: Immagini/subnetwork1.PNG  used on input line 217.
@@ -1173,7 +1177,7 @@ ed
                                                   
 l.230 
        <./Immagini/subnetwork1.PNG>] [20]
-<Immagini/integration.PNG, id=422, 357.58594pt x 249.18094pt>
+<Immagini/integration.PNG, id=425, 357.58594pt x 249.18094pt>
 File: Immagini/integration.PNG Graphic file (type png)
 <use Immagini/integration.PNG>
 Package pdftex.def Info: Immagini/integration.PNG  used on input line 251.
@@ -1192,7 +1196,7 @@ ce-dure across modal-
  []
 
 [22]
-<Immagini/stablebiomarkers.PNG, id=443, 612.03656pt x 244.66406pt>
+<Immagini/stablebiomarkers.PNG, id=446, 612.03656pt x 244.66406pt>
 File: Immagini/stablebiomarkers.PNG Graphic file (type png)
 <use Immagini/stablebiomarkers.PNG>
 Package pdftex.def Info: Immagini/stablebiomarkers.PNG  used on input line 293.
@@ -1209,7 +1213,7 @@ Overfull \hbox (37.81905pt too wide) in paragraph at lines 293--294
                                                   
 l.305 
        <./Immagini/stablebiomarkers.PNG>]
-<Immagini/multimodality.PNG, id=453, 565.36218pt x 320.69812pt>
+<Immagini/multimodality.PNG, id=456, 565.36218pt x 320.69812pt>
 File: Immagini/multimodality.PNG Graphic file (type png)
 <use Immagini/multimodality.PNG>
 Package pdftex.def Info: Immagini/multimodality.PNG  used on input line 314.
@@ -1246,7 +1250,7 @@ name{table.3.1}) has been already used, duplicate ignored
                                                   
 l.99 
      ]
-<Immagini/scatterplot_cs_mta.png, id=504, 647.41875pt x 647.41875pt>
+<Immagini/scatterplot_cs_mta.png, id=507, 647.41875pt x 647.41875pt>
 File: Immagini/scatterplot_cs_mta.png Graphic file (type png)
 <use Immagini/scatterplot_cs_mta.png>
 Package pdftex.def Info: Immagini/scatterplot_cs_mta.png  used on input line 10
@@ -1274,7 +1278,7 @@ ble.3.3}) has been already used, duplicate ignored
                                                   
 l.191 
       ]
-<Immagini/fc_83_schizo.png, id=524, 602.7318pt x 569.4876pt>
+<Immagini/fc_83_schizo.png, id=527, 602.7318pt x 569.4876pt>
 File: Immagini/fc_83_schizo.png Graphic file (type png)
 <use Immagini/fc_83_schizo.png>
 Package pdftex.def Info: Immagini/fc_83_schizo.png  used on input line 194.
@@ -1324,38 +1328,44 @@ Missing character: There is no – in font cmr10!
 ) [41]
 (./Empirical survey main.aux (./title.aux) (./abstract.aux) (./intro.aux)
 (./survey.aux) (./experiments.aux) (./conclusions.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `"Empirical survey main".out' has not changed
 .
 (rerunfilecheck)             Checksum: 0274998CE25216743E915B30A30E52F1;4244.
  ) 
 Here is how much of TeX's memory you used:
- 21316 strings out of 478994
- 393974 string characters out of 5858184
- 695992 words of memory out of 5000000
+ 21317 strings out of 478994
+ 393983 string characters out of 5858184
+ 697031 words of memory out of 5000000
  38176 multiletter control sequences out of 15000+600000
  413021 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,12n,93p,1353b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on "Empirical survey main.pdf" (46 pages, 2682575 bytes).
+pdfTeX warning (dest): name{table.3.6} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
+/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on "Empirical survey main.pdf" (46 pages, 2683019 bytes).
 PDF statistics:
- 653 PDF objects out of 1000 (max. 8388607)
- 544 compressed objects within 6 object streams
- 144 named destinations out of 1000 (max. 500000)
+ 658 PDF objects out of 1000 (max. 8388607)
+ 549 compressed objects within 6 object streams
+ 145 named destinations out of 1000 (max. 500000)
  302 words of extra memory for PDF output out of 10000 (max. 10000000)
 
