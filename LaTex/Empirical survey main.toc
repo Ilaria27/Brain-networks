@@ -32,7 +32,7 @@
 \contentsline {subsection}{\numberline {3.2.2}Results of Unsupervised Network Embedding for Graph Visualization, Clustering and Classification}{31}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Results of Network Classification with Application to Brain Connectomics}{32}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Results of Stable Biomarker Identification for Predicting Schizophrenia in the Human Connectome}{33}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Discussion}{34}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Discussion}{36}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Conclusions}{38}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Future works}{38}{section.4.1}%
 \contentsline {chapter}{Bibliography}{39}{chapter*.19}%
