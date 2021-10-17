@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  16 OCT 2021 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  17 OCT 2021 17:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -938,12 +938,12 @@ l.14 	\listoffigures
 
  [2
 
-]
+] [3]
 (./Empirical survey main.lot)
 \tf@lot=\write8
 \openout8 = `"Empirical survey main.lot"'.
 
- [3
+ [4
 
 ]
 \openout2 = `intro.aux'.
@@ -954,13 +954,13 @@ Chapter 1.
 
 
 ]
-<Immagini/220px-6n-graf.svg.png, id=233, 220.825pt x 145.54375pt>
+<Immagini/220px-6n-graf.svg.png, id=239, 220.825pt x 145.54375pt>
 File: Immagini/220px-6n-graf.svg.png Graphic file (type png)
 <use Immagini/220px-6n-graf.svg.png>
 Package pdftex.def Info: Immagini/220px-6n-graf.svg.png  used on input line 39.
 
 (pdftex.def)             Requested size: 110.41222pt x 72.77168pt.
-<Immagini/220px-Directed.svg.png, id=235, 220.825pt x 198.7425pt>
+<Immagini/220px-Directed.svg.png, id=241, 220.825pt x 198.7425pt>
 File: Immagini/220px-Directed.svg.png Graphic file (type png)
 <use Immagini/220px-Directed.svg.png>
 Package pdftex.def Info: Immagini/220px-Directed.svg.png  used on input line 49
@@ -978,12 +978,12 @@ l.68
 l.68 
       <./Immagini/220px-6n-graf.svg.png> <./Immagini/220px-Directed.svg.png>]
 [4]
-<Immagini/cervello.jpg, id=265, 1656.1875pt x 1358.07375pt>
+<Immagini/cervello.jpg, id=270, 1656.1875pt x 1358.07375pt>
 File: Immagini/cervello.jpg Graphic file (type jpg)
 <use Immagini/cervello.jpg>
 Package pdftex.def Info: Immagini/cervello.jpg  used on input line 94.
 (pdftex.def)             Requested size: 132.49771pt x 108.64812pt.
-<Immagini/nbm3752-toc-0001-m.jpg, id=267, 329.96pt x 287.62pt>
+<Immagini/nbm3752-toc-0001-m.jpg, id=272, 329.96pt x 287.62pt>
 File: Immagini/nbm3752-toc-0001-m.jpg Graphic file (type jpg)
 <use Immagini/nbm3752-toc-0001-m.jpg>
 Package pdftex.def Info: Immagini/nbm3752-toc-0001-m.jpg  used on input line 10
@@ -1028,7 +1028,7 @@ Missing character: There is no ™ in font cmr10!
 
 
 ]
-<Immagini/Groupinn1.PNG, id=304, 563.10374pt x 262.73157pt>
+<Immagini/Groupinn1.PNG, id=309, 563.10374pt x 262.73157pt>
 File: Immagini/Groupinn1.PNG Graphic file (type png)
 <use Immagini/Groupinn1.PNG>
 Package pdftex.def Info: Immagini/Groupinn1.PNG  used on input line 31.
@@ -1048,7 +1048,7 @@ l.39 \paragraph
 Missing character: There is no â in font cmbx10!
 Missing character: There is no € in font cmbx10!
 Missing character: There is no ™ in font cmbx10!
-<Immagini/deep-learning1.PNG, id=315, 368.1253pt x 96.36pt>
+<Immagini/deep-learning1.PNG, id=320, 368.1253pt x 96.36pt>
 File: Immagini/deep-learning1.PNG Graphic file (type png)
 <use Immagini/deep-learning1.PNG>
 Package pdftex.def Info: Immagini/deep-learning1.PNG  used on input line 50.
@@ -1067,12 +1067,12 @@ Missing character: There is no ™ in font cmbx10!
                                                   
 l.62 
       <./Immagini/deep-learning1.PNG>]
-<Immagini/functional1.PNG, id=329, 624.08156pt x 183.68625pt>
+<Immagini/functional1.PNG, id=334, 624.08156pt x 183.68625pt>
 File: Immagini/functional1.PNG Graphic file (type png)
 <use Immagini/functional1.PNG>
 Package pdftex.def Info: Immagini/functional1.PNG  used on input line 69.
 (pdftex.def)             Requested size: 312.04001pt x 91.84288pt.
-<Immagini/functional2.PNG, id=331, 721.94719pt x 180.675pt>
+<Immagini/functional2.PNG, id=336, 721.94719pt x 180.675pt>
 File: Immagini/functional2.PNG Graphic file (type png)
 <use Immagini/functional2.PNG>
 Package pdftex.def Info: Immagini/functional2.PNG  used on input line 79.
@@ -1093,7 +1093,7 @@ l.86
                                                   
 l.86 
       <./Immagini/functional1.PNG> <./Immagini/functional2.PNG>]
-<Immagini/functional3.PNG, id=339, 636.87938pt x 260.47313pt>
+<Immagini/functional3.PNG, id=344, 636.87938pt x 260.47313pt>
 File: Immagini/functional3.PNG Graphic file (type png)
 <use Immagini/functional3.PNG>
 Package pdftex.def Info: Immagini/functional3.PNG  used on input line 89.
@@ -1104,7 +1104,7 @@ Package pdftex.def Info: Immagini/functional3.PNG  used on input line 89.
                                                   
 l.106 
        <./Immagini/functional3.PNG>]
-<Immagini/c-s1.PNG, id=350, 398.99063pt x 302.63063pt>
+<Immagini/c-s1.PNG, id=355, 398.99063pt x 302.63063pt>
 File: Immagini/c-s1.PNG Graphic file (type png)
 <use Immagini/c-s1.PNG>
 Package pdftex.def Info: Immagini/c-s1.PNG  used on input line 124.
@@ -1118,7 +1118,7 @@ l.131 	\item I
  <./Immagini/c-s1.PNG>]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
-<Immagini/Unsupervised.PNG, id=368, 584.1825pt x 142.28156pt>
+<Immagini/Unsupervised.PNG, id=373, 584.1825pt x 142.28156pt>
 File: Immagini/Unsupervised.PNG Graphic file (type png)
 <use Immagini/Unsupervised.PNG>
 Package pdftex.def Info: Immagini/Unsupervised.PNG  used on input line 146.
@@ -1129,7 +1129,7 @@ Package pdftex.def Info: Immagini/Unsupervised.PNG  used on input line 146.
                                                   
 l.153 
        <./Immagini/Unsupervised.PNG>]
-<Immagini/unsupervised2.PNG, id=377, 311.66437pt x 158.09062pt>
+<Immagini/unsupervised2.PNG, id=382, 311.66437pt x 158.09062pt>
 File: Immagini/unsupervised2.PNG Graphic file (type png)
 <use Immagini/unsupervised2.PNG>
 Package pdftex.def Info: Immagini/unsupervised2.PNG  used on input line 156.
@@ -1140,12 +1140,12 @@ Package pdftex.def Info: Immagini/unsupervised2.PNG  used on input line 156.
                                                   
 l.169 
        <./Immagini/unsupervised2.PNG>]
-<Immagini/supervised1.PNG, id=385, 193.47281pt x 143.78719pt>
+<Immagini/supervised1.PNG, id=390, 193.47281pt x 143.78719pt>
 File: Immagini/supervised1.PNG Graphic file (type png)
 <use Immagini/supervised1.PNG>
 Package pdftex.def Info: Immagini/supervised1.PNG  used on input line 178.
 (pdftex.def)             Requested size: 154.77846pt x 115.02989pt.
-<Immagini/supervised2.PNG, id=388, 343.2825pt x 114.4275pt>
+<Immagini/supervised2.PNG, id=393, 343.2825pt x 114.4275pt>
 File: Immagini/supervised2.PNG Graphic file (type png)
 <use Immagini/supervised2.PNG>
 Package pdftex.def Info: Immagini/supervised2.PNG  used on input line 188.
@@ -1156,7 +1156,7 @@ Package pdftex.def Info: Immagini/supervised2.PNG  used on input line 188.
                                                   
 l.197 
        <./Immagini/supervised1.PNG>]
-<Immagini/subnetwork1.PNG, id=399, 343.2825pt x 338.76563pt>
+<Immagini/subnetwork1.PNG, id=404, 343.2825pt x 338.76563pt>
 File: Immagini/subnetwork1.PNG Graphic file (type png)
 <use Immagini/subnetwork1.PNG>
 Package pdftex.def Info: Immagini/subnetwork1.PNG  used on input line 217.
@@ -1173,7 +1173,7 @@ ed
                                                   
 l.230 
        <./Immagini/subnetwork1.PNG>] [20]
-<Immagini/integration.PNG, id=424, 357.58594pt x 249.18094pt>
+<Immagini/integration.PNG, id=429, 357.58594pt x 249.18094pt>
 File: Immagini/integration.PNG Graphic file (type png)
 <use Immagini/integration.PNG>
 Package pdftex.def Info: Immagini/integration.PNG  used on input line 251.
@@ -1192,7 +1192,7 @@ ce-dure across modal-
  []
 
 [22]
-<Immagini/stablebiomarkers.PNG, id=445, 612.03656pt x 244.66406pt>
+<Immagini/stablebiomarkers.PNG, id=450, 612.03656pt x 244.66406pt>
 File: Immagini/stablebiomarkers.PNG Graphic file (type png)
 <use Immagini/stablebiomarkers.PNG>
 Package pdftex.def Info: Immagini/stablebiomarkers.PNG  used on input line 293.
@@ -1209,7 +1209,7 @@ Overfull \hbox (37.81905pt too wide) in paragraph at lines 293--294
                                                   
 l.305 
        <./Immagini/stablebiomarkers.PNG>]
-<Immagini/multimodality.PNG, id=455, 565.36218pt x 320.69812pt>
+<Immagini/multimodality.PNG, id=460, 565.36218pt x 320.69812pt>
 File: Immagini/multimodality.PNG Graphic file (type png)
 <use Immagini/multimodality.PNG>
 Package pdftex.def Info: Immagini/multimodality.PNG  used on input line 314.
@@ -1246,7 +1246,7 @@ name{table.3.1}) has been already used, duplicate ignored
                                                   
 l.99 
      ]
-<Immagini/scatterplot_cs_mta.png, id=506, 647.41875pt x 647.41875pt>
+<Immagini/scatterplot_cs_mta.png, id=511, 647.41875pt x 647.41875pt>
 File: Immagini/scatterplot_cs_mta.png Graphic file (type png)
 <use Immagini/scatterplot_cs_mta.png>
 Package pdftex.def Info: Immagini/scatterplot_cs_mta.png  used on input line 10
@@ -1274,23 +1274,24 @@ ble.3.3}) has been already used, duplicate ignored
                                                   
 l.191 
       ]
-<Immagini/fc_83_schizo.png, id=526, 602.7318pt x 569.4876pt>
-File: Immagini/fc_83_schizo.png Graphic file (type png)
-<use Immagini/fc_83_schizo.png>
-Package pdftex.def Info: Immagini/fc_83_schizo.png  used on input line 194.
-(pdftex.def)             Requested size: 301.36516pt x 284.7431pt.
+<Immagini/fc_83_hcp_gender.png, id=531, 526.96875pt x 425.59pt>
+File: Immagini/fc_83_hcp_gender.png Graphic file (type png)
+<use Immagini/fc_83_hcp_gender.png>
+Package pdftex.def Info: Immagini/fc_83_hcp_gender.png  used on input line 194.
+
+(pdftex.def)             Requested size: 263.48372pt x 212.79446pt.
  [34pdfTeX warning (ext4): destination with the same identifier (name{table.3.4
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.199 \newpage
-              ] [35pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.3.2}) has been already used, duplicate ignored
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.199 \newpage
-               <./Immagini/fc_83_schizo.png>]
-<Immagini/runtimes_w.png, id=539, 1371.1225pt x 687.56876pt>
+               <./Immagini/fc_83_hcp_gender.png>]
+<Immagini/runtimes_w.png, id=540, 1371.1225pt x 687.56876pt>
 File: Immagini/runtimes_w.png Graphic file (type png)
 <use Immagini/runtimes_w.png>
 Package pdftex.def Info: Immagini/runtimes_w.png  used on input line 263.
@@ -1300,12 +1301,12 @@ Overfull \hbox (51.33992pt too wide) in paragraph at lines 263--264
  [][] 
  []
 
-[36pdfTeX warning (ext4): destination with the same identifier (name{table.3.5}
+[35pdfTeX warning (ext4): destination with the same identifier (name{table.3.5}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.269 
-      ]) [37pdfTeX warning (ext4): destination with the same identifier (name{f
+      ]) [36pdfTeX warning (ext4): destination with the same identifier (name{f
 igure.3.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
@@ -1315,7 +1316,7 @@ l.19 	\include{experiments}
 
  (./conclusions.tex
 Chapter 4.
-) [38
+) [37
 
 
 
@@ -1324,7 +1325,7 @@ Chapter 4.
 Missing character: There is no ó in font cmr10!
 Missing character: There is no ’ in font cmr10!
 Missing character: There is no ê in font cmr10!
- [39
+ [38
 
 
 
@@ -1334,9 +1335,9 @@ Missing character: There is no é in font cmr10!
 Missing character: There is no ó in font cmr10!
 Missing character: There is no ê in font cmr10!
 Missing character: There is no – in font cmr10!
- [40]
+ [39]
 Missing character: There is no – in font cmr10!
-) [41]
+) [40]
 (./Empirical survey main.aux (./title.aux) (./abstract.aux) (./intro.aux)
 (./survey.aux) (./experiments.aux) (./conclusions.aux))
 Package rerunfilecheck Info: File `"Empirical survey main".out' has not changed
@@ -1345,8 +1346,8 @@ Package rerunfilecheck Info: File `"Empirical survey main".out' has not changed
  ) 
 Here is how much of TeX's memory you used:
  21324 strings out of 478994
- 394147 string characters out of 5858184
- 700070 words of memory out of 5000000
+ 394171 string characters out of 5858184
+ 700096 words of memory out of 5000000
  38182 multiletter control sequences out of 15000+600000
  413021 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1367,10 +1368,10 @@ exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on "Empirical survey main.pdf" (46 pages, 2692617 bytes).
+Output written on "Empirical survey main.pdf" (46 pages, 2683090 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
- 549 compressed objects within 6 object streams
+ 661 PDF objects out of 1000 (max. 8388607)
+ 550 compressed objects within 6 object streams
  145 named destinations out of 1000 (max. 500000)
  307 words of extra memory for PDF output out of 10000 (max. 10000000)
 

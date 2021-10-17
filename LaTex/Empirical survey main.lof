@@ -20,6 +20,6 @@
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Structure of the deep neural network of Deep Matrix Factorization}}{24}{figure.2.14}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Scatterplot of number of edges induced by the contrast subgraphs to mta dataset. At $x$-axis there the number of edges induced by the contrast subgraph ASD-TD, while at $y$-axis the once induced by the contrast subgraph TD-ASD, on each patient.}}{31}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Graph representing the accuracy according to the percentage of features selected to make classification.}}{35}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Runtime in minutes for each dataset and each method.}}{37}{figure.3.3}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Graph representing the accuracy according to the percentage of features selected to make classification, using hcp\_gender dataset.}}{34}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Runtime in minutes for each dataset and each method.}}{36}{figure.3.3}%
 \addvspace {10\p@ }
