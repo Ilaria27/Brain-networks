@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Empirical survey main.aux
 A level-1 auxiliary file: title.aux
@@ -7,20 +7,21 @@ A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: survey.aux
 A level-1 auxiliary file: experiments.aux
 A level-1 auxiliary file: conclusions.aux
+A level-1 auxiliary file: acknowledgements.aux
 The style file: abbrv.bst
 Database file #1: references.bib
 Repeated entry---line 352 of file references.bib
  : @article{beck2009fast
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 386 of file references.bib
+Repeated entry---line 369 of file references.bib
  : @misc{preservation
  :                   ,
 I'm skipping whatever remains of this entry
 Warning--empty journal in koutra2013deltacon
 You've used 29 entries,
             2118 wiz_defined-function locations,
-            688 strings with 10692 characters,
+            689 strings with 10712 characters,
 and the built_in function-call counts, 11644 in all, are:
 = -- 1070
 > -- 779

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  17 OCT 2021 17:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  18 OCT 2021 02:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -805,7 +805,8 @@ LaTeX Warning: Unused global option(s):
     [bibliography=totoc].
 
 (./Empirical survey main.aux (./title.aux) (./abstract.aux) (./intro.aux)
-(./survey.aux) (./experiments.aux) (./conclusions.aux))
+(./survey.aux) (./experiments.aux) (./conclusions.aux) (./acknowledgements.aux)
+)
 \openout1 = `"Empirical survey main.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -827,8 +828,7 @@ LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 Package hyperref Info: Link coloring OFF on input line 9.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1321,11 +1321,19 @@ Chapter 4.
 
 
 
-] (./Empirical survey main.bbl
+]
+\openout2 = `acknowledgements.aux'.
+
+ (./acknowledgements.tex [38
+
+
+
+
+]) [39] (./Empirical survey main.bbl
 Missing character: There is no ó in font cmr10!
 Missing character: There is no ’ in font cmr10!
 Missing character: There is no ê in font cmr10!
- [38
+ [40
 
 
 
@@ -1335,23 +1343,24 @@ Missing character: There is no é in font cmr10!
 Missing character: There is no ó in font cmr10!
 Missing character: There is no ê in font cmr10!
 Missing character: There is no – in font cmr10!
- [39]
+
+[41]
 Missing character: There is no – in font cmr10!
-) [40]
-(./Empirical survey main.aux (./title.aux) (./abstract.aux) (./intro.aux)
-(./survey.aux) (./experiments.aux) (./conclusions.aux))
+) [42] (./Empirical survey main.aux (./title.aux) (./abstract.aux)
+(./intro.aux) (./survey.aux) (./experiments.aux) (./conclusions.aux)
+(./acknowledgements.aux))
 Package rerunfilecheck Info: File `"Empirical survey main".out' has not changed
 .
-(rerunfilecheck)             Checksum: 0274998CE25216743E915B30A30E52F1;4244.
+(rerunfilecheck)             Checksum: FB02F37AE1A4EB4B7DE953A23850654B;4244.
  ) 
 Here is how much of TeX's memory you used:
- 21324 strings out of 478994
- 394171 string characters out of 5858184
- 700096 words of memory out of 5000000
- 38182 multiletter control sequences out of 15000+600000
+ 21337 strings out of 478994
+ 394397 string characters out of 5858184
+ 700635 words of memory out of 5000000
+ 38185 multiletter control sequences out of 15000+600000
  413021 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,12n,93p,1353b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 94i,12n,93p,1353b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -1368,10 +1377,10 @@ exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on "Empirical survey main.pdf" (46 pages, 2683090 bytes).
+Output written on "Empirical survey main.pdf" (48 pages, 2686386 bytes).
 PDF statistics:
- 661 PDF objects out of 1000 (max. 8388607)
- 550 compressed objects within 6 object streams
- 145 named destinations out of 1000 (max. 500000)
+ 670 PDF objects out of 1000 (max. 8388607)
+ 557 compressed objects within 6 object streams
+ 148 named destinations out of 1000 (max. 500000)
  307 words of extra memory for PDF output out of 10000 (max. 10000000)
 
