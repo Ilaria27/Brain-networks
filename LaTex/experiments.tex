@@ -3,6 +3,9 @@
 \section{Experimental setup}
 \subsection{Methods studied}
 So far, we have seen some methods for brain network classification. Now we are going to describe the experiments done with some of them, to evaluate their performance in a more general setting. This means that the experiments are done with other brain networks datasets. In particular, the methods we are going to experiment are four:
+\begin{comment}
+cite the reference and not the chapter
+\end{comment}
 \begin{itemize}
 	\item Explainable Classification of Brain Networks via Contrast Subgraphs \ref{par:1};
 	\item Unsupervised Network Embedding for Graph Visualization, Clustering and Classification \ref{par:2};
@@ -15,7 +18,7 @@ To make a recap and have in mind what we are studying, we will briefly summarize
 The first in the list aims to extract a constrast-subgraph, a set of vertices whose induced subgraph is dense in the summary graph of the condition group, and sparse in the summary graph of the control group. To make classification they calculated the number of edges of the subgraph induced by the contrast subgraphs (ASD-TD and TD-ASD) for each patient. They made classification with these two features and an SVM.
 \vspace{0.5cm}
 
-In Unsupervised network embedding, they train an autoecoder neural network that construct a feature space for each graph in input. These features, composed of embedding vectors, will be the input of a classification function. 
+In Unsupervised network embedding, they train an autoencoder neural network that construct a feature space for each graph in input. These features, composed of embedding vectors, will be the input of a classification function. 
 \vspace{0.5cm}
 
 Network Classification is given us like a library of the programming language R. Their aim is to find nodes or subnetworks with good discriminative power, meaning that they want to select only the most informative nodes and edges. To capture structural assumptions on these informative edges, they focus on convex structured sparsity penalties, with convex optimization. 
@@ -24,7 +27,8 @@ Network Classification is given us like a library of the programming language R.
 In Stable Biomarkers identification they perform an automatic feature selection procedure to identify biomarkers that will be used to classify brain networks. In this case classify people affected by schizophrenia. To make classification they also design a RFE-SVM classifier. 
 
 \subsection{Datasets used}
-The principle datasets are four big ones, from which are extracted other ones. The main four are:
+
+We are employing datasets coming from 4 different sources, from which we create different datasets selecting patients that match for specific metadata. The four sources are:
 \begin{itemize}
 	\item \textbf{ABIDE} (Autism Brain Imaging Data Exchange) \cite{Cameron2013TheNB}, is a collaboration of 16 international imaging sites that have aggregated and are openly sharing neuroimaging data from 539 individuals suffering from ASD (autism) and 573 typical controls. These 1112 datasets are composed of structural and resting state functional MRI data along with an extensive array of phenotypic information. All data are preprocessed and different types of preprocessing are described in the web site.
 	\item \textbf{MTA} (Multimodal Treatment of Attention Deficit Hyperactivity Disorder) \cite{mta}, datasets from a subset of MTA participants at 6 sites, both with and without childhood ADHD, who were studied as part of a follow-up multimodal brain imaging examination. The principal aim of the effort was to investigate the effect of cannabis use among adults with a childhood diagnosis of ADHD. The study was a 2x2 design of those with/without ADHD and those who did/did not regularly use cannabis.
@@ -32,7 +36,7 @@ The principle datasets are four big ones, from which are extracted other ones. T
 	\item \textbf{Schizophrenia} \cite{schizo}, is a dataset acquired from approximately 100 patients with schizophrenia and 100 age-matched controls during rest as well as several task activation paradigms targeting a hierarchy of cognitive constructs. Neuroimaging data include structural MRI, functional MRI, diffusion MRI, MR spectroscopic imaging, and magneto-encephalography.
 \end{itemize}
 
-The datasets have been extracted from ABIDE are four, \textit{Children}, that includes patients which are at most 9 years, \textit{Adolescents}, individuals between 15 and 20 years old, \textit{EyesClosed}, with people that performed their fMRI with their eyes closed, and \textit{Male}, considering only male subjects. These had been already extracted by T. Lanciano et al \cite{lanciano2020cs}, and kindly given to me to make experiments. We want to stress that, except from ABIDE and \textit{children}, the others are only in binary form, meaning that they have not weighted edges, but only zeros and ones (1 if there is a connection, 0 if there is not).
+The datasets have been extracted from ABIDE are four, \textit{Children}, that includes patients which are at most 9 years, \textit{Adolescents}, individuals between 15 and 20 years old, \textit{EyesClosed}, with people that performed their fMRI with their eyes closed, and \textit{Male}, considering only male subjects. We want to stress that, except from ABIDE and \textit{children}, the others are only in binary form, meaning that they have not weighted edges, but only zeros and ones (1 if there is a connection, 0 if there is not).
 \vspace{0.5cm}
 
 From HCP dataset we though that could be interesting to divide male and female patients, dataset that we will call hcp\_gender, to see if they are in some way different in their brain connections, like in some other papers described in \ref{chap:2}. 
@@ -40,7 +44,9 @@ From HCP dataset we though that could be interesting to divide male and female p
 
 From MTA we exstracted two datasets, one that divides between patients with ADHD and patients without it, that we will call \textit{mta}, and a dataset that distiguish people that make use of cannabis, from people that do not use it, that we will call \textit{mta\_cannabis}.
 \vspace{0.5cm}
-
+\begin{comment}
+	Maybe a table summarize everything better, and you can also specify name and content of the dataset.
+\end{comment}
 At the end we have nine datasets: ABIDE, Children, Adolescents, EyesClosed, Male, mta, mta\_cannabis, Schizophrenia and hcp\_gender. 
 \vspace{0.5cm}
 
@@ -53,8 +59,12 @@ All the experiments were launched with the program Anaconda. We start with an en
 To make the experiments easier to perform, was implemented a python script at which can be specified, as input arguments, which method we want to evaluate, which dataset to use and even if the data must be weighted or binary, meaning that one can choose to have weighted edges of the network, or binary ones. Obviously, the dataset that are already in binary form, will not be studied in weighted form, but will be left as they are, except from the preprocessing.
 \vspace{0.5cm}
 
-After a method has been runned there is the classification part. The classification is done for only two of the methods we take in consideration. These are \textit{Explainable Classification of Brain Networks via Contrast Subgraphs} \cite{lanciano2020cs} and \textit{Unsupervised Network Embedding for Graph Visualization, Clustering and Classification} \cite{GutierrezUn}, because, as said in their summary explanation, what we extract form them are some features of the graphs in input, and for this reason we have to design a classification for them. The other two methods have their own classification in the code, and we though it was not reasonable to use a different one.
+\begin{comment}
+	express everything in percentiles. wrong explanation, we do the opposite.
+\end{comment}
+After a method has been runned there is the classification part. The classification is done for only two of the methods we take in consideration. These are \textit{Explainable Classification of Brain Networks via Contrast Subgraphs} \cite{lanciano2020cs} and \textit{Unsupervised Network Embedding for Graph Visualization, Clustering and Classification} \cite{GutierrezUn}, because, as said in their summary explanation, they are working in this setup as an embedding, and for this reason we have to design a classification for them. The other two methods have their own classification in the code, and we thought it was not reasonable to use a different one.
 \vspace{0.5cm}
+
 
 Our classifier is designed with the grid search function of the Python library sklearn, to find the best parameters for each method. We used a cross-validation of 5/10 folds, repeated 5 times. To split the dataset we choose to have 80\% of train set and 20\% of test set. Then from the best parameters found, we make predictions and evaluate the performance with \textbf{accuracy}. The accuracy is calculated directly from the grid search function for each loop of the cross-validation, so we take the mean of all the values. 
 \vspace{0.5cm}
@@ -65,12 +75,15 @@ All datasets have their own preprocess, made from who released the data. We also
 Now, as we said, we could choose if transform the datasets in binary edged or leave them with weighted edges. If it is chosen to transform them in binary data, after leaving out the values below and above the quantiles, all the values different from zero are transformed in ones, even the negative values.
 
 \section{Results}
+\begin{comment}
+	Table xx reports the results of the experiment etcetc
+\end{comment}
 Now we are going to show the results of each method.
 \vspace{0.5cm}
 
 \subsection{Results of Explainable Classification of Brain Networks via Contrast Subgraphs}
 
-With the code taken from the work of Lanciano et al \cite{lanciano2020cs} we extract the two contrast-subgraphs ASD-TD and TD-ASD. Then we calculate the subgraphs induced by the two contrast-subgraphs on each patient. For each subgraph obtained we count the number of edges. In this way we have two features (columns), one is the number of edges induced by ASD-TD for each patient, and the other is the number of edges induced by TD-ASD for each patient.  Each patient is represented by a row. We give these features to the classifier described in the previous section, designed by us. This procedure is done for each dataset, and for each dataset is done for weighted data and binary data. The parameter $\alpha$ is obtained by taking the percentile of the summary graphs of the two study groups. The percentile is decided through meny experiments, we tried with the percentiles $ = {70, 75, 80, 85, 90, 95}$ for each dataset.
+With the code taken from the work of Lanciano et al \cite{lanciano2020cs} we extract the two contrast-subgraphs ASD-TD and TD-ASD. Then we calculate the subgraphs induced by the two contrast-subgraphs on each patient. For each subgraph obtained we count the number of edges. In this way we have two features (columns), one is the number of edges induced by ASD-TD for each patient, and the other is the number of edges induced by TD-ASD for each patient.  Each patient is represented by a row. We give these features to the classifier described in the previous section, designed by us. This procedure is done for each dataset, and for each dataset is done for weighted data and binary data. The parameter $\alpha$ is obtained by taking the percentile of the summary graphs of the two study groups. The percentile is decided through many experiments, we tried with the percentiles $ = {70, 75, 80, 85, 90, 95}$ for each dataset.
 \vspace{0.5cm}
 
 Each experiment is repeated ten times, in order to take the mean of all the accuracies, and the standard deviation. The results obtained with each dataset is shown in Table \ref{tab:c-s}. We can see that the best result with this method is given with the dataset \textit{mta} both in binary and weighted form. The running time to extract the contrast-subgraphs is very low, only few seconds, and the running time to make classification is at most 16 minutes.
@@ -199,7 +212,7 @@ The running time of this implementation is very high, it depends on the dimentio
 \newpage
 \section{Discussion}
 
-We can see the summary of all the results mentioned in this chapter in Table \ref{tab:all_results}. In general, we do not have very hihg results. This could be due to preprocessing and parameters tuning reasons. Anyway, according to our experiments, the methods that have best accuracy are \textit{Stable Biomarkers identification for predicting schizophrenia in Human Connectome} and textit{Network classification with Application to Brain Connectomics}. This means that they are valid tools to make classification on brain networks. 
+We can see the summary of all the results mentioned in this chapter in Table \ref{tab:all_results}. In general, we do not have very high results. This could be due to preprocessing and parameters tuning reasons. Anyway, according to our experiments, the methods that have best accuracy are \textit{Stable Biomarkers identification for predicting schizophrenia in Human Connectome} and textit{Network classification with Application to Brain Connectomics}. This means that they are valid tools to make classification on brain networks. 
 \vspace{0.5cm}
 
 % \usepackage{multirow}
@@ -255,7 +268,7 @@ We can see the summary of all the results mentioned in this chapter in Table \re
 \end{table}
 		
 
-The accuracy is not the only evaluation that is worth to take in consideration. Obviously it is really important to have right results, in order to use these methods for scientific purpuses. What we think also important to evaluate is the running time. All the algortihms that we evaluated have different running times, we can see them in Figure \ref{fig:diagram21}. From this plot we can see how much time the work of Guti\'{e}rrez et al. \cite{GutierrezBio} takes to evaluate all the dataset, and this could not be very good if we want to make a diagnosis for a patient. 
+The accuracy is not the only evaluation that is worth to take in consideration. Obviously it is really important to have right results, in order to use these methods for scientific purposes. What we think also important to evaluate is the running time. All the algorithms that we evaluated have different running times, we can see them in Figure \ref{fig:diagram21}. From this plot we can see how much time the work of Guti\'{e}rrez et al. \cite{GutierrezBio} takes to evaluate all the dataset, and this could not be very good if we want to make a diagnosis for a patient. 
 \vspace{0.5cm}
 
 \begin{figure}[htbp]
