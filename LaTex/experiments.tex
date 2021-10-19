@@ -3,14 +3,12 @@
 \section{Experimental setup}
 \subsection{Methods studied}
 So far, we have seen some methods for brain network classification. Now we are going to describe the experiments done with some of them, to evaluate their performance in a more general setting. This means that the experiments are done with other brain networks datasets. In particular, the methods we are going to experiment are four:
-\begin{comment}
-cite the reference and not the chapter
-\end{comment}
+
 \begin{itemize}
-	\item Explainable Classification of Brain Networks via Contrast Subgraphs \ref{par:1};
-	\item Unsupervised Network Embedding for Graph Visualization, Clustering and Classification \ref{par:2};
-	\item Network Classification with Application to Brain Connectomics \ref{par:3};
-	\item Stable Biomarker Identification for Predicting Schizophrenia in the Human Connectome \ref{par:4}.
+	\item Explainable Classification of Brain Networks via Contrast Subgraphs \cite{lanciano2020cs};
+	\item Unsupervised Network Embedding for Graph Visualization, Clustering and Classification \cite{GutierrezUn};
+	\item Network Classification with Application to Brain Connectomics \cite{Arroyo_Reli_n_2019};
+	\item Stable Biomarker Identification for Predicting Schizophrenia in the Human Connectome \cite{GutierrezBio}.
 \end{itemize}
 To make a recap and have in mind what we are studying, we will briefly summarize what they do. The first two methods are in the family of statistical fingerprints, the second two in Machine learning. 
 \vspace{0.5cm}
@@ -44,11 +42,41 @@ From HCP dataset we though that could be interesting to divide male and female p
 
 From MTA we exstracted two datasets, one that divides between patients with ADHD and patients without it, that we will call \textit{mta}, and a dataset that distiguish people that make use of cannabis, from people that do not use it, that we will call \textit{mta\_cannabis}.
 \vspace{0.5cm}
-\begin{comment}
-	Maybe a table summarize everything better, and you can also specify name and content of the dataset.
-\end{comment}
-At the end we have nine datasets: ABIDE, Children, Adolescents, EyesClosed, Male, mta, mta\_cannabis, Schizophrenia and hcp\_gender. 
+
+At the end we have nine datasets, summarized and described in Table \ref{tab:datasets}.
 \vspace{0.5cm}
+
+
+\begin{table}[htbp]
+	\centering
+	%\centerline{
+	%\setlength{\tabcolsep}{2.25pt}	
+	\begin{tabular}{cp{0.6\textwidth}}
+		\toprule
+		\textbf{NAME}          & \textbf{DESCRIPTION}                                                                                                                                     \\ 
+		\midrule
+		ABIDE         & 1112 patients, 539 individuals suffering from ASD (autism) and 573 typical controls.                                \\                            
+		\midrule
+		Children      & 101 patients from ABIDE, at most years old, 49 individuals suffering from ASD (autism) and 52 typical controls.                                 \\ 
+		\midrule
+		Adolescents   & 237 patients from ABIDE, between 15 and 20 years old, 116 individuals suffering from ASD (autism) and 121 typical controls.                     \\ 
+		\midrule
+		EyesClosed    & 294 patients from ABIDE, that performed the fMRI with their eyes closed, 136 individuals suffering from ASD (autism) and 158 typical controls.  \\ 
+		\midrule
+		Male          & 838 patients from ABIDE, only males, 420 individuals suffering from ASD (autism) and 418 typical controls.                                      \\ 
+		\midrule
+		mta           & 123 patients, 85 individuals suffering from ADHD 38 typical controls.                                                                           \\ 
+		\midrule
+		mta\_cannabis & 123 patients, 60 individuals that are regular user of cannabis and 63 that do not use cannabis.                                                 \\ 
+		\midrule
+		Schizophrenia & 54 patients, 27 individuals suffering from schizophrenia and 54 typical control.                                                                \\ 
+		\midrule
+		hcp\_gender   & 1003 patients, 534 female individuals and 469 male ones.                                                                                        \\
+		\bottomrule
+\end{tabular}
+\caption{Datasets summary.}
+\label{tab:datasets}
+\end{table}
 
 It is important to specify that each patient is represented by an adjacency matrix contained in a .csv file.
 
@@ -59,9 +87,6 @@ All the experiments were launched with the program Anaconda. We start with an en
 To make the experiments easier to perform, was implemented a python script at which can be specified, as input arguments, which method we want to evaluate, which dataset to use and even if the data must be weighted or binary, meaning that one can choose to have weighted edges of the network, or binary ones. Obviously, the dataset that are already in binary form, will not be studied in weighted form, but will be left as they are, except from the preprocessing.
 \vspace{0.5cm}
 
-\begin{comment}
-	express everything in percentiles. wrong explanation, we do the opposite.
-\end{comment}
 After a method has been runned there is the classification part. The classification is done for only two of the methods we take in consideration. These are \textit{Explainable Classification of Brain Networks via Contrast Subgraphs} \cite{lanciano2020cs} and \textit{Unsupervised Network Embedding for Graph Visualization, Clustering and Classification} \cite{GutierrezUn}, because, as said in their summary explanation, they are working in this setup as an embedding, and for this reason we have to design a classification for them. The other two methods have their own classification in the code, and we thought it was not reasonable to use a different one.
 \vspace{0.5cm}
 
@@ -69,17 +94,21 @@ After a method has been runned there is the classification part. The classificat
 Our classifier is designed with the grid search function of the Python library sklearn, to find the best parameters for each method. We used a cross-validation of 5/10 folds, repeated 5 times. To split the dataset we choose to have 80\% of train set and 20\% of test set. Then from the best parameters found, we make predictions and evaluate the performance with \textbf{accuracy}. The accuracy is calculated directly from the grid search function for each loop of the cross-validation, so we take the mean of all the values. 
 \vspace{0.5cm}
 
-All datasets have their own preprocess, made from who released the data. We also added some data modification before to give the datasets to the algorithms. First of all is checked if the values of the diagonal of each matrix were zeros, if not they are corrected, because we do not want to consider each ROI connected to itself, so like an edge. Then, for each adjacency matrix we calculated the 0.2 quantile and 0.8 quantile, to leave out all the values of the edges bigger than the 0.2 quantile and lower than the 0.8 quantile. We do that because we want to consider only the most relevant nodes, and the ones that are in the middle are obliviously less informative. This is done for all datasets. 
+All datasets have their own preprocess, made from who released the data. We also added some data modification before to give the datasets to the algorithms. First of all is checked if the values of the diagonal of each matrix were zeros, if not they are corrected, because we do not want to consider each ROI connected to itself, so like an edge. Then, for each adjacency matrix distribution we calculated the 0.2 and the 0.8 percentiles, to consider only values of the edges lower than the 0.2 percentile and bigger than the 0.8 percentile. We do that because we want to consider only the most relevant nodes, and the ones that are in the middle are obliviously less informative. This is done for all datasets. 
 \vspace{0.5cm}
 
 Now, as we said, we could choose if transform the datasets in binary edged or leave them with weighted edges. If it is chosen to transform them in binary data, after leaving out the values below and above the quantiles, all the values different from zero are transformed in ones, even the negative values.
 
 \section{Results}
-\begin{comment}
-	Table xx reports the results of the experiment etcetc
-\end{comment}
-Now we are going to show the results of each method.
+Now we are going to show the results of each method. In particular:
 \vspace{0.5cm}
+\begin{itemize}
+	\item Table \ref{tab:c-s} reports the results of the experiment with \textit{Explainable Classification of Brain Networks via Contrast Subgraphs} \cite{lanciano2020cs};
+	\item Table \ref{tab:embs} reports the results of the experiment with \textit{Unsupervised Network Embedding for Graph Visualization, Clustering and Classification} \cite{GutierrezUn};
+	\item Table \ref{tab:graphclass} reports the results of the experiment with \textit{Network Classification with Application to Brain Connectomics} \cite{Arroyo_Reli_n_2019};
+	\item Table \ref{tab:biomarkers} reports the results of the experiment with \textit{Stable Biomarker Identification for Predicting Schizophrenia in the Human Connectome} \cite{GutierrezBio};
+	\item Table \ref{tab:all_results} reports al the results obtained with all the experiments.
+\end{itemize}
 
 \subsection{Results of Explainable Classification of Brain Networks via Contrast Subgraphs}
 
@@ -102,7 +131,8 @@ Each experiment is repeated ten times, in order to take the mean of all the accu
 		\textbf{mta}           & \textbf{0.69 $\pm$ 0.03}        & \textbf{0.69 $\pm$ 0.02}  \\
 		\textbf{hcp\_gender}   & 0.53 $\pm$ 0.11        & 0.53 $\pm$ 0.02  \\
 		\textbf{schizophrenia} & 0.54 $\pm$ 0.05        & 0.51 $\pm$ 0.06  \\
-		\textbf{mta\_cannabis} & 0.47 $\pm$ 0.04        & 0.55 $\pm$ 0.10 
+		\textbf{mta\_cannabis} & 0.47 $\pm$ 0.04        & 0.55 $\pm$ 0.10 \\
+		\bottomrule
 	\end{tabular}
 	\caption{Results of Contrast-subgraph method with each dataset.}
 	\label{tab:c-s}
@@ -140,7 +170,8 @@ The results for each dataset are shown in Table \ref{tab:embs}. From that we can
 		\textbf{mta}           & 0.67 $\pm$ 0.03        & 0.64 $\pm$ 0.09  \\
 		\textbf{hcp\_gender}   & 0.64 $\pm$ 0.08        & 0.63 $\pm$ 0.02  \\
 		\textbf{schizophrenia} & \textbf{0.70 $\pm$ 0.03}        & 0.67 $\pm$ 0.01  \\
-		\textbf{mta\_cannabis} & 0.58 $\pm$ 0.03        & 0.56 $\pm$ 0.09 
+		\textbf{mta\_cannabis} & 0.58 $\pm$ 0.03        & 0.56 $\pm$ 0.09 \\
+		\bottomrule
 	\end{tabular}
 	\caption{Results of Unsupervised network embedding method with each dataset.}
 	\label{tab:embs}
@@ -169,7 +200,8 @@ The mean of the running time is 5 minutes, anyway it is not more than 11 minutes
 		\textbf{mta}           & 0.72 $\pm$ 0.05        & 0.69 $\pm$ 0.03  \\
 		\textbf{hcp\_gender}   & 0.75 $\pm$ 0.03        & \textbf{0.84 $\pm$ 0.01}  \\
 		\textbf{schizophrenia} & 0.74 $\pm$ 0.15        & 0.74 $\pm$ 0.07  \\
-		\textbf{mta\_cannabis} & 0.53 $\pm$ 0.10        & 0.58 $\pm$ 0.11 
+		\textbf{mta\_cannabis} & 0.53 $\pm$ 0.10        & 0.58 $\pm$ 0.11 \\
+		\bottomrule
 	\end{tabular}
 \caption{Results of Network classification method with each dataset.}
 \label{tab:graphclass}
@@ -182,7 +214,7 @@ As the previous model, even \textit{Stable Biomarkers Identification} has alread
 
 \begin{table}
 	\centering
-	\begin{tabular}{c|l|c} 
+	\begin{tabular}{c|c|c} 
 		\toprule
 		& \multicolumn{1}{c|}{b} & w                \\ 
 		\midrule
@@ -194,7 +226,8 @@ As the previous model, even \textit{Stable Biomarkers Identification} has alread
 		\textbf{mta}           & 0.67 $\pm$ 0.06        & 0.68 $\pm$ 0.06  \\
 		\textbf{hcp\_gender}   & 0.78 $\pm$ 0.03        & \textbf{0.84 $\pm$ 0.03}  \\
 		\textbf{schizophrenia} & 0.62 $\pm$ 0.04        & 0.62 $\pm$ 0.01  \\
-		\textbf{mta\_cannabis} & 0.57 $\pm$ 0.08        & 0.60 $\pm$ 0.08 
+		\textbf{mta\_cannabis} & 0.57 $\pm$ 0.08        & 0.60 $\pm$ 0.08 \\
+		\bottomrule
 	\end{tabular}
 \caption{Results of Stable biomarkers identification method with each dataset.}
 \label{tab:biomarkers}

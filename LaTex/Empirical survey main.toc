@@ -27,12 +27,12 @@
 \contentsline {subsection}{\numberline {3.1.1}Methods studied}{26}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Datasets used}{27}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Code}{28}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Results}{29}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Results of Explainable Classification of Brain Networks via Contrast Subgraphs}{30}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Results of Unsupervised Network Embedding for Graph Visualization, Clustering and Classification}{31}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Results of Network Classification with Application to Brain Connectomics}{32}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Results of Stable Biomarker Identification for Predicting Schizophrenia in the Human Connectome}{33}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Discussion}{35}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Conclusions}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Future works}{37}{section.4.1}%
-\contentsline {chapter}{Bibliography}{40}{chapter*.20}%
+\contentsline {section}{\numberline {3.2}Results}{30}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Results of Explainable Classification of Brain Networks via Contrast Subgraphs}{31}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Results of Unsupervised Network Embedding for Graph Visualization, Clustering and Classification}{32}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Results of Network Classification with Application to Brain Connectomics}{34}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Results of Stable Biomarker Identification for Predicting Schizophrenia in the Human Connectome}{34}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Discussion}{36}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Conclusions}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Future works}{39}{section.4.1}%
+\contentsline {chapter}{Bibliography}{42}{chapter*.20}%
